@@ -11,16 +11,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>The UrbanV2X Datasets  </title>
     <meta name="author" content="The UrbanV2X Datasets " />
-    <meta name="description" content="An Event-Centric Multisensory Driving Dataset for SLAM.
+    <meta name="description" content=" Multisensory Vehicle-Infrastructure Dataset for Cooperative Navigation in Urban Areas.
 " />
-    <meta name="keywords" content="Event-based Vision, Multi-sensor, SLAM, Autonomous Driving" />
+    <meta name="keywords" content="Multi-sensor Fusion, RoadSide Infrastructure, SLAM, Autonomous Driving, Dataset" />
 
     <!-- OpenGraph -->
     <meta property="og:site_name" content="The UrbanV2X Datasets  " />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="The UrbanV2X Datasets   | Home" />
     <meta property="og:url" content="http://localhost:4000/UrbanV2X/" />
-    <meta property="og:description" content="An Event-Centric Multisensory Driving Dataset for SLAM.
+    <meta property="og:description" content="Multisensory Vehicle-Infrastructure Dataset for Cooperative Navigation in Urban Areas.
 " />
     
     <meta property="og:locale" content="en" />
@@ -28,7 +28,7 @@
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Home" />
-    <meta name="twitter:description" content="An Event-Centric Multisensory Driving Dataset for SLAM.
+    <meta name="twitter:description" content="Multisensory Vehicle-Infrastructure Dataset for Cooperative Navigation in Urban Areas.
 " />
     
     
@@ -70,7 +70,7 @@
 
     <!-- Styles -->
     
-    <link rel="shortcut icon" href="https://polyu-taslab.github.io/UrbanV2X/assets/img/hku_logo.png"/>
+    <link rel="shortcut icon" href="https://polyu-taslab.github.io/UrbanV2X/assets/img/icon.png"/>
     
     <link rel="stylesheet" href="https://polyu-taslab.github.io/UrbanV2X/assets/css/main.css">
     <link rel="canonical" href="http://localhost:4000/UrbanV2X/">
@@ -151,7 +151,7 @@
            <span style="font-weight: 600;">The UrbanV2X Datasets</span>  
           </h1>
           <p class="desc">
-            An Event-Centric Multisensory Driving Dataset for SLAM.
+            Multisensory Vehicle-Infrastructure Dataset for Cooperative Navigation in Urban Areas.
           </p>
         </header>
 
@@ -168,7 +168,7 @@
 
 <div style="text-align: center;">
   <picture>
-    <img style="width: 90%;" class="img-fluid rounded z-depth-1" src="https://polyu-taslab.github.io/UrbanV2X/assets/gif/sensor_video_new.gif" title="sensor_video">
+    <img style="width: 90%;" class="img-fluid rounded z-depth-1" src="https://polyu-taslab.github.io/UrbanV2X/assets/img/sensor_setup.png" title="sensor_setup">
   </picture>
 </div>
 
@@ -186,36 +186,32 @@
 <p><br></p>
 
 <p style="text-align: justify;">
-This is first event-based SLAM datasets specifically focus on urbanized autonomou driving. 
-We explore the inquiry: Are event cameras ready for autonomous driving?
-At the same time, we also investigates the perceptual capabilities of various sensors, including LiDAR, standard cameras, infrared cameras, and GNSS-RTK/INS.
+  Due to the limitations of single autonomous vehicles, Cellular Vehicle-to-Everything (C-V2X) technology opens a new window for achieving fully autonomous driving through sensor information sharing. However, real-world datasets supporting vehicle–infrastructure cooperative navigation in complex urban environments remain rare. 
+</p>
+<p style="text-align: justify;">
+  To address this gap, we present UrbanV2X, a comprehensive multisensory dataset collected from both vehicles and roadside infrastructure in the Hong Kong C-V2X testbed, designed to support research on smart mobility applications in dense urban areas. 
+</p>
+<p style="text-align: justify;">
+  Our onboard platform provides time-synchronized data from multiple industrial cameras, LiDARs, 4D radar, UWB, IMU, and high-precision GNSS-RTK/INS navigation systems. Meanwhile, our roadside infrastructure provides LiDAR, GNSS, and UWB measurements. 
+</p>
+<p style="text-align: justify;">
+  The entire vehicle–infrastructure platform is synchronized using the Precision Time Protocol (PTP), with sensor calibration data provided. We also benchmark various navigation algorithms to evaluate the collected cooperative data.
+</p>
 <!-- After the paper is accepted, we will release all the datasets and keep the dataset maintenance. -->
 <br>
+
 The contributions of our work can be summarized as follows:
 </p>
 
 <ul>
-  <li style="text-align: justify;"> Our <a href="/UrbanV2X/sensors">sensor platform</a> consists of various novel sensors, 
-    including two sets of stereo event cameras with distinct resolutions (640×480, 346×260),
-    an infrared camera, 
-    stereo industrial cameras, 
-    three mechanical LiDARs (including two slanted LiDARs), 
-    an onboard inertial measurement unit (IMU), 
-    and two global navigation satellite system (GNSS) receivers.
-    For the ground-truth, we adopt a centimeter-level position system that combines the GNSS real-time kinematic (RTK)
-    with the fiber optics gyroscope integrated inertial system as GNSS-RTK/INS. 
+  <li style="text-align: justify;"> UrbanV2X Dataset and Sensor Integration: Our <a href="/UrbanV2X/sensors">sensor platform</a>  integrating various sensors like multiple event cameras, GNSS/INS, 4D Radar, LiDAR and sky-pointing cameara with roadside infrastructure, including GNSS, LiDAR, and UWB.
   </li>
-
+  
   <!-- <li style="text-align: justify;">
     ALl sensors are <a href="/UrbanV2X/calibration">well-calibrated</a> and temporally synchronized at the hardware level, with recording data simultaneously.
   </li> -->
   
-  <li style="text-align: justify;"> UrbanV2X collects 81 sequences covering over 200 kilometers of trajectories in various driving scenarios, 
-    including dense streets, urban, tunnels, highways, bridges, and suburbs.
-    These <a href="/UrbanV2X/download">sequences</a> are recorded under daylight and nighttime, providing challenging situations for Visual and LiDAR SLAM, e.g., 
-    dynamic objects, high-speed motion, repetitive scenarios, and HDR scenes.
-    Meanwhile, we evaluate existing state-of-the-art visual and LiDAR SLAM algorithms with various sensor modalities on our datasets.
-    Moreover, our dataset and benchmark results are released publicly available on our website.
+  <li style="text-align: justify;"> UrbanV2X collects comprehensive data from both urban canyons and open areas. These <a href="/UrbanV2X/download">sequences</a> are recorded under various conditions. Our dataset and benchmark results are publicly available on our website.
   </li>
   <!-- <li style="text-align: justify;"> We present a comprehensive <a href="/UrbanV2X/benchmark">benchmark</a> that evaluates existing state-of-the-art SLAM algorithms of various
     sensor modalities and analyzes their limitations.
@@ -227,7 +223,7 @@ The contributions of our work can be summarized as follows:
   <br>
   The visualization of each sequence is available in <a href="/UrbanV2X/download">Download section</a> and <a href="https://www.bilibili.com/video/BV1Km4y157KC/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7">Bilibili</a>.
   <br>
-  If you have any suggestions or questions, do not hesitate to propose an issue to our <a href="https://github.com/arclab-hku/UrbanV2X">Github Repository</a>.
+  If you have any suggestions or questions, do not hesitate to propose an issue to our <a href="https://polyu-taslab.github.io/UrbanV2X">Github Repository</a>.
 </p>
 
 <p><br></p>
@@ -330,10 +326,12 @@ The contributions of our work can be summarized as follows:
         <div id="UrbanV2X2023" class="col-sm-8">
         
           <!-- Author -->
-          <div class="paper" style="text-align: justify;">P. Chen, W. Guan, F. Huang, Y. Zhong, W. Wen, L. Hsu, and P. Lu. 
-            UrbanV2X: An Event-Centric Multisensory Driving Dataset for SLAM.
-            IEEE Transactions on Intelligent Vehicles, vol. 9, no. 1, pp. 407-416, 2023.
+
+          <div class="paper" style="text-align: justify;">
+            Urban-V2X: A Multisensory Vehicle-Infrastructure
+            Dataset for Cooperative Navigation in Urban Areas
           </div>
+          
           <!-- Title -->
           <!-- <div class="title" style="text-align: justify;">UrbanV2X: An Event-Centric Multisensory Driving Dataset for SLAM.</div> -->
 
@@ -383,7 +381,7 @@ The contributions of our work can be summarized as follows:
             <h2>License</h2>
             <p>
             This work is released under <a href="https://www.gnu.org/licenses/" target="_blank" rel="noopener noreferrer">GPLv3</a> license. 
-            For commercial inquires, please contact Dr. Peng Lu (lupeng@hku.hk).
+            For commercial inquires, please contact Dr. Wen Weisong(welson.wen@polyu.edu.hk).
             </p>
           </div>
           <br>
@@ -393,7 +391,7 @@ The contributions of our work can be summarized as follows:
           <div class="Acknowledgement">
             <h2>Acknowledgement</h2>
             <p style="text-align: justify;">
-              This work was supported by General Research Fund under Grant 17204222, and in part by the Seed Fund for Collaborative Research and General Funding Scheme-HKU-TCL Joint Research Center for Artificial Intelligence.
+              The authors thank Yuteng Wang, Shaoting Qiu from PolyU, Jiashi Feng, Alpamys Urtay and Siqiao from ASTRI for their kind support in this data evaluation.
             </p>
           </div>
           <br>
