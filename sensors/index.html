@@ -159,22 +159,19 @@
 
 <h4>Visual sensors</h4>
 <p style="text-align: justify;">
-  Two sets of stereo event cameras with different resolutions, DAVIS436 (346&times;260) and DVXplorer (640&times;480), are configured at a baseline of 30 cm respectively.
-  DAVIS346 produces asynchronous events and intensity frames. 
-  In contrast, DVXplorer exclusively generates events, while its resolution surpasses that of DAVIS346, enabling the provision of more intricate scene information.
-  Each event camera is equipped with additional infrared filters to mitigate interference from LiDAR.
-  Two FLIR BFLY-U3-23S3C industrial cameras with a resolution of 1920&times;1200 are used to capture RGB images at 20 Hz in fixed exposure mode.
-  Forward-facing stereo industrial cameras are installed with a baseline of 30 cm, ensuring fairness by maintaining consistency with the baseline of the stereo event cameras.
-  Hikrobot MV-CI003-GL-N6 infrared camera collects thermal frames at 20 Hz, encompassing a response band of 8-14&mu;m and equipped with a 6.3mm focal length lens.
+  Seven Hikvision MV-CS050-10GC PRO industrial cameras equipped with VM0428MP12 4mm industrial lenses are used, each with a resolution of 2200&times;1740, capturing RGB images at 10 Hz in fixed exposure mode. Among them, two are forward-facing stereo industrial cameras, while the other five cameras are installed at an angle of 60° between each other to form a 360° surround image capture setup. Each camera has a horizontal FOV of approximately 80.18°, with an overlap angle of around 20° between adjacent cameras. Image synchronization and triggering are achieved through the GigE Vision protocol, ensuring a frame trigger error of 0.005s for each image set.
 <br>
 </p>
-
+<h4>4D Radar</h4>
+<p style="text-align: justify;">
+  A 4D radar is mounted at the front of the sensor kit, capable of real-time measurement of the position, velocity, and distance of objects ahead, while generating 3D point cloud data fused with velocity information. It features a horizontal field of view of 150° and operates at a collection frequency of 13 Hz.
+  <br>
+</p>
 <h4>Mechanical LiDAR</h4>
 <p style="text-align: justify;">
-  We configure three mechanical LiDARs including two slanted LiDARs to collect accurate point clouds of surrounding environments.
+  We configure two mechanical LiDARs including one slanted LiDAR to collect accurate point clouds of surrounding environments.
   Velodyne HDL-32E is positioned on the top of the vehicle to capture the surroundings horizontally.
-  Two slanted LiDARs, Lslidar C16 and Velodyne VLP-16, are mounted on the left and right sides of the sensor kit, respectively.
-  This configuration facilitates the thorough recording of architectural particulars relevant to high-rising buildings in urbanized 
+  The slanted LiDARs, Hesai XT-32, are mounted on the center front part of vehicle.This configuration facilitates the thorough recording of architectural particulars relevant to high-rising buildings in urbanized 
   areas and all LiDAR data are collected at 10 Hz.
 <br>
 </p>
@@ -197,74 +194,53 @@ The details of full sensors setup can be found below:
   <tablecaption id="Sensors specifications"></tablecaption>
   <tr><td>Sensor Type</td><td>Description</td></tr>
   <tr>
-  <td>Inivation DAVIS346 Color &times; 2</td>
+  <td>Hikvision MV-CS050-10GC PRO  &times; 7</td>
   <td>
   <ul>
-  <li>346&times;260 pixels</li>
-  <li>IMU: MPU 6150, 6-axis</li>
-  <li>Baseline: 30cm</li>
+  <li>2220 &times;1740 pixels at 10 fps</li>
+  <li>H-FOV: 80.18&deg;, V-FOV: 73.77&deg;.</li>
   </ul>
   </td>
   </tr>
   <tr>
-  <td>Inivation DVXplorer &times; 2</td>
+  <td>Roadside Infrastracture</td>
   <td>
   <ul>
-  <li>640&times;480 pixels</li>
-  <li>IMU: MPU 6150, 6-axis</li>
-  <li>Baseline: 30cm</li>
+  <li>GNSS U-Blox F9P, 1Hz</li>
+  <li>Nooploop P-B, 50 Hz</li>
+  <li>Innovusion Jaguar, LiDAR, 300 lines</li>
   </ul>
   </td>
   </tr>
   <tr>
-  <td>Hikrobot MV-CI003-GL-N6</td>
+  <td>Hesai XT-32</td>
   <td>
   <ul>
-  <li>640&times;512 pixels at 20fps</li>
-  <li>H-FOV: 88.5&deg;, V-FOV: 73.2&deg;.</li>
-  </ul>
-  </td>
-  </tr>
-  <tr>
-  <td>FLIR BFLY-U3-23S3C &times; 2</td>
-  <td>
-  <ul>
-  <li>color 1920&times;1200 pixels at 20fps</li>
-  <li>H-FOV: 96.8&deg;, V-FOV: 79.4&deg;.</li>
-  <li>Baseline: 30cm</li>
-  </ul>
-  </td>
-  </tr>
-  <tr>
-  <td>Velodyne HDL-32E</td>
-  <td>
-  <ul>
-  <li>H-FOV:360&deg;, V-FOV:-30&deg; ~ 10&deg;.</li>
+  <li>H-FOV:360°, V-FOV:+15° ~ -16°.</li>
   <li>32 channel</li>
   <li>10Hz</li>
-  <li>80m range</li>
+  <li>125m range</li>
   </ul>
   </td>
   </tr>
   <tr>
-  <td>Velodyne VLP-16</td>
+  <td>Velodyne VLP-32E</td>
   <td>
   <ul>
-  <li>H-FOV:360&deg;, V-FOV:-15&deg; ~ 15&deg;.</li>
-  <li>16 channel</li>
+  <li>H-FOV:360°, V-FOV:-30.67° ~ 10.67°.</li>
+  <li>32 channel</li>
   <li>10Hz</li>
   <li>100m range</li>
   </ul>
   </td>
   </tr>
   <tr>
-  <td>Lslidar C16</td>
+  <td>GPAL-Ares-R7861 Radar</td>
   <td>
   <ul>
-  <li>H-FOV:360&deg;, V-FOV:-15&deg; ~ 15&deg;.</li>
-  <li>16 channel</li>
-  <li>10Hz</li>
-  <li>150m range</li>
+  <li>H-FOV:150°, V-FOV:30.</li>
+  <li>Front-View</li>
+  <li>13Hz</li>
   </ul>
   </td>
   </tr>
@@ -306,6 +282,7 @@ The details of full sensors setup can be found below:
   </td>
   </tr>
   </table>
+
 </div>
 
   <p><br></p>
