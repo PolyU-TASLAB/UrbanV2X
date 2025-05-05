@@ -105,12 +105,12 @@
 
               <!-- Home -->
               <li class="nav-item">
-                <a class="nav-link" href="/UrbanV2X/">Home</a>
+                <a class="nav-link" href="../">Home</a>
               </li>
 
               <!-- Other pages -->
                 <li class="nav-item active">
-                  <a class="nav-link" href="/UrbanV2X/sensors/">Sensors<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="./">Sensors<span class="sr-only">(current)</span></a>
                 </li>
                 <!-- <li class="nav-item ">
                   <a class="nav-link" href="/UrbanV2X/calibration/">Calibration</a>
@@ -138,42 +138,68 @@
           <article>
             <p><br></p>
 
-          <!-- <figure style="text-align: center;">
-             <img style = "width: 90%" src="https://polyu-taslab.github.io/UrbanV2X/assets/img/sensors.JPG" alt="Image description">
-          </figure> -->
-
           <figure style="text-align: center;">
-            <img style = "width: 70%" src="https://polyu-taslab.github.io/UrbanV2X/assets/img/sensor_platform.png" alt="Image description">
-            <figcaption id="overview">Fig. 1. An overview of the sensor setup</figcaption>
+             <img style = "width: 90%" src="../assets/gif/sensor_platform.gif" alt="Image description">
           </figure>
+
+          
 
 <p><br></p>
 
 <p style="text-align: justify;">
-  The data collection platform is shown in <a href="#overview">Fig. 1.</a>. Our sensor suite consists of a multi-camera setup (event camera, industrial camera, 
+  The data collection platform is shown in <a href="#overview">Fig. 1</a>. Our sensor suite consists of a multi-camera setup (event camera, industrial camera, 
   and infrared camera) equipped with three LiDARs, onboard IMU, two GNSS receivers, and GNSS-RTK/INS systems.
   The specific specifications of each sensor are presented in <a href="#Sensors specifications">Table. 1.</a> .
   An Intel NUC (i7-1260P, 32GB RAM) and an industrial computer (i7-10610U, 32GB RAM) are used to run sensor drivers, and record data into ROS bags on the Ubuntu system.
 <br>
+  <figure style="text-align: center;">
+    <img style = "width: 90%" src="../assets/img/sensor_kit_design.JPG" alt="Image description">
+    <figcaption id="overview">Fig. 1. An overview of the sensor setup</figcaption>
+  </figure>
 </p>
+
+<p style="text-align: justify;">
+  We use an Ethernet topology for data transmission and time synchronization, as shown in <a href="#system_architecture">Fig. 2</a>. 
+  All independent devices and the PTP server are synchronized using NMEA and PPS signals from a u-blox M8T GNSS receiver.
+  PTP server synchronizes devices clocks by broadcasting PTPv2 messages. Ethernet cameras are triggered via GigE Vision with a timing accuracy of &lt; 0.005s. 
+<br>
+  <figure style="text-align: center;">
+    <img style = "width: 90%" src="../assets/img/sys_architecture.png" alt="Image description">
+    <figcaption id="system_architecture">Fig. 2. System architecture</figcaption>
+  </figure>
+</p>
+
 
 <h4>Visual sensors</h4>
 <p style="text-align: justify;">
-  Seven Hikvision MV-CS050-10GC PRO industrial cameras equipped with VM0428MP12 4mm industrial lenses are used, each with a resolution of 2200&times;1740, capturing RGB images at 10 Hz in fixed exposure mode. Among them, two are forward-facing stereo industrial cameras, while the other five cameras are installed at an angle of 60° between each other to form a 360° surround image capture setup. Each camera has a horizontal FOV of approximately 80.18°, with an overlap angle of around 20° between adjacent cameras. Image synchronization and triggering are achieved through the GigE Vision protocol, ensuring a frame trigger error of 0.005s for each image set.
+  Seven Hikvision MV-CS050-10GC PRO cameras with 4mm lenses capture 2200×1740 RGB images at 10 Hz. 
+  Two are forward-facing stereo cameras, while five form a 360° surround setup with 60° spacing and 20° overlap. The FOV coverage is shown in <a href="#cameras_fov_coverage">Fig. 3</a>
+  Image synchronized trigger is achieved via the GigE Vision protocol.
+  <figure style="text-align: center;">
+    <img style = "width: 90%" src="../assets/img/cameras_fov_coverage.png" alt="Image description">
+    <figcaption id="cameras_fov_coverage">Fig. 3. Cameras FOV Coverage</figcaption>
+  </figure>
 <br>
 </p>
 <h4>4D Radar</h4>
 <p style="text-align: justify;">
-  A 4D radar is mounted at the front of the sensor kit, capable of real-time measurement of the position, velocity, and distance of objects ahead, while generating 3D point cloud data fused with velocity information. It features a horizontal field of view of 150° and operates at a collection frequency of 13 Hz.
+  A front-mounted 4D radar GPAL Ares-R7861 measures object position, velocity, and distance in real time, producing 3D point clouds with velocity data. 
+  It offers a 150° horizontal FOV and operates at 13 Hz. The point cloud view can be found in <a href="#radar_sample">Fig. 4</a>
   <br>
+  <figure style="text-align: center;">
+    <img style = "width: 90%" src="../assets/img/radar_sample.png" alt="Image description">
+    <figcaption id="radar_sample">Fig. 4. Radar sample</figcaption>
+  </figure>
 </p>
 <h4>Mechanical LiDAR</h4>
-<p style="text-align: justify;">
-  We configure two mechanical LiDARs including one slanted LiDAR to collect accurate point clouds of surrounding environments.
-  Velodyne HDL-32E is positioned on the top of the vehicle to capture the surroundings horizontally.
-  The slanted LiDARs, Hesai XT-32, are mounted on the center front part of vehicle.This configuration facilitates the thorough recording of architectural particulars relevant to high-rising buildings in urbanized 
-  areas and all LiDAR data are collected at 10 Hz.
-<br>
+  <p style="text-align: justify;">
+    Two mechanical LiDARs are used: a Velodyne HDL-32E on the vehicle roof for horizontal surroundings and a slanted Hesai XT-32 at the front for detailed urban architecture. 
+    Two LiDAR point clouds are fused as <a href="#lidar_sample">Fig. 5</a>. Both operate at 10 Hz.
+  <br>
+  <figure style="text-align: center;">
+    <img style = "width: 90%" src="../assets/img/lidar_sample.png" alt="Image description">
+    <figcaption id="lidar_sample">Fig. 5. LiDAR sample</figcaption>
+  </figure>
 </p>
 
 <h4>Onboard IMU and GNSS-RTK/INS suite</h4>
