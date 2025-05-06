@@ -138,9 +138,32 @@
           <article>
             <p><br></p>
 
-          <figure style="text-align: center;">
-             <img style = "width: 90%" src="../assets/gif/sensor_platform.gif" alt="Image description">
+          <figure style="text-align: center; position: relative; width: 90%; margin: 0 auto;">
+            <!-- 加载标记 -->
+            <div id="loading" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+              <span>Sensor-kit Overview Loading...</span> <!-- 或使用一个加载动画 -->
+            </div>
+          
+            <!-- 图片 -->
+            <img id="sensorImage" style="width: 100%; display: none;" src="/UrbanV2X/assets/gif/sensor_platform.gif" alt="Image description">
           </figure>
+          
+          <script>
+            // 获取图片和加载标记
+            const image = document.getElementById('sensorImage');
+            const loading = document.getElementById('loading');
+          
+            // 图片加载成功时
+            image.onload = () => {
+              loading.style.display = 'none'; // 隐藏加载标记
+              image.style.display = 'block'; // 显示图片
+            };
+          
+            // 图片加载失败时（可选）
+            image.onerror = () => {
+              loading.innerHTML = 'Failed to load image'; // 显示错误信息
+            };
+          </script>
 
           
 
