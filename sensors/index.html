@@ -177,7 +177,7 @@
 <br>
   <figure style="text-align: center;">
     <img style = "width: 90%" src="../assets/img/sensor_kit_design.JPG" alt="Image description">
-    <figcaption id="overview">Fig. 1. An overview of the sensor setup</figcaption>
+    <figcaption id="overview">Fig. 1. An overview of the onboard sensor setup</figcaption>
   </figure>
 </p>
 
@@ -190,12 +190,9 @@
 </p> -->
 
 <p style="text-align: justify;">
-The details of full sensors setup can be found below:
-</p>
-
-
+The details of full sensors setup can be found below:</p>
 <div style="text-align: center;">
-  <table style="display: inline-block; border-collapse: collapse;" border="1" cellpadding="8">
+  <table style="display: inline-block; border-collapse: collapse;" border="1" cellpadding="7">
     <tr><th>Platform</th><th>Sensor Type</th><th>Description</th></tr>
 
     <!-- Onboard Platform -->
@@ -265,14 +262,14 @@ The details of full sensors setup can be found below:
     </tr>
 
     <!-- <tr>
-      <!-- <td><strong>U-Blox EVK-M8T</strong></td>
+    <td><strong>U-Blox EVK-M8T</strong></td>
       <td>
         <ul>
           <li>Automotive Grade GNSS Receiver</li>
           <li>1 Hz, GPS Time</li>
         </ul>
       </td> -->
-    </tr> -->
+    <!-- </tr>  -->
 
     <tr>
       <td><strong>NovAtel SPAN-CPT</strong></td>
@@ -363,14 +360,23 @@ The details of full sensors setup can be found below:
   </figure>
 </p>
 
-<h4>Mechanical LiDAR</h4>
+<h4>Roadside LiDAR</h4>
   <p style="text-align: justify;">
-    Two mechanical LiDARs are used: a Velodyne HDL-32E on the vehicle roof for horizontal surroundings and a slanted Hesai XT-32 at the front for detailed urban architecture. 
-    Two LiDAR point clouds are fused as <a href="#lidar_sample">Fig. 5</a>. Both operate at 10 Hz.
+    Innovusion Jaguar LiDAR at 300 Lines cover the roundabout areas
   <br>
   <figure style="text-align: center;">
-    <img style = "width: 90%" src="../assets/img/lidar_sample.png" alt="Image description">
-    <figcaption id="lidar_sample">Fig. 5. LiDAR sample</figcaption>
+    <img style = "width: 90%" src="../assets/gif/roadside_lidar_sample.gif" alt="Image description">
+    <figcaption id="lidar_sample">Fig. 6. Roadside LiDAR </figcaption>
+  </figure>
+</p>
+
+<h4>Roadside UWB</h4>
+  <p style="text-align: justify;">
+    We deployed 4 UWB anchors with RSI, which ensure the communication between vehicle and RSU at the roundabout area.
+  <br>
+  <figure style="text-align: center;">
+    <img style = "width: 90%" src="../assets/gif/roadside_uwb_sample.gif" alt="Image description">
+    <figcaption id="roadside_UWB_sample">Fig. 7. Roadside UWB</figcaption>
   </figure>
 </p>
 
@@ -394,12 +400,12 @@ The details of full sensors setup can be found below:
 
     </div>
 
-    <!-- Footer -->    
-    <footer class="nofixed-bottom">
-      <div class="container mt-0" style="width:100%;text-align:center;">
-        © 2025 Tas Lab, The University of HongKong. All rights reserved.
-      </div>
-    </footer> 
+   <!-- Footer -->    
+   <footer class="nofixed-bottom">
+    <div class="container mt-0" style="width:100%;text-align:center;">
+      © 2025 Tas Lab, The Hong Kong Polytechnic University. All rights reserved.
+    </div>
+  </footer> 
 
     <!-- JavaScripts -->
     <!-- jQuery -->
