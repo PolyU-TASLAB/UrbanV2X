@@ -1,6 +1,6 @@
 Website for the UrbanV2X datasets.
 
-Webpage: https://polyu-taslab.github.io//UrbanV2X/
+Webpage: https://polyu-taslab.github.io/UrbanV2X/
 
 If you have any suggestions or questions, do not hesitate to propose an issue.
 
