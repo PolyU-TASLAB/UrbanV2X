@@ -145,7 +145,7 @@
             </div>
           
             <!-- 图片 -->
-            <img id="sensorImage" style="width: 100%; display: none;" src="/UrbanV2X/assets/gif/sensor_platform.gif" alt="Image description">
+            <img id="sensorImage" style="width: 100%; display: none;" src="/UrbanV2X/assets/gif/onboard_platform_speedX4.gif" alt="Image description">
           </figure>
           
           <script>
@@ -170,16 +170,151 @@
 <p><br></p>
 
 <p style="text-align: justify;">
-  The data collection platform is shown in <a href="#overview">Fig. 1</a>. Our sensor suite consists of a multi-camera setup (event camera, industrial camera, 
+  The Vehicle-Infrastructure platform is shown in <a href="#overview">Fig. 1</a>. Our onboard sensor suite consists of a multi-camera setup (event camera, industrial camera, 
   and infrared camera) equipped with three LiDARs, onboard IMU, two GNSS receivers, and GNSS-RTK/INS systems.
   The specific specifications of each sensor are presented in <a href="#Sensors specifications">Table. 1.</a> .
   An Intel NUC (i7-1260P, 32GB RAM) and an industrial computer (i7-10610U, 32GB RAM) are used to run sensor drivers, and record data into ROS bags on the Ubuntu system.
 <br>
   <figure style="text-align: center;">
-    <img style = "width: 90%" src="../assets/img/sensor_kit_design.JPG" alt="Image description">
-    <figcaption id="overview">Fig. 1. An overview of the sensor setup</figcaption>
+    <img style = "width: 90%" src="../assets/img/VI_sensor_kit.jpg" alt="Image description">
+    <figcaption id="overview">Fig. 1. An overview of the Vehicle-Infrastructure sensor setup</figcaption>
   </figure>
 </p>
+
+
+<h4>Vehicle-Infrastructure sensor platform</h4>
+<!-- <p style="text-align: justify;">
+  An onboard Xsens-MTI-30 IMU is employed to collect the raw acceleration and angular velocity at 400 Hz.
+  The accurate ground-truth of localization is furnished by a centimeter-level GNSS(GPS, GLONASS, and BeiDou)-RTK/INS(fiber-optic gyroscope) navigation system.
+<br>
+</p> -->
+
+<p style="text-align: justify;">
+The details of full sensors setup can be found below:</p>
+<div style="text-align: center;">
+  <table style="display: inline-block; border-collapse: collapse;" border="1" cellpadding="7">
+    <tr><th>Platform</th><th>Sensor Type</th><th>Description</th></tr>
+
+    <!-- Onboard Platform -->
+    <tr>
+      <td rowspan="7"><strong>Onboard Platform</strong></td>
+      <td><strong>Hikvision MV-CS050-10GC PRO × 7</strong></td>
+      <td>
+        <ul>
+          <li>Resolution: 2220 × 1740 pixels @ 10 fps</li>
+          <li>H-FOV: 80.18°, V-FOV: 73.77°</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>Hesai XT-32</strong></td>
+      <td>
+        <ul>
+          <li>H-FOV: 360°, V-FOV: +15° ~ -16°</li>
+          <li>32 channels, 10 Hz</li>
+          <li>Range: 125 m</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>Velodyne VLP-32E</strong></td>
+      <td>
+        <ul>
+          <li>H-FOV: 360°, V-FOV: -30.67° ~ +10.67°</li>
+          <li>32 channels, 10 Hz</li>
+          <li>Range: 100 m</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>GPAL-Ares-R7861 Radar</strong></td>
+      <td>
+        <ul>
+          <li>H-FOV: 150°, V-FOV: 30°</li>
+          <li>Front-view radar</li>
+          <li>Frequency: 13 Hz</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>Xsens MTi-30 IMU</strong></td>
+      <td>
+        <ul>
+          <li>Sampling Rate: 400 Hz</li>
+          <li>Accelerometer in-run bias instability: 15 µg</li>
+          <li>Gyroscope in-run bias instability: 18°/h</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>U-Blox ZED-F9P</strong></td>
+      <td>
+        <ul>
+          <li>Automotive Grade GNSS Receiver</li>
+          <li>1 Hz, GPS Time</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- <tr>
+    <td><strong>U-Blox EVK-M8T</strong></td>
+      <td>
+        <ul>
+          <li>Automotive Grade GNSS Receiver</li>
+          <li>1 Hz, GPS Time</li>
+        </ul>
+      </td> -->
+    <!-- </tr>  -->
+
+    <tr>
+      <td><strong>NovAtel SPAN-CPT</strong></td>
+      <td>
+        <ul>
+          <li>Geodetic Grade GNSS/INS System</li>
+          <li>1 Hz, GPS Time</li>
+          <li>Position Accuracy: 5 cm</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Roadside Platform -->
+    <tr>
+      <td rowspan="3"><strong>Roadside Infrastructure</strong></td>
+      <td><strong>Innovusion Jaguar LiDAR</strong></td>
+      <td>
+        <ul>
+          <li>300 Lines</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>U-Blox ZED-F9P</strong></td>
+      <td>
+        <ul>
+          <li>Automotive Grade GNSS Receiver</li>
+          <li>1 Hz, GPS Time</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>UWB Nooploop</strong></td>
+      <td>
+        <ul>
+          <li>Model: P-B</li>
+          <li>Frequency: 50 Hz</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+
 
 <p style="text-align: justify;">
   We use an Ethernet topology for data transmission and time synchronization, as shown in <a href="#system_architecture">Fig. 2</a>. 
@@ -225,114 +360,25 @@
   </figure>
 </p>
 
-<h4>Onboard IMU and GNSS-RTK/INS suite</h4>
-<p style="text-align: justify;">
-  An onboard Xsens-MTI-30 IMU is employed to collect the raw acceleration and angular velocity at 400 Hz.
-  The accurate ground-truth of localization is furnished by a centimeter-level GNSS(GPS, GLONASS, and BeiDou)-RTK/INS(fiber-optic gyroscope) navigation system.
-<br>
+<h4>Roadside LiDAR</h4>
+  <p style="text-align: justify;">
+    Innovusion Jaguar LiDAR at 300 Lines cover the roundabout areas
+  <br>
+  <figure style="text-align: center;">
+    <img style = "width: 90%" src="../assets/gif/roadside_lidar_sample.gif" alt="Image description">
+    <figcaption id="lidar_sample">Fig. 6. Roadside LiDAR </figcaption>
+  </figure>
 </p>
 
-<p style="text-align: justify;">
-The details of full sensors setup can be found below:
-<br>
+<h4>Roadside UWB</h4>
+  <p style="text-align: justify;">
+    We deployed 4 UWB anchors with RSI, which ensure the communication between vehicle and RSU at the roundabout area.
+  <br>
+  <figure style="text-align: center;">
+    <img style = "width: 90%" src="../assets/gif/roadside_uwb_sample.gif" alt="Image description">
+    <figcaption id="roadside_UWB_sample">Fig. 7. Roadside UWB</figcaption>
+  </figure>
 </p>
-
-
-<div style="text-align: center;">
-<table style="display: inline-block;">
-  <tablecaption id="Sensors specifications"></tablecaption>
-  <tr><td>Sensor Type</td><td>Description</td></tr>
-  <tr>
-  <td>Hikvision MV-CS050-10GC PRO  &times; 7</td>
-  <td>
-  <ul>
-  <li>2220 &times;1740 pixels at 10 fps</li>
-  <li>H-FOV: 80.18&deg;, V-FOV: 73.77&deg;.</li>
-  </ul>
-  </td>
-  </tr>
-  <tr>
-  <td>Roadside Infrastracture</td>
-  <td>
-  <ul>
-  <li>GNSS U-Blox F9P, 1Hz</li>
-  <li>Nooploop P-B, 50 Hz</li>
-  <li>Innovusion Jaguar, LiDAR, 300 lines</li>
-  </ul>
-  </td>
-  </tr>
-  <tr>
-  <td>Hesai XT-32</td>
-  <td>
-  <ul>
-  <li>H-FOV:360°, V-FOV:+15° ~ -16°.</li>
-  <li>32 channel</li>
-  <li>10Hz</li>
-  <li>125m range</li>
-  </ul>
-  </td>
-  </tr>
-  <tr>
-  <td>Velodyne VLP-32E</td>
-  <td>
-  <ul>
-  <li>H-FOV:360°, V-FOV:-30.67° ~ 10.67°.</li>
-  <li>32 channel</li>
-  <li>10Hz</li>
-  <li>100m range</li>
-  </ul>
-  </td>
-  </tr>
-  <tr>
-  <td>GPAL-Ares-R7861 Radar</td>
-  <td>
-  <ul>
-  <li>H-FOV:150°, V-FOV:30.</li>
-  <li>Front-View</li>
-  <li>13Hz</li>
-  </ul>
-  </td>
-  </tr>
-  <tr>
-  <td>Xsens Mti-30 IMU</td>
-  <td>
-  <ul>
-  <li>400 Hz</li>
-  <li>accelerometer in-run bias instability 15 &mu;g </li>
-  <li>gyroscope in-run bias instability 18&deg;/h</li>
-  </ul>
-  </td>
-  </tr>
-  <tr>
-  <td>U-BLOX ZED-F9P</td>
-  <td>
-  <ul>
-  <li>Automobile Level</li>
-  <li>1Hz, GPS Time</li>
-  </ul>
-  </td>
-  </tr>
-  <tr>
-  <td>U-BLOX EVK-M8T</td>
-  <td>
-  <ul>
-  <li>Automobile Level</li>
-  <li>1Hz, GPS Time</li>
-  </ul>
-  </td>
-  </tr>
-  <td>NovAtel SPAN-CPT</td>
-  <td>
-  <ul>
-  <li>Geodetic Level</li>
-  <li>1 Hz, GPS Time</li>
-  <li>Position accuracy 5cm</li>
-  </ul>
-  </td>
-  </tr>
-  </table>
-
-</div>
 
   <p><br></p>
 
@@ -354,12 +400,12 @@ The details of full sensors setup can be found below:
 
     </div>
 
-    <!-- Footer -->    
-    <footer class="nofixed-bottom">
-      <div class="container mt-0" style="width:100%;text-align:center;">
-        © 2025 Tas Lab, The University of HongKong. All rights reserved.
-      </div>
-    </footer> 
+   <!-- Footer -->    
+   <footer class="nofixed-bottom">
+    <div class="container mt-0" style="width:100%;text-align:center;">
+      © 2025 Tas Lab, The Hong Kong Polytechnic University. All rights reserved.
+    </div>
+  </footer> 
 
     <!-- JavaScripts -->
     <!-- jQuery -->
