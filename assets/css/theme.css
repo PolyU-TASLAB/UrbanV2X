@@ -1,0 +1,59 @@
+.site-theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-shrink:0;min-width:40px;height:40px;padding:0 12px;border:1px solid #dce4e7;border-radius:3px;background:transparent;color:#415965;font:600 13px Arial,sans-serif;cursor:pointer}
+.site-theme-toggle:hover{color:#007f90;border-color:#00acc1}
+.site-theme-toggle svg{flex-shrink:0}
+.theme-sun{display:none}
+[data-theme="dark"] .theme-sun{display:block}
+[data-theme="dark"] .theme-moon{display:none}
+@media(max-width:1100px){.site-theme-toggle{width:40px;padding:0}.site-theme-toggle [data-theme-label]{display:none}.site-navigation-inner{gap:18px}.site-navigation-links{gap:18px}}
+@media(max-width:1000px){.site-theme-toggle{margin-left:auto}.site-navigation-inner{gap:12px}.site-navigation-links{gap:0}}
+
+html[data-theme="dark"]{--ink:#e8f1f5;--ink-soft:#b1c5cf;--muted:#aec2cc;--line:#304652;--surface:#132936;--surface-blue:#18313e;--pale:#132936;--cyan:#54d6d5;--cyan-bright:#66ded8;--blue:#82baff;color-scheme:dark}
+html[data-theme="dark"] body{background:#0b1822;color:var(--ink)}
+html[data-theme="dark"] a{color:#8dc3ff}
+html[data-theme="dark"] a:hover{color:#7ee9e1}
+html[data-theme="dark"] .site-navigation{background:#0c1d28f5;border-color:var(--line)}
+html[data-theme="dark"] .site-navigation-brand,
+html[data-theme="dark"] .site-navigation-links>a{color:var(--ink)}
+html[data-theme="dark"] .site-navigation-brand img{background:white;border-radius:3px}
+html[data-theme="dark"] .site-navigation-links>a[aria-current="page"],
+html[data-theme="dark"] .site-navigation-links>a:hover{color:var(--cyan)}
+html[data-theme="dark"] .site-navigation-links>a.site-navigation-paper,
+html[data-theme="dark"] .site-theme-toggle,
+html[data-theme="dark"] .site-navigation-toggle{border-color:var(--line);background:transparent;color:var(--ink)}
+html[data-theme="dark"] .site-theme-toggle:hover{border-color:var(--cyan);color:var(--cyan)}
+html[data-theme="dark"] .eyebrow,
+html[data-theme="dark"] .card-copy h3,
+html[data-theme="dark"] .site-tag{color:#68dcd7}
+html[data-theme="dark"] .hero h1 em{color:#68dcd7}
+html[data-theme="dark"] .hero-note,
+html[data-theme="dark"] .stats small,
+html[data-theme="dark"] .tags span,
+html[data-theme="dark"] .dataset-showcase figcaption,
+html[data-theme="dark"] .map-credit{color:var(--muted)}
+html[data-theme="dark"] .dataset-showcase figcaption strong{color:var(--ink)}
+html[data-theme="dark"] .media-card,
+html[data-theme="dark"] .site-grid article,
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .structure-key,
+html[data-theme="dark"] .sequence-card{background:#132733;border-color:var(--line)}
+html[data-theme="dark"] .overview,
+html[data-theme="dark"] .navigation-preview,
+html[data-theme="dark"] .cta{background:var(--surface)}
+html[data-theme="dark"] .latest-release{border-color:var(--line);border-left-color:var(--cyan)}
+html[data-theme="dark"] .table-wrap{background:#10232f;border-color:var(--line)}
+html[data-theme="dark"] th{background:#1b3340;color:#c5d7e1}
+html[data-theme="dark"] tbody th,
+html[data-theme="dark"] .sensor-specs tbody th{background:#142b37;color:var(--ink)}
+html[data-theme="dark"] .parameter-table summary{color:#8dc3ff}
+html[data-theme="dark"] .button{background:#63d8d3;color:#082731;border-color:#63d8d3}
+html[data-theme="dark"] .button:hover{background:#8aeee5;color:#082731}
+html[data-theme="dark"] .button-primary{background:#2362c5;border-color:#2362c5;color:white}
+html[data-theme="dark"] .button-primary:hover{background:#2c74df;color:white}
+html[data-theme="dark"] .button-outline,
+html[data-theme="dark"] .button-ghost-light{background:transparent;border-color:#567281;color:var(--ink)}
+html[data-theme="dark"] .button-outline:hover,
+html[data-theme="dark"] .button-ghost-light:hover{background:#1b3543;border-color:var(--cyan);color:var(--ink)}
+html[data-theme="dark"] .text-link{border-color:#567281}
+html[data-theme="dark"] .footer .brand,
+html[data-theme="dark"] footer strong{color:#e8f1f5}
+@media(max-width:1000px){html[data-theme="dark"] .site-navigation-links{background:#0c1d28;border-color:var(--line)}}

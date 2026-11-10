@@ -20,7 +20,10 @@ The 3D observation explorer loads local JSON over HTTP; opening `index.html` via
 The overview order is: automatic cover reel, full presentation, dataset cards, collection sites,
 three preview groups (surround sensing / reconstruction / combined positioning),
 footer. Previews play automatically while visible, without opening individual
-players. Only the full presentation exposes normal video controls.
+players. Videos pause outside the viewport or when the tab is hidden, and resume
+from their paused position on return. A native-controls pause remains in effect
+within the current viewport visit. Only the full presentation exposes normal
+video controls.
 
 `assets/previews/sources.json` records media provenance. The five cover loops total
 about 2.1 MiB. Silent H.264 clips are used instead of larger GIFs, with lazy loading,
@@ -139,3 +142,12 @@ Run `python scripts/check_site.py --tracked` before publishing. The Website chec
 workflow checks linked files, image/video size budgets, deferred video loading,
 JavaScript syntax and calibration checksums on `Qijun` and `main`. Regenerate the
 web photo and film using `scripts/optimize_site_media.py --film-source <original>`.
+
+## Day and night appearance
+
+All six pages include a Day/Night control in the shared navigation. The initial
+appearance follows the system preference; an explicit choice is stored locally
+under `urbanv2x-theme` and carried across pages and tabs. An inline head bootstrap
+applies the choice before the page renders. The control also works when browser
+storage is unavailable. Sensor imagery, diagrams, videos and the positioning
+canvas retain their original colours. Theme styles add no external dependencies.
