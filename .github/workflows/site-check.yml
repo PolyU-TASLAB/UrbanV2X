@@ -1,0 +1,27 @@
+name: Website checks
+
+on:
+  push:
+    branches: [Qijun, main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  assets-and-loading:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Check published assets and loading budgets
+        run: python3 scripts/check_site.py --tracked
+      - name: Check JavaScript syntax
+        run: |
+          node --check assets/js/overview.js
+          node --check assets/js/positioning.js
+          node --check assets/js/download.js
+          node --check assets/js/site.js
+      - name: Verify calibration file checksums
+        working-directory: assets/calibration
+        run: sha256sum --check SHA256SUMS

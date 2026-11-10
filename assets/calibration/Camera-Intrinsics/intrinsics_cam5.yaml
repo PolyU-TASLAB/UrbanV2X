@@ -1,0 +1,31 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+sensor: cam5
+topic: /hikcamera/image_5/compressed
+imageWidth: 2200
+imageHeight: 1740
+cameraMatrix:
+  rows: 3
+  cols: 3
+  dt: d
+  data:
+  - 1164.697397404244
+  - 0.0
+  - 1084.803856030697
+  - 0.0
+  - 1164.4544712297209
+  - 881.6902491670663
+  - 0.0
+  - 0.0
+  - 1.0
+distCoeffs:
+  rows: 1
+  cols: 4
+  dt: d
+  data:
+  - -0.08556909309799818
+  - 0.08442243832267385
+  - -4.2875299288343124e-05
+  - 0.00017990373448148814

@@ -1,0 +1,96 @@
+{
+  "schema": "roadside_lidar_pose_v1",
+  "sensor_id": "ekeo_3",
+  "site": "EastKowloon",
+  "enu_anchor_lla_wgs84": {
+    "latitude_deg": 22.3299584565062,
+    "longitude_deg": 114.20099264698274,
+    "altitude_m": 10.11305885668844
+  },
+  "position_enu_m": [
+    -197.03668930760688,
+    -559.3772624637583,
+    -3.0459418356741708
+  ],
+  "position_lla_wgs84": {
+    "latitude_deg": 22.324906943303652,
+    "longitude_deg": 114.19908014081439,
+    "altitude_m": 7.09481786750257
+  },
+  "T_Rj": {
+    "frame_convention": "sensor R -> public site ENU",
+    "translation_enu_m": [
+      -197.03668930760688,
+      -559.3772624637583,
+      -3.0459418356741708
+    ],
+    "rotation_matrix_enu_sensor": [
+      [
+        0.5140023545040064,
+        0.8502679171825931,
+        0.11334041015592333
+      ],
+      [
+        -0.8266439724115208,
+        0.526278057122777,
+        -0.19922637743726387
+      ],
+      [
+        -0.22904436784177387,
+        0.008710660196014325,
+        0.9733770091587902
+      ]
+    ],
+    "quaternion_wxyz": [
+      0.8679944442197735,
+      0.05989008311573628,
+      0.09861375849745832,
+      -0.48298462644581314
+    ]
+  },
+  "attitude": {
+    "reference_frame": "public site ENU anchored at enu_anchor_lla_wgs84",
+    "transform_convention": "R_enu_sensor maps sensor-frame vectors into anchor ENU; p_enu = R_enu_sensor p_sensor + position_enu_m",
+    "quaternion_wxyz": [
+      0.8679944442197735,
+      0.05989008311573628,
+      0.09861375849745832,
+      -0.48298462644581314
+    ],
+    "rpy_deg_xyz": [
+      0.5127209079760363,
+      13.240816225749871,
+      -58.12689442669737
+    ],
+    "heading_sensor_plus_x_deg": -58.12689442669737,
+    "local_tangent_enu_at_sensor": {
+      "quaternion_wxyz": [
+        0.8679986232563832,
+        0.05984373764003327,
+        0.09860624734800318,
+        -0.48298439423467787
+      ],
+      "rpy_deg_xyz": [
+        0.5084372958289687,
+        13.237460538841766,
+        -58.12714888245885
+      ],
+      "heading_sensor_plus_x_deg": -58.12714888245885
+    }
+  },
+  "quality": {
+    "median_nn_m": 0.2250953662291051,
+    "fraction_nn_under_0p3m": 0.7284664943165498,
+    "xy_shift_m": 0.2442462211704652,
+    "refinement_stable": false,
+    "quality_status": "needs_review"
+  },
+  "calibration": {
+    "coarse_method": "FFT fusion",
+    "snapshots": 10,
+    "rolling_scan_frames": 3,
+    "ndt_refinement_cycles": 120,
+    "parameter_overrides": {},
+    "ndt_extension_review": null
+  }
+}

@@ -1,0 +1,28 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+source_sensor: xt32
+target_sensor: imu
+maps: xt32 -> imu
+Rotation:
+- -0.9997355060005216
+- 0.019402095333773513
+- -0.012348147170423611
+- -0.022565380265532703
+- -0.931215791978517
+- 0.3637690921220466
+- -0.00444090704194134
+- 0.36395151801646125
+- 0.9314073066484724
+Translation:
+- -0.016020614462407802
+- 0.735293212775378
+- -0.04048701264985477
+legacy_name: T_I_L
+source_topic: /lidar_points
+source_model: Hesai XT32
+target_topic: /imu/data
+time_offset_to_imu_s_by_dataset:
+  aug07: 0.0087125509357328
+  aug13: 0.008649644761021716

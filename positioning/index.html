@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="UrbanV2X: a vehicle–infrastructure cooperative dataset for urban navigation in Hong Kong. Synchronized sensing, reference trajectories, calibration and digital twins.">
+  <meta name="theme-color" content="#102b3a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Positioning · UrbanV2X">
+  <meta property="og:description" content="Seven vehicle sequences, ten roadside sequences, real multi-sensor recordings and research-ready urban navigation resources.">
+  <meta property="og:image" content="../assets/previews/positioning-card.webp">
+  <title>Positioning · UrbanV2X</title>
+  <link rel="canonical" href="https://polyu-taslab.github.io/UrbanV2X/positioning/">
+  <link rel="icon" href="../assets/img/taslab-icon.jpg">
+  <link rel="stylesheet" href="../assets/css/urbanv2x.css">
+  <script defer src="../assets/js/urbanv2x.js"></script>
+  <script defer src="../assets/js/positioning.js"></script>
+  <link rel="stylesheet" href="../assets/css/positioning.css">
+  <link rel="stylesheet" href="../assets/css/navigation.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-navigation">
+    <div class="site-navigation-inner">
+      <a class="site-navigation-brand" href="../index.html" aria-label="UrbanV2X home"><img src="../assets/img/taslab-icon.jpg" alt="TAS Lab"><span>Urban<span>V2X</span></span></a>
+      <button class="site-navigation-toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation-menu"><span aria-hidden="true"></span></button>
+      <nav class="site-navigation-links" id="site-navigation-menu" data-nav-menu aria-label="Main navigation">
+        <a href="../index.html" aria-current="page">Overview</a>
+        <a href="../sensors/">Sensors</a>
+        <a href="../calibration/">Calibration</a>
+        <a href="../download/">Download</a>
+        <a href="https://polyu-taslab.github.io/" target="_blank" rel="noopener noreferrer">TAS Lab ↗</a>
+      </nav>
+    </div>
+  </header>
+
+<main id="main"><section class="wrap section"><div class="section-head"><div><p class="eyebrow">DATASET PREVIEW · POSITIONING</p><h1 class="positioning-title">GNSS, UWB and ground truth.</h1></div></div><div class="positioning-demo" data-positioning-demo>
+  <div class="positioning-viewport">
+    <canvas id="positioning-canvas" tabindex="0" aria-label="Interactive 3D city with automatically playing vehicle trajectory, satellite observations and UWB. Drag or use arrow keys to rotate."></canvas>
+    <p id="scene-status" role="status">Loading scene…</p>
+    <div class="positioning-view-tools" role="group" aria-label="Scene viewpoint">
+      <button type="button" id="scene-left" aria-label="Rotate left" title="Rotate left">←</button>
+      <button type="button" id="scene-right" aria-label="Rotate right" title="Rotate right">→</button>
+      <button type="button" id="scene-zoom-out" aria-label="Zoom out" title="Zoom out">−</button>
+      <button type="button" id="scene-zoom-in" aria-label="Zoom in" title="Zoom in">+</button>
+      <button type="button" id="scene-reset" aria-label="Reset viewpoint" title="Reset view">↺</button>
+    </div>
+    <span class="positioning-hint">Drag to rotate</span>
+    <a class="positioning-credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</a>
+  </div>
+  <div class="positioning-playback">
+    <button type="button" id="scene-play" aria-label="Pause trajectory" title="Pause trajectory">Ⅱ</button>
+    <input id="timeline" type="range" min="225" max="299" value="225" step="0.1" aria-label="Trajectory playback position" disabled>
+    <output id="scene-time" for="timeline">0:00 / 1:14</output>
+  </div>
+</div></section></main>  <footer>
+    <div><a class="brand" href="../index.html"><img class="brand-icon" src="../assets/img/taslab-icon.jpg" alt="TAS Lab">Urban<span>V2X</span></a><p>Real streets. Shared perspectives.</p></div>
+    <div><strong>TAS Lab, Department of Aeronautical and Aviation Engineering</strong><p>The Hong Kong Polytechnic University<br>Trustworthy embodied AI · perception, navigation and control</p></div>
+    <div><a href="https://polyu-taslab.github.io/" target="_blank" rel="noopener noreferrer">TAS Lab website ↗</a><a href="https://github.com/polyu-taslab" target="_blank" rel="noopener noreferrer">TAS Lab GitHub ↗</a><a href="https://github.com/PolyU-TASLAB/UrbanV2X" target="_blank" rel="noopener noreferrer">Project GitHub ↗</a><a href="mailto:darren.huang@polyu.edu.hk">Contact ↗</a></div>
+  </footer>
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

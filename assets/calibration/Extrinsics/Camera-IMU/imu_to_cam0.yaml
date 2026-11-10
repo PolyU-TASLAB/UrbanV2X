@@ -1,0 +1,41 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+source_sensor: imu
+target_sensor: cam0
+maps: imu -> cam0
+Rotation:
+- -0.4772638345916008
+- -0.8786478408959798
+- -0.014042929885008094
+- -0.006959833940658527
+- 0.01975936689303462
+- -0.9997805399844046
+- 0.878732492230964
+- -0.47706135780297704
+- -0.015545674277425998
+Translation:
+- -0.12147139018426695
+- -0.13309502405210816
+- -0.6386059454960656
+legacy_name: T_C_I
+camera_model: pinhole
+distortion_model: radtan
+distortion_coeffs:
+- -0.08525571221250708
+- 0.08000933267728375
+- -6.627609959634862e-05
+- -0.00010983515710569272
+intrinsics:
+- 1161.2886794269698
+- 1160.8282453643865
+- 1097.3657808601824
+- 845.383239091205
+resolution:
+- 2200
+- 1740
+rostopic: /hikcamera/image_0/compressed
+timeshift_cam_imu_by_dataset:
+  aug07: 0.010487254761553497
+  aug13: 0.01096585096651853

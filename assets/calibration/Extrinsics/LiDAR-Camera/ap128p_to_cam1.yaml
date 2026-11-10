@@ -1,0 +1,27 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+source_sensor: ap128p
+target_sensor: cam1
+maps: ap128p -> cam1
+Rotation:
+- -0.002571365143953089
+- -0.9999262881581401
+- 0.011866184373281536
+- 0.019814663130897112
+- -0.011914841210254013
+- -0.9997326721098707
+- 0.999800363675821
+- -0.0023355533003289893
+- 0.019843839962965744
+Translation:
+- -0.38718703011754846
+- -0.007335447599325362
+- -0.025133021322766513
+legacy_name: T_C_L[Y]
+source_topic: /lidar_points2
+source_model: Hesai AP128P
+target_topic: /hikcamera/image_1/compressed
+time_offset_to_imu_s_by_dataset:
+  aug13: 0.008649644761021716

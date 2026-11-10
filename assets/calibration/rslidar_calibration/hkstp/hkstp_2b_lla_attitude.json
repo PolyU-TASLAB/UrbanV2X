@@ -1,0 +1,116 @@
+{
+  "schema": "roadside_lidar_pose_v1",
+  "sensor_id": "hkstp_2b",
+  "site": "HKSTP",
+  "enu_anchor_lla_wgs84": {
+    "latitude_deg": 22.424549180520735,
+    "longitude_deg": 114.21351706021711,
+    "altitude_m": 9.414061702787876
+  },
+  "position_enu_m": [
+    -6.7960711756934025,
+    76.8102747822598,
+    -1.6708430829005252
+  ],
+  "position_lla_wgs84": {
+    "latitude_deg": 22.42524281352687,
+    "longitude_deg": 114.21345104791094,
+    "altitude_m": 7.7436871798709035
+  },
+  "T_Rj": {
+    "frame_convention": "sensor R -> public site ENU",
+    "translation_enu_m": [
+      -6.7960711756934025,
+      76.8102747822598,
+      -1.6708430829005252
+    ],
+    "rotation_matrix_enu_sensor": [
+      [
+        0.4184851827966317,
+        0.8957020228854831,
+        0.1502931734262144
+      ],
+      [
+        -0.8861926950940409,
+        0.43893119658623064,
+        -0.14833041436381103
+      ],
+      [
+        -0.1988282146518173,
+        -0.07111463184347372,
+        0.977450791700604
+      ]
+    ],
+    "quaternion_wxyz": [
+      0.841853189559122,
+      0.022930299331874956,
+      0.10367644632339831,
+      -0.529158391296439
+    ]
+  },
+  "attitude": {
+    "reference_frame": "public site ENU anchored at enu_anchor_lla_wgs84",
+    "transform_convention": "R_enu_sensor maps sensor-frame vectors into anchor ENU; p_enu = R_enu_sensor p_sensor + position_enu_m",
+    "quaternion_wxyz": [
+      0.841853189559122,
+      0.022930299331874956,
+      0.10367644632339831,
+      -0.529158391296439
+    ],
+    "rpy_deg_xyz": [
+      -4.161234219887803,
+      11.468444581829626,
+      -64.72199763207377
+    ],
+    "heading_sensor_plus_x_deg": -64.72199763207377,
+    "local_tangent_enu_at_sensor": {
+      "quaternion_wxyz": [
+        0.8418531118204606,
+        0.022935090582216534,
+        0.10368010269409822,
+        -0.5291575909344342
+      ],
+      "rpy_deg_xyz": [
+        -4.1609882980235104,
+        11.469097853332187,
+        -64.72192355264339
+      ],
+      "heading_sensor_plus_x_deg": -64.72192355264339
+    }
+  },
+  "quality": {
+    "median_nn_m": 0.21052134817647922,
+    "fraction_nn_under_0p3m": 0.8274086929391806,
+    "xy_shift_m": 0.8260784864614156,
+    "refinement_stable": false,
+    "quality_status": "needs_review"
+  },
+  "calibration": {
+    "coarse_method": "BEV direct",
+    "snapshots": 12,
+    "rolling_scan_frames": 3,
+    "ndt_refinement_cycles": 120,
+    "parameter_overrides": {
+      "bev_fft_enable": false,
+      "bev_full_map": false,
+      "bev_max_shift": 6.0,
+      "bev_p2pl_rerank": true,
+      "ndt_max_iter": 30
+    },
+    "ndt_extension_review": {
+      "base_cycles": 120,
+      "extended_cycles": 400,
+      "translation_delta_m": [
+        0.0,
+        0.00010000000000331966,
+        -9.999999999976694e-05
+      ],
+      "rotation_delta_deg": 0.00036252182881640015,
+      "base_median_nn_m": 0.21052134817647922,
+      "extended_median_nn_m": 0.210566048516571,
+      "base_fraction_nn_under_0p3m": 0.8274086929391806,
+      "extended_fraction_nn_under_0p3m": 0.827506191135464,
+      "decision": "keep 120-cycle result: extended NDT did not reduce median NN distance"
+    }
+  }
+}
