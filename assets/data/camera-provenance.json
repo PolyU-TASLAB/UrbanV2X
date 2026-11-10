@@ -1,0 +1,16 @@
+[
+  {
+    "source": "/media/quintinumi/data/bag/UrbanV2Xplus/2026-8-13/honda/2026-08-13-16-01-23_0.bag",
+    "topic": "/hikcamera/image_2/compressed",
+    "bag_time_ns": 1786608121730670196,
+    "header": "std_msgs__msg__Header(seq=380, stamp=builtin_interfaces__msg__Time(sec=1786608121, nanosec=641026497, __msgtype__='builtin_interfaces/msg/Time'), frame_id='', __msgtype__='std_msgs/msg/Header')",
+    "file": "assets/media/cam2.jpg"
+  },
+  {
+    "source": "/media/quintinumi/data/bag/UrbanV2Xplus/2026-8-13/honda/2026-08-13-16-01-23_0.bag",
+    "topic": "/hikcamera/image_1/compressed",
+    "bag_time_ns": 1786608121734327550,
+    "header": "std_msgs__msg__Header(seq=380, stamp=builtin_interfaces__msg__Time(sec=1786608121, nanosec=641052485, __msgtype__='builtin_interfaces/msg/Time'), frame_id='', __msgtype__='std_msgs/msg/Header')",
+    "file": "assets/media/cam1.jpg"
+  }
+]

@@ -1,0 +1,26 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+relation_type: lidar_lidar
+source_sensor: hdl32
+target_sensor: ap128p
+maps: hdl32 -> ap128p
+matrix:
+- - 0.024852795722447
+  - 0.9995768467427106
+  - -0.015115091818437475
+  - -0.7671464808698321
+- - -0.9996889207781547
+  - 0.024818174023412163
+  - -0.002473845498804819
+  - -0.2554277434708727
+- - -0.0020976697038943173
+  - 0.015171871804267122
+  - 0.999882700164259
+  - 0.27571180564989534
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+legacy_name: Y_from_H

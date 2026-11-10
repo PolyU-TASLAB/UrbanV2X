@@ -1,0 +1,28 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+source_sensor: hdl32
+target_sensor: imu
+maps: hdl32 -> imu
+Rotation:
+- 0.9993938942947747
+- -0.03479986209302761
+- 0.0009020225217807182
+- 0.03480212605081605
+- 0.9993907643435812
+- -0.002629100054194755
+- -0.0008099806581827532
+- 0.0026588988431563987
+- 0.9999961370866751
+Translation:
+- -0.001595
+- -0.022252
+- 0.157731
+legacy_name: T_I_L
+source_topic: /velodyne_points
+source_model: Velodyne HDL32
+target_topic: /imu/data
+time_offset_to_imu_s_by_dataset:
+  aug07: 0.0087125509357328
+  aug13: 0.008649644761021716

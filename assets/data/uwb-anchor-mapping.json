@@ -1,0 +1,234 @@
+{
+  "anchors": [
+    {
+      "lamppost": "Roadside_roundablut",
+      "latitude": 22.42454128055555,
+      "longitude": 114.21353661944447,
+      "id": 1,
+      "source": "all_lampposts_latlon(1).xlsx",
+      "association": "recorded-range consistency against tabulated positions",
+      "association_inferred": true,
+      "height_display_only": true
+    },
+    {
+      "lamppost": "roadside_west",
+      "latitude": 22.42516252,
+      "longitude": 114.21146463,
+      "id": 3,
+      "source": "all_lampposts_latlon(1).xlsx",
+      "association": "recorded-range consistency against tabulated positions",
+      "association_inferred": true,
+      "height_display_only": true
+    },
+    {
+      "lamppost": "roadside_east_high_near_roundabout_20251108",
+      "latitude": 22.425236375000004,
+      "longitude": 114.2134551,
+      "id": 4,
+      "source": "all_lampposts_latlon(1).xlsx",
+      "association": "recorded-range consistency against tabulated positions",
+      "association_inferred": true,
+      "height_display_only": true
+    }
+  ],
+  "workbook": "all_lampposts_latlon(1).xlsx",
+  "workbook_sha256": "08451a7af0e2adaf3ac4ccfbd67503b94a5d570e960850d36fef5f1d08fbad13",
+  "comparison": "WGS84 horizontal distance; moving samples over 5 m from initial GT; robust median/P90 ranking retains raw outliers; no coordinate fitting",
+  "unassigned_ids": [
+    18
+  ],
+  "reports": [
+    {
+      "id": 1,
+      "samples": 69,
+      "range_span_m": 109.261,
+      "selected": true,
+      "candidates": [
+        {
+          "lamppost": "Roadside_roundablut",
+          "latitude": 22.42454128055555,
+          "longitude": 114.21353661944447,
+          "rmse_m": 5.8732730096587895,
+          "median_absolute_error_m": 0.8167529620766203,
+          "p90_absolute_error_m": 1.4313004876060054
+        },
+        {
+          "lamppost": "roadside_west_near_roundabout",
+          "latitude": 22.424505866666667,
+          "longitude": 114.21316471944444,
+          "rmse_m": 25.15521142487477,
+          "median_absolute_error_m": 20.010878763050837,
+          "p90_absolute_error_m": 34.83667498708876
+        },
+        {
+          "lamppost": "roadside_east_high_near_roundabout_20251108",
+          "latitude": 22.425236375000004,
+          "longitude": 114.2134551,
+          "rmse_m": 36.57151407013461,
+          "median_absolute_error_m": 31.308982710186406,
+          "p90_absolute_error_m": 61.012365710758445
+        },
+        {
+          "lamppost": "roadside_west",
+          "latitude": 22.42516252,
+          "longitude": 114.21146463,
+          "rmse_m": 173.49286439568385,
+          "median_absolute_error_m": 167.36137193426816,
+          "p90_absolute_error_m": 206.73021213679772
+        },
+        {
+          "lamppost": "roadside_east_high",
+          "latitude": 22.42744535,
+          "longitude": 114.21107245,
+          "rmse_m": 337.5318253094034,
+          "median_absolute_error_m": 342.6337632003849,
+          "p90_absolute_error_m": 384.5912248516259
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "samples": 16,
+      "range_span_m": 108.834,
+      "selected": true,
+      "candidates": [
+        {
+          "lamppost": "roadside_west",
+          "latitude": 22.42516252,
+          "longitude": 114.21146463,
+          "rmse_m": 0.7881204507360949,
+          "median_absolute_error_m": 0.8025009796566565,
+          "p90_absolute_error_m": 0.8706676772090347
+        },
+        {
+          "lamppost": "roadside_east_high_near_roundabout_20251108",
+          "latitude": 22.425236375000004,
+          "longitude": 114.2134551,
+          "rmse_m": 59.56073826425329,
+          "median_absolute_error_m": 55.315967267737605,
+          "p90_absolute_error_m": 86.12554312686193
+        },
+        {
+          "lamppost": "roadside_west_near_roundabout",
+          "latitude": 22.424505866666667,
+          "longitude": 114.21316471944444,
+          "rmse_m": 76.39271870075274,
+          "median_absolute_error_m": 58.70392447757978,
+          "p90_absolute_error_m": 119.66281005438711
+        },
+        {
+          "lamppost": "Roadside_roundablut",
+          "latitude": 22.42454128055555,
+          "longitude": 114.21353661944447,
+          "rmse_m": 70.69220738262257,
+          "median_absolute_error_m": 61.52593828796784,
+          "p90_absolute_error_m": 104.85561487260959
+        },
+        {
+          "lamppost": "roadside_east_high",
+          "latitude": 22.42744535,
+          "longitude": 114.21107245,
+          "rmse_m": 219.55312167815524,
+          "median_absolute_error_m": 217.451517161646,
+          "p90_absolute_error_m": 231.18846683110516
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "samples": 61,
+      "range_span_m": 61.330000000000005,
+      "selected": true,
+      "candidates": [
+        {
+          "lamppost": "roadside_east_high_near_roundabout_20251108",
+          "latitude": 22.425236375000004,
+          "longitude": 114.2134551,
+          "rmse_m": 3.4332552344655687,
+          "median_absolute_error_m": 0.7731003035900699,
+          "p90_absolute_error_m": 1.259048974178441
+        },
+        {
+          "lamppost": "Roadside_roundablut",
+          "latitude": 22.42454128055555,
+          "longitude": 114.21353661944447,
+          "rmse_m": 37.157544081757116,
+          "median_absolute_error_m": 34.31191630082871,
+          "p90_absolute_error_m": 60.77876456649708
+        },
+        {
+          "lamppost": "roadside_west_near_roundabout",
+          "latitude": 22.424505866666667,
+          "longitude": 114.21316471944444,
+          "rmse_m": 41.92180019364549,
+          "median_absolute_error_m": 39.89345570979494,
+          "p90_absolute_error_m": 57.7830702722744
+        },
+        {
+          "lamppost": "roadside_west",
+          "latitude": 22.42516252,
+          "longitude": 114.21146463,
+          "rmse_m": 179.91485279322762,
+          "median_absolute_error_m": 187.579945797104,
+          "p90_absolute_error_m": 198.34967978214382
+        },
+        {
+          "lamppost": "roadside_east_high",
+          "latitude": 22.42744535,
+          "longitude": 114.21107245,
+          "rmse_m": 340.6587290353955,
+          "median_absolute_error_m": 345.1967899598088,
+          "p90_absolute_error_m": 345.9726737150228
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "samples": 58,
+      "range_span_m": 28.74,
+      "selected": false,
+      "candidates": [
+        {
+          "lamppost": "Roadside_roundablut",
+          "latitude": 22.42454128055555,
+          "longitude": 114.21353661944447,
+          "rmse_m": 51.360700059186705,
+          "median_absolute_error_m": 36.288497649524714,
+          "p90_absolute_error_m": 85.4865071186898
+        },
+        {
+          "lamppost": "roadside_east_high_near_roundabout_20251108",
+          "latitude": 22.425236375000004,
+          "longitude": 114.2134551,
+          "rmse_m": 57.49297992097882,
+          "median_absolute_error_m": 52.476416014519316,
+          "p90_absolute_error_m": 91.47045216308088
+        },
+        {
+          "lamppost": "roadside_west_near_roundabout",
+          "latitude": 22.424505866666667,
+          "longitude": 114.21316471944444,
+          "rmse_m": 56.046030788899635,
+          "median_absolute_error_m": 60.22258216616895,
+          "p90_absolute_error_m": 79.92553497751955
+        },
+        {
+          "lamppost": "roadside_west",
+          "latitude": 22.42516252,
+          "longitude": 114.21146463,
+          "rmse_m": 194.94553098565657,
+          "median_absolute_error_m": 198.89566244855672,
+          "p90_absolute_error_m": 246.69931084358606
+        },
+        {
+          "lamppost": "roadside_east_high",
+          "latitude": 22.42744535,
+          "longitude": 114.21107245,
+          "rmse_m": 364.40969599239503,
+          "median_absolute_error_m": 372.3010923311957,
+          "p90_absolute_error_m": 403.6307696407252
+        }
+      ]
+    }
+  ]
+}

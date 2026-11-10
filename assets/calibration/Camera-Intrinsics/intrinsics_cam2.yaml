@@ -1,0 +1,31 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+sensor: cam2
+topic: /hikcamera/image_2/compressed
+imageWidth: 2200
+imageHeight: 1740
+cameraMatrix:
+  rows: 3
+  cols: 3
+  dt: d
+  data:
+  - 1163.049120825797
+  - 0.0
+  - 1105.2647657768491
+  - 0.0
+  - 1162.0851806820926
+  - 852.6110540905904
+  - 0.0
+  - 0.0
+  - 1.0
+distCoeffs:
+  rows: 1
+  cols: 4
+  dt: d
+  data:
+  - -0.09012964212188246
+  - 0.1001954512581897
+  - -0.00023028608185322104
+  - -0.00015148680171757158

@@ -1,472 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <!-- Head -->
-  <head>    <!-- Metadata, OpenGraph and Schema.org -->
-    
-
-    <!-- Standard metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The UrbanV2X Datasets | Download </title>
-    <meta name="author" content="The UrbanV2X Datasets " />
-    <meta name="description" content="An Event-Centric Multisensory Driving Dataset for SLAM.
-" />
-    <meta name="keywords" content="Event-based Vision, Multi-sensor, SLAM, Autonomous Driving" />
-
-    <!-- OpenGraph -->
-    <meta property="og:site_name" content="The UrbanV2X Datasets  " />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="The UrbanV2X Datasets   | Download" />
-    <meta property="og:url" content="http://localhost:4000/UrbanV2X/sensors" />
-    <meta property="og:description" content="An Event-Centric Multisensory Driving Dataset for SLAM.
-" />
-    
-    <meta property="og:locale" content="en" />
-
-    <!-- Twitter card -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Download" />
-    <meta name="twitter:description" content="An Event-Centric Multisensory Driving Dataset for SLAM.
-" />
-    
-    
-
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-      {
-        "author":
-        {
-          "@type": "Person",
-          "name": "The UrbanV2X Datasets  "
-        },
-        "url": "http://localhost:4000/UrbanV2X/",
-        "@type": "WebSite",
-        "description": "An Event-Centric Multisensory Driving Dataset for SLAM.
-",
-        "headline": "Download",
-        "sameAs": ["https://github.com/arclab-hku/Event_based_VO-VIO-SLAM", "https://arclab.hku.hk/"],
-        "name": "The UrbanV2X Datasets  ",
-        "@context": "https://schema.org"
-      }
-    </script>
-
-
-    <!-- Bootstrap & MDB -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Barriecito&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700">
-
-    <!-- Code Syntax Highlighting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/PASTIE.css" media="none" id="highlight_theme_light" />
-
-    <!-- Styles -->
-
-    <link rel="shortcut icon" href="https://polyu-taslab.github.io/UrbanV2X/assets/img/icon.png"/>
-    
-    <link rel="stylesheet" href="https://polyu-taslab.github.io/UrbanV2X/assets/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/UrbanV2X/sensors">
-    <link rel="stylesheet" href="https://polyu-taslab.github.io/UrbanV2X/assets/css/fonts.css">
-    <link rel="stylesheet" href="/UrbanV2X/assets/css/fonts.css">
-    
-    <!-- Dark Mode -->
-    
-
-  </head>
-
-  <!-- Body -->
-  <body class="fixed-top-nav ">
-
-    <!-- Header -->
-    <header>
-
-      <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-        <div class="container">
-          <a class="navbar-brand title font-weight-lighter" href="http://polyu-taslab.github.io/UrbanV2X/"><span class="font-weight: 600">UrbanV2X Dataset</span>   </a>
-          <!-- Navbar Toggle -->
-          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
-
-          <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-
-              <!-- Home -->
-              <li class="nav-item">
-                <a class="nav-link" href="/UrbanV2X/index.html">Home</a>
-              </li>
-
-              <!-- Other pages -->
-                <li class="nav-item ">
-                  <a class="nav-link" href="/UrbanV2X/sensors/index.html">Sensors</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="/UrbanV2X/calibration/index.html">Calibration</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="/UrbanV2X/download/index.html">Download<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071824">
+  <title>Download | UrbanV2X</title>
+  <meta name="description" content="Download UrbanV2X from Hugging Face, browse its directory structure, and access the original Small Loop and Large Loop recordings.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Download | UrbanV2X">
+  <meta property="og:description" content="Access UrbanV2X release resources and the original UrbanV2X dataset downloads.">
+  <meta property="og:image" content="../assets/img/real-satellite-hkstp.jpg">
+  <link rel="canonical" href="https://polyu-taslab.github.io/UrbanV2X/download/">
+  <link rel="icon" href="../assets/img/taslab-icon.jpg">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/download.css">
+  <link rel="stylesheet" href="../assets/css/navigation.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-navigation">
+    <div class="site-navigation-inner">
+      <a class="site-navigation-brand" href="../index.html" aria-label="UrbanV2X home"><img src="../assets/img/taslab-icon.jpg" alt="TAS Lab"><span>Urban<span>V2X</span></span></a>
+      <button class="site-navigation-toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation-menu"><span aria-hidden="true"></span></button>
+      <nav class="site-navigation-links" id="site-navigation-menu" data-nav-menu aria-label="Main navigation">
+        <a href="../index.html">Overview</a>
+        <a href="../sensors/">Sensors</a>
+        <a href="../calibration/">Calibration</a>
+        <a href="../download/" aria-current="page">Download</a>
+        <a href="https://polyu-taslab.github.io/" target="_blank" rel="noopener noreferrer">TAS Lab ↗</a>
+        <a class="site-navigation-paper" href="https://www.overleaf.com/2516394827fhbggmhfvhjr#03cc03" target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
       </nav>
-    </header>
-<!-- 以上为include -->
-
-    <!-- Content -->
-    <div class="container mt-5">
-      <!-- page.html -->
-        <div class="post">
-
-          <header class="post-header">
-            <h1 class="post-title">Download</h1>
-            <p class="post-description"></p>
-          </header>
-
-          <article>
-            <p><br></p>
-
-<h4>Data Format</h4>
-
-<p><br></p>
-
-<p>We provide various sensor data in the rosbag file, including 4D Radar, sky-pointing camera, 7 surround cameras, IMU, LiDAR, UWB, and GNSS. 
-  Additionally, a text file provides ground truth data as well as data and parameters from various roadside equipment. </p>
-
-<ul>
-  <li style="font-size: 14px;">
-<strong>/Target_Radar_1</strong> (<a href ="https://polyu-taslab.github.io/UrbanV2X/assets/description/radar4d_data_structure.md" target="_blank" rel="noopener noreferrer">sensor_msgs/PointCloud2</a>): 3D point clouds from 4D Radar GPAL-Ares-R7861.</li>
-  <li style="font-size: 14px;">
-<strong>/Target_Radar_1_extreme</strong> (<a href ="https://polyu-taslab.github.io/UrbanV2X/assets/description/radar4d_data_structure.md" target="_blank" rel="noopener noreferrer">sensor_msgs/PointCloud2</a>): Extreme 3D point clouds from 4D Radar GPAL-Ares-R7861.</li>
-  <li style="font-size: 14px;">
-<strong>/camera/image_color/compressed</strong> (<a href ="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html" target="_blank" rel="noopener noreferrer">sensor_msgs/CompressedImage</a>): Color images from the sky-pointing camera.</li> 
-  <li style="font-size: 14px;">
-<strong>/hikcamera/image_0/compressed</strong> (<a href ="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html" target="_blank" rel="noopener noreferrer">sensor_msgs/CompressedImage</a>): Color images from the right-back camera.</li>
-  <li style="font-size: 14px;">
-<strong>/hikcamera/image_1/compressed</strong> (<a href ="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html" target="_blank" rel="noopener noreferrer">sensor_msgs/CompressedImage</a>): Color images from the front camera (right).</li>
-  <li style="font-size: 14px;">
-<strong>/hikcamera/image_2/compressed</strong> (<a href ="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html" target="_blank" rel="noopener noreferrer">sensor_msgs/CompressedImage</a>): Color images from the front camera (left).</li>
-  <li style="font-size: 14px;">
-<strong>/hikcamera/image_3/compressed</strong> (<a href ="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html" target="_blank" rel="noopener noreferrer">sensor_msgs/CompressedImage</a>): Color images from the left-front camera.</li>
-  <li style="font-size: 14px;">
-<strong>/hikcamera/image_4/compressed</strong> (<a href ="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html" target="_blank" rel="noopener noreferrer">sensor_msgs/CompressedImage</a>): Color images from the right-front camera.</li>
-  <li style="font-size: 14px;">
-<strong>/hikcamera/image_5/compressed</strong> (<a href ="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html" target="_blank" rel="noopener noreferrer">sensor_msgs/CompressedImage</a>): Color images from the left-back camera.</li>
-  <li style="font-size: 14px;">
-<strong>/hikcamera/image_6/compressed</strong> (<a href ="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html" target="_blank" rel="noopener noreferrer">sensor_msgs/CompressedImage</a>): Color images from the rear camera.</li>
-  <li style="font-size: 14px;">
-<strong>/imu/data</strong> (<a href ="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Imu.html" target="_blank" rel="noopener noreferrer">sensor_msgs/Imu</a>): 9-axis IMU from Xsens Mti-30.</li>     
-  <li style="font-size: 14px;">
-<strong>/lidar_points</strong> (<a href="http://docs.ros.org/en/lunar/api/sensor_msgs/html/msg/PointCloud2.html" target="_blank" rel="noopener noreferrer">sensor_msgs/PointCloud2</a>): Point clouds from the front-installed LiDAR.</li>  
-  <li style="font-size: 14px;">
-<strong>/nlink_linktrack_nodeframe3</strong> (<a href ="https://github.com/nooploop-dev/nlink_parser" target="_blank" rel="noopener noreferrer">nlink_parser/LinktrackNodeframe3</a>): UWB data from Nooploop P-B.</li> 
-  <li style="font-size: 14px;">
-<strong>/ublox_driver/ephem</strong> (<a href ="https://github.com/HKUST-Aerial-Robotics/gnss_comm" target="_blank" rel="noopener noreferrer">gnss_comm/GnssEphemMsg</a>): Events from the right DVXplorer.</li>
-  <li style="font-size: 14px;">
-<strong>/ublox_driver/glo_ephem</strong> (<a href ="https://github.com/HKUST-Aerial-Robotics/gnss_comm" target="_blank" rel="noopener noreferrer">gnss_comm/GnssGloEphemMsg</a>): 6-axis IMU from the right DVXplorer.</li>        
-  <li style="font-size: 14px;">
-<strong>/ublox_driver/iono_params</strong> (<a href="https://github.com/HKUST-Aerial-Robotics/gnss_comm" target="_blank" rel="noopener noreferrer">gnss_comm/StampedFloat64Array</a>): Color images from the left standard cameras.</li>
-  <li style="font-size: 14px;">
-<strong>/ublox_driver/range_meas</strong> (<a href="https://github.com/HKUST-Aerial-Robotics/gnss_comm" target="_blank" rel="noopener noreferrer">gnss_comm/GnssMeasMsg</a>): Color images from the right standard cameras.</li>
-  <li style="font-size: 14px;">
-<strong>/ublox_driver/receiver_lla</strong> (<a href="https://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/NavSatFix.html" target="_blank" rel="noopener noreferrer">sensor_msgs/NavSatFix</a>): Infrared images from the hikrobot infrared camera.</li>
-  <li style="font-size: 14px;">
-<strong>/ublox_driver/receiver_pvt</strong> (<a href="https://github.com/HKUST-Aerial-Robotics/gnss_comm" target="_blank" rel="noopener noreferrer">gnss_comm/GnssPVTSolnMsg</a>): Point clouds from the left slanted LiDAR.</li>
-  <li style="font-size: 14px;">
-<strong>/velodyne_points</strong> (<a href="http://docs.ros.org/en/lunar/api/sensor_msgs/html/msg/PointCloud2.html" target="_blank" rel="noopener noreferrer">sensor_msgs/PointCloud2</a>): Point clouds from the top-installed LiDAR.</li>  
-  <li style="font-size: 14px;">
-
-<strong>/imu/data</strong> (<a href="http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Imu.html" target="_blank" rel="noopener noreferrer">sensor_msgs/Imu</a>): 9-axis IMU from the Xsens Mti-30.</li>
-  <li style="font-size: 14px;">
-<strong>gt.txt</strong> (<a href="https://vision.in.tum.de/data/datasets/rgbd-dataset/file_formats" target="_blank" rel="noopener noreferrer">TUM format</a>): The ground truth signals from centimeter-level GNSS-RTK/INS system.</li>
-</ul>
-
-<p>
-  The following content is divided into two sections:
-</p>
-<p>
-  <a href="#section1">1. Visualization.</a>
-</p>
-<p>
-  <a href="#section2">2. Summary Table.</a>
-</p>
-
-
-<p><br></p>
-
-<h3 id="section1">Visualization of each sequence</h3>
-
-<p><br></p>
-
-<h4>Small Loop Scenario <a href="https://www.dropbox.com/scl/fo/qqpa51htlyat43hdj0tv8/AEmZUkgUK-A4VjaatAHl1Aw?rlkey=3v44oqcbau74xhu714l6ngfcn&st=w1eqmoen&dl=0">(Download Link)</a></h4>
-
-<p><br></p>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-            <picture>
-                <img  style="width: 80%; height: auto; border-radius: 6px;"  
-                      class="small_loop_demo" src="https://polyu-taslab.github.io/UrbanV2X/assets/gif/small_loop_demo_10hz_240p.gif" 
-                      title="Small Loop Demo">
-            </picture>
-        </figure>
     </div>
-</div>
+  </header>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <h5>small_loop</h5>
+  <main id="main-content">
+    <section class="download-intro" aria-labelledby="page-title"><div class="container">
+      <h1 id="page-title">Download</h1>
+      <div class="latest-release" id="latest-release">
+        <div><p class="eyebrow">Latest dataset · Partial release</p><h2>UrbanV2X on Hugging Face</h2></div>
+        <a class="button button-primary" href="https://huggingface.co/datasets/polyutaslab/UrbanV2X" target="_blank" rel="noopener noreferrer">Open on Hugging Face ↗</a>
+      </div>
+
+      <div class="release-structure" aria-labelledby="structure-title">
+        <div class="structure-heading"><h3 id="structure-title">Dataset structure</h3><div class="sequence-links"><a href="https://huggingface.co/datasets/polyutaslab/UrbanV2X/tree/main/hkstp_s_01" target="_blank" rel="noopener noreferrer">Small Loop · <code>hkstp_s_01</code> ↗</a> <a href="https://huggingface.co/datasets/polyutaslab/UrbanV2X/tree/main/hkstp_l_01" target="_blank" rel="noopener noreferrer">Large Loop · <code>hkstp_l_01</code> ↗</a></div></div>
+        <p class="structure-note">Both sequences use the following layout. Small Loop also includes <code>camera/metadata.jsonl</code> for the image viewer.</p>
+        <div class="structure-grid"><pre class="directory-tree" aria-label="Hugging Face sequence directory structure"><code>hkstp_s_01/ · hkstp_l_01/
+├── camera/
+│   ├── cam0/ … cam6/       *.png
+│   └── fisheye/            *.png
+├── lidar/
+│   ├── hdl32/              *.bin
+│   └── xt32/               *.bin
+├── radar/
+│   ├── Target_Radar_1/
+│   └── Target_Radar_1_extreme/
+├── gnss/
+│   ├── messages.jsonl
+│   ├── observations.obs
+│   └── rinex_summary.json
+├── roadside/
+│   ├── rsi2/               bags/, lidar/
+│   └── gnss/               *.obs
+├── calib/
+│   ├── intrinsics/         *.yaml
+│   └── extrinsics/         *.yaml
+├── bags/supplemental.bag
+├── imu.csv
+├── uwb.csv
+└── reference_original.csv</code></pre>
+        <dl class="structure-key">
+          <dt>Camera</dt><dd><code>cam0</code>–<code>cam6</code> correspond to <code>image_0</code>–<code>image_6</code>. The front pair is <code>image_1</code> and <code>image_2</code>; <code>fisheye</code> is the sky-pointing camera.</dd>
+          <dt>LiDAR</dt><dd><code>hdl32</code>: Velodyne HDL-32E<br><code>xt32</code>: Hesai XT32</dd>
+          <dt>GNSS &amp; roadside</dt><dd>Receiver messages and RINEX observations, with the RSI2 LiDAR recordings and roadside GNSS files in <code>roadside/</code>.</dd>
+          <dt>Motion &amp; positioning</dt><dd>IMU samples, UWB measurements and the original reference trajectory are provided as separate CSV files.</dd>
+          <dt>Calibration</dt><dd>Use the intrinsics and extrinsics supplied inside each sequence's <code>calib/</code> directory.</dd>
+        </dl></div>
+      </div>
+      <p class="download-calibration"><a href="../calibration/#parameters">Camera intrinsics and sensor extrinsics ↓</a></p>
+    </div></section>
+    <section class="download-previous" id="earlier-release" aria-labelledby="earlier-title"><div class="container">
+      <h2 id="earlier-title">Original UrbanV2X downloads</h2>
+<div class="grid-2 sequence-grid">
+<article class="sequence-card">
+  <div class="sequence-title"><h3>Small Loop</h3><span>309 s</span></div>
+  <video data-download-preview data-src="../assets/previews/small-loop-loop.mp4" poster="../assets/previews/small-loop.jpg" muted loop playsinline preload="none" aria-label="Original Small Loop sequence preview"></video>
+  <div class="sequence-files"><p class="folder-link"><a href="https://www.dropbox.com/scl/fo/qqpa51htlyat43hdj0tv8/AEmZUkgUK-A4VjaatAHl1Aw?rlkey=3v44oqcbau74xhu714l6ngfcn&amp;st=w1eqmoen&amp;dl=0" target="_blank" rel="noopener noreferrer">Open Small Loop folder ↗</a></p><ul><li><span class="file-label">Vehicle ROS bag</span><div><a href="https://www.dropbox.com/scl/fi/hggqlmo8eo4fs9z3xy09x/small_loop.bag?rlkey=9fx4s8bk38kyucpizn38gn1u0&amp;st=u3icmeqy&amp;dl=0" target="_blank" rel="noopener noreferrer">small_loop.bag</a><span class="file-size">34.92 GB</span></div></li><li><span class="file-label">Ground truth · TUM</span><div><a href="https://www.dropbox.com/scl/fi/rnpwjmq1a15oly8pbekge/gt_small_loop.txt?rlkey=ux3ja0noo5q78bdq0nexwil74&amp;st=kfwwkq9a&amp;dl=0" target="_blank" rel="noopener noreferrer">gt_small_loop.txt</a><span class="file-size">30.04 MB</span></div></li><li><span class="file-label">Roadside LiDAR · RSI2</span><div><a href="https://www.dropbox.com/scl/fi/h22xy3slvmj4ojfp9ge6x/small_loop-RSI2_LiDAR.bag?rlkey=vede9n7n6z1vrsyog3gwacgvj&amp;st=wy1tcx4k&amp;dl=0" target="_blank" rel="noopener noreferrer">small_loop-RSI2_LiDAR.bag</a><span class="file-size">12.04 GB</span></div></li><li><span class="file-label">Roadside GNSS · RSG0 / West</span><div><a href="https://www.dropbox.com/scl/fi/yktrc7rggslg76f9rvt0g/west_rsi_gnss_small_loop.obs?rlkey=pqs4fjmsta8oorj91my5ovbom&amp;st=7ji3hmd2&amp;dl=0" target="_blank" rel="noopener noreferrer">west_rsi_gnss_small_loop.obs</a></div></li><li><span class="file-label">Roadside GNSS · RSG3 / East High</span><div><a href="https://www.dropbox.com/scl/fi/frq5j1c61b0bzl1b2pixu/east_high_small_loop.obs?rlkey=83tvuk7ab8il53hsbqlh9sor9&amp;st=dv636ptm&amp;dl=0" target="_blank" rel="noopener noreferrer">east_high_small_loop.obs</a></div></li></ul></div>
+</article>
+<article class="sequence-card">
+  <div class="sequence-title"><h3>Large Loop</h3><span>600 s</span></div>
+  <video data-download-preview data-src="../assets/previews/large-loop-loop.mp4" poster="../assets/previews/large-loop.jpg" muted loop playsinline preload="none" aria-label="Original Large Loop sequence preview"></video>
+  <div class="sequence-files"><p class="folder-link"><a href="https://www.dropbox.com/scl/fo/brl5wic82lv865rb2bhnv/ACK8BRbCDTYjRJnkolscGZM?rlkey=yt2amhwtbblgtlpzwo617lysw&amp;st=svvxvrty&amp;dl=0" target="_blank" rel="noopener noreferrer">Open Large Loop folder ↗</a></p><ul><li><span class="file-label">Vehicle ROS bag</span><div><a href="https://www.dropbox.com/scl/fi/crt2ac22o1vhhwk7h187h/large_loop.bag?rlkey=32lr5zos5fe8ejx2bsn45aqr4&amp;st=ka4vm3ph&amp;dl=0" target="_blank" rel="noopener noreferrer">large_loop.bag</a><span class="file-size">62.21 GB</span></div></li><li><span class="file-label">Ground truth · TUM</span><div><a href="https://www.dropbox.com/scl/fi/hkhiflza8ndjyr9bfgyzt/gt_large_loop.txt?rlkey=dijxeu3lnnrsaj9vz1um1881x&amp;st=i1ls39yf&amp;dl=0" target="_blank" rel="noopener noreferrer">gt_large_loop.txt</a><span class="file-size">77.36 MB</span></div></li><li><span class="file-label">Roadside LiDAR · RSI2</span><div><a href="https://www.dropbox.com/scl/fi/sv4zlqa3cgea8zux1hnjx/large_loop-RSI2_LiDAR.bag?rlkey=hn88gm1in53izln1gk14evub4&amp;st=3g8h83q9&amp;dl=0" target="_blank" rel="noopener noreferrer">large_loop-RSI2_LiDAR.bag</a><span class="file-size">23.32 GB</span></div></li><li><span class="file-label">Roadside GNSS · RSG0 / West</span><div><a href="https://www.dropbox.com/scl/fi/6tao8jde71m4ykzghkbv3/west_rsi_gnss_large_loop.obs?rlkey=9io7e0aho2ww3mouv4g5j8ahh&amp;st=1tgn1tjr&amp;dl=0" target="_blank" rel="noopener noreferrer">west_rsi_gnss_large_loop.obs</a></div></li><li><span class="file-label">Roadside GNSS · RSG3 / East High</span><div><a href="https://www.dropbox.com/scl/fi/3pcec5n55joyn5fd767s0/east_high_large_loop.obs?rlkey=k29w96d43o55wdplkghndrymv&amp;st=98o52s6d&amp;dl=0" target="_blank" rel="noopener noreferrer">east_high_large_loop.obs</a></div></li></ul><p class="mirror-link"><a href="https://pan.baidu.com/s/1QCTQaGTv6CENsKLITDrIhQ?pwd=7bfj" target="_blank" rel="noopener noreferrer">Baidu Netdisk ↗</a> · Password: <code>7bfj</code></p></div>
+</article>
+</div>
+      <div class="roadside-locations"><h3>Roadside locations</h3><div class="table-wrap"><table><thead><tr><th scope="col">Station</th><th scope="col">Coordinates</th><th scope="col">Data</th></tr></thead><tbody>
+        <tr><th scope="row">RSI2 · LiDAR</th><td><code>22.424537955, 114.21353345</code></td><td>ROS bag</td></tr>
+        <tr><th scope="row">RSG0 · HKSTP West</th><td><code>22.42516252, 114.21146463, 3.0557</code></td><td>RINEX 3.02 · PPP position</td></tr>
+        <tr><th scope="row">RSG3 · HKSTP East High</th><td><code>22.42744535, 114.21107245, 11.2765</code></td><td>RINEX 3.02 · PPP position</td></tr>
+      </tbody></table></div><p class="table-note">Coordinates from the original release: latitude, longitude, and height in metres where provided.</p></div>
+<details class="recording-format"><summary>ROS topics &amp; ground-truth format</summary><div class="table-wrap"><table><thead><tr><th scope="col">Topic</th><th scope="col">Message type</th><th scope="col">Sensor / output</th></tr></thead><tbody><tr><th scope="row"><code>/Target_Radar_1</code></th><td><code>sensor_msgs/PointCloud2</code></td><td>GPAL-Ares-R7861 4D radar point clouds</td></tr><tr><th scope="row"><code>/Target_Radar_1_extreme</code></th><td><code>sensor_msgs/PointCloud2</code></td><td>GPAL-Ares-R7861 extreme-mode point clouds</td></tr><tr><th scope="row"><code>/camera/image_color/compressed</code></th><td><code>sensor_msgs/CompressedImage</code></td><td>Sky-pointing camera</td></tr><tr><th scope="row"><code>/hikcamera/image_0/compressed</code></th><td><code>sensor_msgs/CompressedImage</code></td><td>Right-back</td></tr><tr><th scope="row"><code>/hikcamera/image_1/compressed</code></th><td><code>sensor_msgs/CompressedImage</code></td><td>Front-right</td></tr><tr><th scope="row"><code>/hikcamera/image_2/compressed</code></th><td><code>sensor_msgs/CompressedImage</code></td><td>Front-left</td></tr><tr><th scope="row"><code>/hikcamera/image_3/compressed</code></th><td><code>sensor_msgs/CompressedImage</code></td><td>Left-front</td></tr><tr><th scope="row"><code>/hikcamera/image_4/compressed</code></th><td><code>sensor_msgs/CompressedImage</code></td><td>Right-front</td></tr><tr><th scope="row"><code>/hikcamera/image_5/compressed</code></th><td><code>sensor_msgs/CompressedImage</code></td><td>Left-back</td></tr><tr><th scope="row"><code>/hikcamera/image_6/compressed</code></th><td><code>sensor_msgs/CompressedImage</code></td><td>Rear</td></tr><tr><th scope="row"><code>/imu/data</code></th><td><code>sensor_msgs/Imu</code></td><td>Xsens MTi-30 IMU</td></tr><tr><th scope="row"><code>/lidar_points</code></th><td><code>sensor_msgs/PointCloud2</code></td><td>Hesai XT32 · front</td></tr><tr><th scope="row"><code>/velodyne_points</code></th><td><code>sensor_msgs/PointCloud2</code></td><td>Velodyne HDL-32E · roof</td></tr><tr><th scope="row"><code>/nlink_linktrack_nodeframe3</code></th><td><code>nlink_parser/LinktrackNodeframe3</code></td><td>Nooploop P-B UWB measurements</td></tr><tr><th scope="row"><code>/ublox_driver/ephem</code></th><td><code>gnss_comm/GnssEphemMsg</code></td><td>Broadcast ephemerides</td></tr><tr><th scope="row"><code>/ublox_driver/glo_ephem</code></th><td><code>gnss_comm/GnssGloEphemMsg</code></td><td>GLONASS ephemerides</td></tr><tr><th scope="row"><code>/ublox_driver/iono_params</code></th><td><code>gnss_comm/StampedFloat64Array</code></td><td>Ionospheric parameters</td></tr><tr><th scope="row"><code>/ublox_driver/range_meas</code></th><td><code>gnss_comm/GnssMeasMsg</code></td><td>Raw GNSS observations</td></tr><tr><th scope="row"><code>/ublox_driver/receiver_lla</code></th><td><code>sensor_msgs/NavSatFix</code></td><td>Receiver latitude, longitude and altitude</td></tr><tr><th scope="row"><code>/ublox_driver/receiver_pvt</code></th><td><code>gnss_comm/GnssPVTSolnMsg</code></td><td>Receiver position, velocity and time</td></tr></tbody></table></div><p>Ground-truth text files use the TUM pose format: <code>timestamp tx ty tz qx qy qz qw</code>.</p></details>
+    </div></section>
+    <section aria-labelledby="citation-title" class="section section-surface" id="citation">
+<div class="container">
+<div class="section-header"><div><span class="eyebrow">Citation</span><h2 id="citation-title">Cite UrbanV2X</h2></div><p>Please cite the current manuscript when using the expanded dataset or its derived products in academic work.</p></div>
+<div class="citation-box">
+<div class="citation-head"><span>BibTeX · UrbanV2X</span><button class="button button-ghost-light button-small copy-button" data-copy-target="bibtex-download" type="button">Copy BibTeX</button></div>
+<pre id="bibtex-download">@misc{qin2026urbanv2xplus,
+  author  = {Qin, Qijun and Zhang, Ziqi and Zhang, Qi and Hu, Wei and Chen, Hang and Su, Dongzhe and Liu, Xikun and Jiao, Jianhao and Wu, Jin and Huang, Yulong and Huang, Feng and Wen, Weisong},
+  title   = {An Open-sourced Vehicle--Infrastructure Cooperative Dataset for Urban Navigation},
+  year    = {2026},
+  note    = {UrbanV2X dataset},
+  url     = {https://polyu-taslab.github.io/UrbanV2X/}
+}</pre>
+</div>
+<p class="table-note">Citation metadata follows the current manuscript; venue and DOI can be added upon publication. For software and release-specific licensing, refer to the files distributed with each repository or data package.</p>
+</div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><a class="brand" href="../index.html"><svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="#102B3A"/><path d="M9 12L16 28L20 19L24 28L31 12" stroke="#3ED6D0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="10" r="2" fill="#FFFFFF"/></svg><span class="brand-name">UrbanV2X</span></a><p class="footer-about">A research release of TAS Lab, Department of Aeronautical and Aviation Engineering, The Hong Kong Polytechnic University.</p></div>
+      <div><h2 class="footer-title">Project</h2><ul class="footer-links"><li><a href="../index.html">Overview</a></li><li><a href="../sensors/index.html">Sensors</a></li><li><a href="../calibration/index.html">Calibration</a></li><li><a href="index.html">Download</a></li></ul></div>
+      <div><h2 class="footer-title">Resources</h2><ul class="footer-links"><li><a href="https://polyu-taslab.github.io/" target="_blank" rel="noopener noreferrer">TAS Lab website</a></li><li><a href="https://github.com/polyu-taslab" target="_blank" rel="noopener noreferrer">TAS Lab GitHub</a></li><li><a href="https://www.overleaf.com/2516394827fhbggmhfvhjr#03cc03" target="_blank" rel="noopener noreferrer">Paper on Overleaf</a></li><li><a href="https://github.com/PolyU-TASLAB/UrbanV2X" target="_blank" rel="noopener noreferrer">Project GitHub</a></li><li><a href="#citation">Citation</a></li></ul></div>
     </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Rosbag (Ego)</strong>:  
-            <a href="https://www.dropbox.com/scl/fi/hggqlmo8eo4fs9z3xy09x/small_loop.bag?rlkey=9fx4s8bk38kyucpizn38gn1u0&st=u3icmeqy&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               small_loop.bag (34.92 G)
-            </a> 
-        </li>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Ground Truth</strong>: 
-            <a href="https://www.dropbox.com/scl/fi/rnpwjmq1a15oly8pbekge/gt_small_loop.txt?rlkey=ux3ja0noo5q78bdq0nexwil74&st=kfwwkq9a&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               gt_small_loop.txt (30.04 MB)
-            </a> 
-        </li>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Roadside LiDAR (RSI2) Pose: 22.424537955, 114.21353345</strong>: 
-            <a href="https://www.dropbox.com/scl/fi/h22xy3slvmj4ojfp9ge6x/small_loop-RSI2_LiDAR.bag?rlkey=vede9n7n6z1vrsyog3gwacgvj&st=wy1tcx4k&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               small_loop-RSI2_LiDAR (12.04 GB)
-            </a> 
-        </li>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Roadside GNSS (RSG0: HKSTP West) Format: RINEX 3.02, PPP Pose: 22.42516252,114.21146463,3.0557 </strong>: 
-            <a href="https://www.dropbox.com/scl/fi/yktrc7rggslg76f9rvt0g/west_rsi_gnss_small_loop.obs?rlkey=pqs4fjmsta8oorj91my5ovbom&st=7ji3hmd2&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               west_rsi_gnss_small_loop.o
-            </a> 
-        </li>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Roadside GNSS (RSG3: HKSTP East High) Format: RINEX 3.02, PPP Pose: 22.42744535, 114.21107245, 11.2765 </strong>: 
-            <a href="https://www.dropbox.com/scl/fi/frq5j1c61b0bzl1b2pixu/east_high_small_loop.obs?rlkey=83tvuk7ab8il53hsbqlh9sor9&st=dv636ptm&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               east_high_small_loop.o
-            </a> 
-        </li>
-    </div>
-</div>
-
-<p><br></p>
-
-
-<h4>Large Loop Scenario <a href="https://www.dropbox.com/scl/fo/brl5wic82lv865rb2bhnv/ACK8BRbCDTYjRJnkolscGZM?rlkey=yt2amhwtbblgtlpzwo617lysw&st=svvxvrty&dl=0">(Download Link)</a></h4>
-
-<p><br></p>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-            <picture>
-                <img  style="width: 80%; height: auto; border-radius: 6px;"  
-                      class="large_loop_demo" src="https://polyu-taslab.github.io/UrbanV2X/assets/gif/large_loop_demo_10hz_240p.gif" 
-                      title="Large Loop Demo">
-            </picture>
-        </figure>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <h5>large_loop</h5>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Rosbag (Ego)</strong>:  
-            <a href="https://www.dropbox.com/scl/fi/crt2ac22o1vhhwk7h187h/large_loop.bag?rlkey=32lr5zos5fe8ejx2bsn45aqr4&st=ka4vm3ph&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               large_loop.bag (62.21 G)
-            </a> 
-               || 
-            <a href="https://pan.baidu.com/s/1QCTQaGTv6CENsKLITDrIhQ?pwd=7bfj" 
-               target="_blank" rel="noopener noreferrer">
-               Baidu Netdisk (Password: 7bfj)
-            </a> 
-        </li>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Ground Truth</strong>:   
-            <a href="https://www.dropbox.com/scl/fi/hkhiflza8ndjyr9bfgyzt/gt_large_loop.txt?rlkey=dijxeu3lnnrsaj9vz1um1881x&st=i1ls39yf&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               gt_large_loop.txt (77.36 MB)
-            </a> 
-        </li>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Roadside LiDAR (RSI2) Pose: 22.424537955, 114.21353345</strong>: 
-            <a href="https://www.dropbox.com/scl/fi/sv4zlqa3cgea8zux1hnjx/large_loop-RSI2_LiDAR.bag?rlkey=hn88gm1in53izln1gk14evub4&st=3g8h83q9&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               large_loop-RSI2_LiDAR (23.32 GB)
-            </a> 
-        </li>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Roadside GNSS  (RSG0: HKSTP West) Format: RINEX 3.02, PPP Pose: 22.42516252,114.21146463,3.0557</strong>: 
-            <a href="https://www.dropbox.com/scl/fi/6tao8jde71m4ykzghkbv3/west_rsi_gnss_large_loop.obs?rlkey=9io7e0aho2ww3mouv4g5j8ahh&st=1tgn1tjr&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               west_rsi_gnss_large_loop.o
-            </a> 
-        </li>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <li>
-            <strong>Roadside GNSS (RSG3: HKSTP East High) Format: RINEX 3.02, PPP Pose: 22.42744535, 114.21107245, 11.2765 </strong>: 
-            <a href="https://www.dropbox.com/scl/fi/3pcec5n55joyn5fd767s0/east_high_large_loop.obs?rlkey=k29w96d43o55wdplkghndrymv&st=98o52s6d&dl=0" 
-               target="_blank" rel="noopener noreferrer">
-               east_high_large_loop.o
-            </a> 
-        </li>
-    </div>
-</div>
-
-
-<p><br></p>
-
-<h3 id="section2">Summarization</h3>
-
-  <p><br></p>
-
-<div style="text-align: center;">
-<table style="display: inline-block;">
-<!-- <table border="1" style="border-collapse: collapse;" > -->
-  <tr>
-    <td>Scene</td>
-    <td>Duration</td>
-    <td>Total Size</td>
-    <!-- <td>Description</td> -->
-  </tr>
-  <tr>
-    <td> Small Loop Scenario
-    <br><a href="https://www.dropbox.com/scl/fo/qqpa51htlyat43hdj0tv8/AEmZUkgUK-A4VjaatAHl1Aw?rlkey=ebizm82owonedauagv6ghci0n&st=unxmkqka&dl=0" target="_blank" rel="noopener noreferrer">(Download Link)</a></td>
-    <td>309s</td>
-    <td>34.9 GB</td>
-    <!-- <td rowspan="19" style=" max-width: 200px; font-size: 14px;" > This scenario focuses on low-speed vehicles, around 30km/h, proceeding on highly urbanized areas and urban canyons in Hong Kong with multiple light conditions.
-      The presence of congested traffic and dynamic crowds may produce the degradation of visual or LiDAR localization, such as Dense street day easy b.
-      To evaluate the loop closure performance of SLAM, we remarkably recorded sequences Dense street difficult circle and Dense street difficult loop where our vehicle was circling in repeated routes.
-    </td> -->
-  </tr>
-  <tr>
-    <td> Large Loop Scenario
-    <br><a href="https://www.dropbox.com/scl/fo/brl5wic82lv865rb2bhnv/ACK8BRbCDTYjRJnkolscGZM?rlkey=h5cco650j1fovicz1kbtf5y2v&st=lxk1gol9&dl=0" target="_blank" rel="noopener noreferrer">(Download Link)</a></td>
-    <td>600s</td>
-    <td>62.2 GB</td>
-    <!-- <td rowspan="19" style=" max-width: 200px; font-size: 14px;" > This scenario focuses on low-speed vehicles, around 30km/h, proceeding on highly urbanized areas and urban canyons in Hong Kong with multiple light conditions.
-      The presence of congested traffic and dynamic crowds may produce the degradation of visual or LiDAR localization, such as Dense street day easy b.
-      To evaluate the loop closure performance of SLAM, we remarkably recorded sequences Dense street difficult circle and Dense street difficult loop where our vehicle was circling in repeated routes.
-    </td> -->
-  </tr>
-</table>
-</div>
-
-<p><br></p>
-
-          </article>
-
-        </div>
-
-    </div>
-
-    <!-- Footer -->   
-    <footer class="nofixed-bottom">
-        <div class="container mt-0" style="width:100%;text-align:center;">
-          © 2025 Tas Lab, The Hong Kong Polytechnic University. All rights reserved.
-        </div>
-    </footer> 
-
-    <!-- JavaScripts -->
-    <!-- jQuery -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <!-- Bootsrap & MDB scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
-
-    <!-- Masonry & imagesLoaded -->
-  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script defer src="/vector/assets/js/masonry.js" type="text/javascript"></script>
-    
-  <!-- Medium Zoom JS -->
-  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
-  <script src="/vector/assets/js/zoom.js"></script><!-- Load Common JS -->
-  <script src="/vector/assets/js/common.js"></script>
-
-    <!-- MathJax -->
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        tags: 'ams'
-      }
-    };
-  </script>
-  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-
-    
-  </body>
+    <div class="container footer-bottom"><div>© 2026 TAS Lab, The Hong Kong Polytechnic University.</div><span>UrbanV2X · Hong Kong</span></div>
+  </footer>
+  <script src="../assets/js/site.js" defer></script>
+  <script src="../assets/js/download.js" defer></script>
+</body>
 </html>
-

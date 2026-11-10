@@ -1,0 +1,74 @@
+schema: roadside_lidar_pose_v1
+sensor_id: ekeo_5
+site: EastKowloon
+enu_anchor_lla_wgs84:
+  latitude_deg: 22.3299584565062
+  longitude_deg: 114.20099264698274
+  altitude_m: 10.11305885668844
+position_enu_m:
+- 417.80316051558555
+- -1754.9513559211262
+- -1.3726290782799424
+position_lla_wgs84:
+  latitude_deg: 22.31411016867362
+  longitude_deg: 114.20504767566511
+  altitude_m: 8.99682049266994
+T_Rj:
+  frame_convention: sensor R -> public site ENU
+  translation_enu_m:
+  - 417.80316051558555
+  - -1754.9513559211262
+  - -1.3726290782799424
+  rotation_matrix_enu_sensor:
+  - - 0.9026683636212871
+    - 0.3665343900645044
+    - 0.22548251865124674
+  - - -0.35462068702460064
+    - 0.930396833544382
+    - -0.09276799267412905
+  - - -0.24379088098505236
+    - 0.0037779664674456592
+    - 0.969820464476752
+  quaternion_wxyz:
+  - 0.9750494425466871
+  - 0.024754118849965888
+  - 0.12032041124258923
+  - -0.18490218178207277
+attitude:
+  reference_frame: public site ENU anchored at enu_anchor_lla_wgs84
+  transform_convention: R_enu_sensor maps sensor-frame vectors into anchor ENU; p_enu
+    = R_enu_sensor p_sensor + position_enu_m
+  quaternion_wxyz:
+  - 0.9750494425466871
+  - 0.024754118849965888
+  - 0.12032041124258923
+  - -0.18490218178207277
+  rpy_deg_xyz:
+  - 0.22319640254923206
+  - 14.11038981663455
+  - -21.447789815634653
+  heading_sensor_plus_x_deg: -21.447789815634653
+  local_tangent_enu_at_sensor:
+    quaternion_wxyz:
+    - 0.9750543097130312
+    - 0.024626936845868266
+    - 0.12026258660920212
+    - -0.18493111515831537
+    rpy_deg_xyz:
+    - 0.2094016667726526
+    - 14.101102870004077
+    - -21.45269191051874
+    heading_sensor_plus_x_deg: -21.45269191051874
+quality:
+  median_nn_m: 0.22880365715845674
+  fraction_nn_under_0p3m: 0.7390565730376301
+  xy_shift_m: 0.93849769775625
+  refinement_stable: false
+  quality_status: needs_review
+calibration:
+  coarse_method: FFT fusion
+  snapshots: 10
+  rolling_scan_frames: 3
+  ndt_refinement_cycles: 120
+  parameter_overrides: {}
+  ndt_extension_review: null

@@ -1,0 +1,28 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+source_sensor: xt32
+target_sensor: cam5
+maps: xt32 -> cam5
+Rotation:
+- 0.4907258468866787
+- -0.8003426113841148
+- 0.3444413558215848
+- 0.04034537889362094
+- -0.3740167471159771
+- -0.9265439672669179
+- 0.870379453801206
+- 0.4685756900220547
+- -0.1512495590772851
+Translation:
+- 0.7652737945939359
+- -0.10840267355975666
+- -0.9978933125990895
+legacy_name: T_C_L[X]
+source_topic: /lidar_points
+source_model: Hesai XT32
+target_topic: /hikcamera/image_5/compressed
+time_offset_to_imu_s_by_dataset:
+  aug07: 0.0087125509357328
+  aug13: 0.008649644761021716

@@ -1,0 +1,52 @@
+[
+  {
+    "asset": "assets/media/platform.mp4",
+    "source": "UrbanV2X/assets/gif/onboard_platform_speedX4.gif",
+    "start_s": 0,
+    "duration_s": 8,
+    "filter": "scale=1280:-2",
+    "notes": "Experimental render; no embedded labels. Front projection: cam2 left, cam1 right."
+  },
+  {
+    "asset": "assets/media/multi-lidar.mp4",
+    "source": "ws_data-flywheel/workspaces/sensor_calibration/common/runs/visual_review/20261014_oblique_round_v3/videos/aug13_vehicle_lidar_oblique_clean.mp4",
+    "start_s": 8,
+    "duration_s": 12,
+    "filter": "scale=1280:-2",
+    "notes": "Experimental render; no embedded labels. Front projection: cam2 left, cam1 right."
+  },
+  {
+    "asset": "assets/media/surround-projection.mp4",
+    "source": "ws_data-flywheel/workspaces/sensor_calibration/common/runs/visual_review/20261014_oblique_round_v3/videos/aug13_lidar_cam_clean.mp4",
+    "start_s": 8,
+    "duration_s": 12,
+    "filter": "scale=1760:-2",
+    "notes": "Experimental render; no embedded labels. Front projection: cam2 left, cam1 right."
+  },
+  {
+    "asset": "assets/media/front-projection.mp4",
+    "source": "ws_data-flywheel/workspaces/sensor_calibration/common/runs/visual_review/20261014_oblique_round_v3/videos/aug13_lidar_cam_clean.mp4",
+    "start_s": 8,
+    "duration_s": 12,
+    "filter": "crop=1100:435:550:0,scale=1280:-2",
+    "notes": "Experimental render; no embedded labels. Front projection: cam2 left, cam1 right."
+  },
+  {
+    "asset": "assets/media/cooperative-labels.jpg",
+    "source": "Urban-V2X_dropbox/extension/results/cooperative_perception/UrbanV2X_BEVFusion_EKEO1-6_LiDAR.zip",
+    "members": "data/EKEO1/points/{I,V}/00010.bin; data/EKEO1/labels/00010.json",
+    "recipe": "scripts/render_experiment_assets.py",
+    "notes": "Both inputs already share roadside_fusion coordinates. Original draft reference boxes; not independently verified ground truth."
+  },
+  {
+    "asset": "assets/media/gnss-scene.png",
+    "source": "assets/data/gnss.json + assets/data/hkstp-map.json",
+    "recipe": "Canvas export of explorer.js scene; no raster text"
+  },
+  {
+    "asset": "assets/video/urbanv2x-full-film.mp4",
+    "source": "Urban-V2X_dropbox/extension/video/飞书20261110-151649.mp4",
+    "sha256": "96b5e4615d78d298bb93b332603fff1a9fd621e0cad96383a13b80f3c6353d13",
+    "notes": "Original full video, byte-identical. Its original editing and captions are retained."
+  }
+]

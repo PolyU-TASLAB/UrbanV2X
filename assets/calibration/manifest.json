@@ -1,0 +1,575 @@
+{
+  "files": [
+    {
+      "path": "Camera-Intrinsics/intrinsics_cam0.yaml",
+      "bytes": 604,
+      "sha256": "973750e84d9c7767dc4fa1b7993e3ef2c455f195b715b0a73bf2d28cd9542658",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Camera-Intrinsics/intrinsics_cam1.yaml",
+      "bytes": 602,
+      "sha256": "ddb917fdd1359b1c8962241289176543fd4a378b0c793ddd8c182ea79bc42fc9",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Camera-Intrinsics/intrinsics_cam2.yaml",
+      "bytes": 604,
+      "sha256": "2495742cca0ba7abfcd0178eec329183d830236a50107ab902c9a2df12c6ff7d",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Camera-Intrinsics/intrinsics_cam3.yaml",
+      "bytes": 603,
+      "sha256": "285bc1cc3e48fe8e08a806bc9886fffe2ae64c5b6f69043b3bf2d409214619d7",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Camera-Intrinsics/intrinsics_cam4.yaml",
+      "bytes": 600,
+      "sha256": "13cd54c17f8fef8f9e3422901a0dd473b0933d1fa3d59dbe058c19315ffd713f",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Camera-Intrinsics/intrinsics_cam5.yaml",
+      "bytes": 603,
+      "sha256": "19d630c296f67d8f5e52faf16acf47a53d1fd246e5ff945c3e5a118c7a0bdf40",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Camera-Intrinsics/intrinsics_cam6.yaml",
+      "bytes": 602,
+      "sha256": "7880c9d031fbb8d9e5d9fd8e2890b7b0db8ebd6c412337018035fa8bd94a92ad",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/Camera-Camera/camera_camera.yaml",
+      "bytes": 11114,
+      "sha256": "c0c5062f548b112f9482fe9d47d07ff51b4a511d38be700e41babd73f5730abb",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/Camera-IMU/imu_to_cam0.yaml",
+      "bytes": 968,
+      "sha256": "f79a989ad309a0324a61310ac005d2764c6357ab5108ed065e36947ba67be562",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/Camera-IMU/imu_to_cam1.yaml",
+      "bytes": 964,
+      "sha256": "da0628246034c5b290b9451015ab872a8554067ed27db90044e8e1ab0d7dbbe7",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/Camera-IMU/imu_to_cam2.yaml",
+      "bytes": 964,
+      "sha256": "b8d045b11afcb46a4ee1f8164d579ed90b6219bd2f87631a60160e4fd1910560",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/Camera-IMU/imu_to_cam3.yaml",
+      "bytes": 967,
+      "sha256": "69ce28bcffb5670f21d8af6b1763128024e8d1ba59bf4ab04fe51d0d33b02e6f",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/Camera-IMU/imu_to_cam4.yaml",
+      "bytes": 956,
+      "sha256": "869ef3ed5ad74f38c9146734039eba8f2e21a897c31f11c5be68e1584995e0dc",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/Camera-IMU/imu_to_cam5.yaml",
+      "bytes": 960,
+      "sha256": "4cd9ff64b35e15fd468b4d237c0c2eab3e77ee1a156e77ede62e396aad4db651",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/Camera-IMU/imu_to_cam6.yaml",
+      "bytes": 971,
+      "sha256": "02caaaa267e15cbe769fe408bcac99277d555a74e0408abaa94f43b8921e27f3",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/ap128p_to_cam0.yaml",
+      "bytes": 727,
+      "sha256": "ab728bae76d27450079cb6a5048df87f16596f6f0d6c52433f4e27aaf4507296",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/ap128p_to_cam1.yaml",
+      "bytes": 735,
+      "sha256": "9e46ddcddd8754c1f6828cb8e629d8b1f5d2818fff273e7cfb0bb714effa6bee",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/ap128p_to_cam2.yaml",
+      "bytes": 733,
+      "sha256": "6952da86fb5659dd8b1879b95fcb1a76cf7fe5b9f78d76b4c6706347ecc4f45c",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/ap128p_to_cam3.yaml",
+      "bytes": 727,
+      "sha256": "7ef645c7dcfc63f0448f4c33f60001ed0216e92ceb544b3dc960adddedab1346",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/ap128p_to_cam4.yaml",
+      "bytes": 721,
+      "sha256": "41ea4125446add2410048cdb694d26bd0a87b2e8c9f535d5432fcee22710e300",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/ap128p_to_cam5.yaml",
+      "bytes": 724,
+      "sha256": "67984e21114659018dce35761172ada5eadb5d70343c7d4d88c5db87aac73d8b",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/ap128p_to_cam6.yaml",
+      "bytes": 737,
+      "sha256": "3c4c6bfd6499ce545f169fca11f099d86607dff05c1b17fe962a19b4c8aa39cf",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/hdl32_to_cam0.yaml",
+      "bytes": 758,
+      "sha256": "f5d70be13fc156e59376179244554d4fc4484ca0b1fb0adf08012107db111ebb",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/hdl32_to_cam1.yaml",
+      "bytes": 757,
+      "sha256": "2fdc4dcebdd6c055d7d0e44e9e54cab9bdb8f549301906bd43f1a67ca6283854",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/hdl32_to_cam2.yaml",
+      "bytes": 755,
+      "sha256": "9264cb9b35e58566cbd1d9121aa122d7f78d71f10a35187cce76dd342a39decb",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/hdl32_to_cam3.yaml",
+      "bytes": 759,
+      "sha256": "96a5e243e557c3978cb9d7415136cf3c9f65b940aafa88b4de4c8858ef87087c",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/hdl32_to_cam4.yaml",
+      "bytes": 751,
+      "sha256": "6458cb9df34ecd0fa5c72b7eda3ad35ac814aa2369c2e4f84bb56bc5342fd9a4",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/hdl32_to_cam5.yaml",
+      "bytes": 756,
+      "sha256": "e4918a97553fd6ba3e2be6f186dbba1c860f8ecbbf4fae22482f09564c67fc26",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/hdl32_to_cam6.yaml",
+      "bytes": 762,
+      "sha256": "feb0e7f568791cfe4fd047ab755a69e4a7e1079cc2f0c178c7aa9e968d9d3a93",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/xt32_to_cam0.yaml",
+      "bytes": 745,
+      "sha256": "1ab31cbeaec25f024dc83a20553cd2119b3b22dee8c414a0a83023e47c0dfe86",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/xt32_to_cam1.yaml",
+      "bytes": 752,
+      "sha256": "6aa764155cdc651a4388d36f12da7469e6a9712374a58c2b7220b3b41f2adf70",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/xt32_to_cam2.yaml",
+      "bytes": 754,
+      "sha256": "87557b6b2864e170043dead02573a0ae1f934e8c6989f1f9fa813ab607f4bd3c",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/xt32_to_cam3.yaml",
+      "bytes": 739,
+      "sha256": "3a8336a8095f434b322f2e841531d51ea29fa9612ba589a6378bd057523165ac",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/xt32_to_cam4.yaml",
+      "bytes": 747,
+      "sha256": "cdce9397e4a081e97d60c18f68db59323882731aa276ff55e4b04c0fd3d5a8ae",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/xt32_to_cam5.yaml",
+      "bytes": 738,
+      "sha256": "31fd76e7997bdec360ec9f9292a7a8d012b5a03a5cf531a6d34af92788ec2a55",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-Camera/xt32_to_cam6.yaml",
+      "bytes": 747,
+      "sha256": "39f54796279ca67b73a99a718ec1067df266c88a52511596431bf83e75eedfd7",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-IMU/ap128p_to_imu.yaml",
+      "bytes": 706,
+      "sha256": "057caf80687f0e8a394f74b4437599e1e8aa0c8b7e1c45b88d137b1bd31624cd",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-IMU/hdl32_to_imu.yaml",
+      "bytes": 703,
+      "sha256": "93f755598947867bc206d3fe7dff3fbed043dcd2f2aa85f90188d7d08ab3c532",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-IMU/xt32_to_imu.yaml",
+      "bytes": 722,
+      "sha256": "7638b4d0f8a68080d8cb83344bb84bad98183cd4accb54abd5f106bcd0d6ba78",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-LiDAR/ap128p_to_hdl32.yaml",
+      "bytes": 637,
+      "sha256": "735f894bb6a6d536fbf014fcafa6a89758107475106def3513873f3a818872d4",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-LiDAR/ap128p_to_xt32.yaml",
+      "bytes": 633,
+      "sha256": "84cf322c67dabda54cc11e56addc923c0b00f650ea8a6ccc518b73f31832df59",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-LiDAR/hdl32_to_ap128p.yaml",
+      "bytes": 633,
+      "sha256": "07a2bf2ad47972fb1a26e44b38e82c7a36bbd4ba6e64af0f3119792cc6990667",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-LiDAR/hdl32_to_xt32.yaml",
+      "bytes": 631,
+      "sha256": "5ce14033e11262af607b39d907e5ef699d6e9463da7e6cdbda29485e6a0f01b8",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-LiDAR/xt32_to_ap128p.yaml",
+      "bytes": 634,
+      "sha256": "0674eaf2a8eacc5e65c13c0980fef7a04d8b321118f1b8f42fda5b2315b3951b",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "Extrinsics/LiDAR-LiDAR/xt32_to_hdl32.yaml",
+      "bytes": 633,
+      "sha256": "9c1a54dd36f70026d1588f5d4e657ac9bc6715b2ea974488383d2e01b9cbb1cc",
+      "package": "august_2026_reviewed_candidate",
+      "status": "experimental_maintenance_candidate",
+      "calibration_accepted": false
+    },
+    {
+      "path": "rslidar_calibration/README.md",
+      "bytes": 407,
+      "sha256": "f8594282e714683514188015b8016ef774980c3611c3cf022848f5c795b7af40",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/README.md",
+      "bytes": 369,
+      "sha256": "b291c47d9752ac27a351374bdb9d75c5d09726ebd26caf67298a007b53355484",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_1_lla_attitude.json",
+      "bytes": 2374,
+      "sha256": "f5438e3528a4d85c7ad802419547a8aff3c84be6578bb68ca7607a1b0e4b2685",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_1_lla_attitude.yaml",
+      "bytes": 1917,
+      "sha256": "75b92a2a240abb271012b0334fefd51975d23bc743a09a2a3ba54e5a2363a8db",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_2_lla_attitude.json",
+      "bytes": 2464,
+      "sha256": "4a8961fdd48916d8d6ff7b48bf6653d5874316ad58f5c32279686ae57dcfbefc",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_2_lla_attitude.yaml",
+      "bytes": 2007,
+      "sha256": "3a7336633fdaf2722cd347317fa44ea66d4971cc1e22dcd687e1350319a83d45",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_3_lla_attitude.json",
+      "bytes": 2472,
+      "sha256": "bbb4ba2052fcb27f6bd1a1b304af2fa227625937f391f554426eed575e454aea",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_3_lla_attitude.yaml",
+      "bytes": 2015,
+      "sha256": "b9c0ba1cffdfbc3ebd2bd75d43b66e2083d65f2512e608b8d69f03ae8b9bfe02",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_4_lla_attitude.json",
+      "bytes": 2462,
+      "sha256": "f77074ff0e4214faeae004c013006a6ae063665824f2da484e3ae4e31c53e2bc",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_4_lla_attitude.yaml",
+      "bytes": 2005,
+      "sha256": "0231ac95613bf93ee4044f4df3656df0504b4df45fd63e32c4d121ab1edb3384",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_5_lla_attitude.json",
+      "bytes": 2476,
+      "sha256": "5ac844d43615e544d8f8b8bb30e31349119668749a1cf9b62b2f1a093df711cf",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_5_lla_attitude.yaml",
+      "bytes": 2019,
+      "sha256": "adbc486fec020ffa801fd66af45aff29889105ca4080222e862ec7d8f5114d16",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_6_lla_attitude.json",
+      "bytes": 2614,
+      "sha256": "35a1c57601477c01b31a3e93a9a5ff9f90cbf0ad163739f0c6a4044bd621309f",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/ekeo_6_lla_attitude.yaml",
+      "bytes": 2125,
+      "sha256": "441150b9622f392af3468dd46aae90ed3da435d82bea5cc6a87958d9ef5e5519",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/poses.csv",
+      "bytes": 1519,
+      "sha256": "5bdb081503fdb851a59b282191d2393bd92f586daff32d6617227a787dcbc75a",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/ekeo/poses.yaml",
+      "bytes": 13149,
+      "sha256": "eef7140beb4e6c7c728d81a3a1368cc6d85cceac54eed7ee965103611390cd71",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/hkstp/README.md",
+      "bytes": 370,
+      "sha256": "38f54c6f1d1d33710a59c67fc6f2cc95c8d1e86ebf4630c0533237d6fd9088f1",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/hkstp/hkstp_2a_lla_attitude.json",
+      "bytes": 2549,
+      "sha256": "617955d6fffbed11088b0848951f80daecb9f57987b6ec1b0035a1724f3f7f41",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/hkstp/hkstp_2a_lla_attitude.yaml",
+      "bytes": 2055,
+      "sha256": "cb85ed9fcc3ac692aa60cd6ee4f405da00ad502ac4e00e33fc8d24719d2afcfe",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/hkstp/hkstp_2b_lla_attitude.json",
+      "bytes": 3143,
+      "sha256": "300abd7f6643b06d30883d0957bbac3b0fabb7bbe9f4dc88b5b6da21d16b23ea",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/hkstp/hkstp_2b_lla_attitude.yaml",
+      "bytes": 2584,
+      "sha256": "2ff53dcb0c9bff38805871811c5bce2a6829ffcd9f8358ae4c660991a1236f05",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/hkstp/poses.csv",
+      "bytes": 578,
+      "sha256": "ff03b8417328d98f9c7d664d142b73ce6d1c0658f45bd087af4b448c8016b32e",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/hkstp/poses.yaml",
+      "bytes": 5146,
+      "sha256": "6744af7896f91cb7a6fc5fa365512eb8298aa9b8b61db583325c5d2eb759fd11",
+      "kind": "roadside"
+    },
+    {
+      "path": "rslidar_calibration/\u5916\u53c2\u4f7f\u7528\u8bf4\u660e.md",
+      "bytes": 8557,
+      "sha256": "a2b077b1ed018a68b05747d501cca76fff05e838039d5159ebbb608e963ce623",
+      "kind": "roadside"
+    },
+    {
+      "path": "all_lampposts_latlon(1).xlsx",
+      "bytes": 9482,
+      "sha256": "08451a7af0e2adaf3ac4ccfbd67503b94a5d570e960850d36fef5f1d08fbad13",
+      "kind": "roadside"
+    }
+  ],
+  "archives": [
+    {
+      "name": "UrbanV2X-calibration.zip",
+      "files": 70,
+      "bytes": 75057
+    },
+    {
+      "name": "Camera-Intrinsics.zip",
+      "files": 7,
+      "bytes": 5983
+    },
+    {
+      "name": "Extrinsics.zip",
+      "files": 63,
+      "bytes": 71012
+    },
+    {
+      "name": "Roadside.zip",
+      "files": 25,
+      "bytes": 41830
+    },
+    {
+      "name": "Roadside-hkstp.zip",
+      "files": 7,
+      "bytes": 10109
+    },
+    {
+      "name": "Roadside-ekeo.zip",
+      "files": 15,
+      "bytes": 21520
+    },
+    {
+      "name": "LiDAR-Camera.zip",
+      "files": 21,
+      "bytes": 16392
+    },
+    {
+      "name": "LiDAR-LiDAR.zip",
+      "files": 6,
+      "bytes": 5564
+    },
+    {
+      "name": "LiDAR-IMU.zip",
+      "files": 3,
+      "bytes": 3925
+    },
+    {
+      "name": "Camera-IMU.zip",
+      "files": 7,
+      "bytes": 7506
+    },
+    {
+      "name": "Camera-Camera.zip",
+      "files": 1,
+      "bytes": 5511
+    }
+  ],
+  "transform_count": 58,
+  "roadside_poses": 8,
+  "raw_bytes": 120496,
+  "source_values_unchanged": true
+}

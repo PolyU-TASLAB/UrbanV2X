@@ -1,458 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-  <!-- Head -->
-  <head>    <!-- Metadata, OpenGraph and Schema.org -->
-    
-
-    <!-- Standard metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The UrbanV2X Datasets  </title>
-    <meta name="author" content="The UrbanV2X Datasets " />
-    <meta name="description" content=" Multisensory Vehicle-Infrastructure Dataset for Cooperative Navigation in Urban Areas.
-" />
-    <meta name="keywords" content="Multi-sensor Fusion, RoadSide Infrastructure, SLAM, Autonomous Driving, Dataset" />
-
-    <!-- OpenGraph -->
-    <meta property="og:site_name" content="The UrbanV2X Datasets  " />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="The UrbanV2X Datasets   | Home" />
-    <meta property="og:url" content="http://localhost:4000/UrbanV2X/" />
-    <meta property="og:description" content="Multisensory Vehicle-Infrastructure Dataset for Cooperative Navigation in Urban Areas.
-" />
-    
-    <meta property="og:locale" content="en" />
-
-    <!-- Twitter card -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Home" />
-    <meta name="twitter:description" content="Multisensory Vehicle-Infrastructure Dataset for Cooperative Navigation in Urban Areas.
-" />
-    
-    
-
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-      {
-        "author":
-        {
-          "@type": "Person",
-          "name": "The UrbanV2X Datasets  "
-        },
-        "url": "http://localhost:4000/UrbanV2X/",
-        "@type": "WebSite",
-        "description": "An Event-Centric Multisensory Driving Dataset for SLAM.
-",
-        "headline": "Home",
-        "sameAs": ["https://github.com/arclab-hku/Event_based_VO-VIO-SLAM", "https://arclab.hku.hk/"],
-        "name": "The UrbanV2X Datasets  ",
-        "@context": "https://schema.org"
-      }
-    </script>
-
-
-    <!-- Bootstrap & MDB -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Barriecito&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700">
-
-    <!-- Code Syntax Highlighting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/PASTIE.css" media="none" id="highlight_theme_light" />
-
-    <!-- Styles -->
-    
-    <link rel="shortcut icon" href="https://polyu-taslab.github.io/UrbanV2X/assets/img/icon.png"/>
-    
-    <link rel="stylesheet" href="https://polyu-taslab.github.io/UrbanV2X/assets/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/UrbanV2X/">
-    <link rel="stylesheet" href="https://polyu-taslab.github.io/UrbanV2X/assets/css/fonts.css">
-    <link rel="stylesheet" href="/UrbanV2X/assets/css/fonts.css">
-    
-    <!-- Dark Mode -->
-    
-
-  </head>
-
-  <!-- Body -->
-  <body class="fixed-top-nav ">
-
-    <!-- Header -->
-    <header>
-
-      <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-        <div class="container">
-          
-          <!-- Navbar Toggle -->
-          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
-
-          <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-
-              <!-- Home -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/UrbanV2X/index.html">Home<span class="sr-only">(current)</span></a>
-              </li>
-
-              <!-- Other pages -->
-                <!-- <li class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sensors</a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/UrbanV2X/about/sensor/">Sensor Suite</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/UrbanV2X/about/synchronization/">Synchronization</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/UrbanV2X/about/ground_truth/">Ground Truth</a>
-                  </div>
-                </li> -->
-                <li class="nav-item ">
-                  <a class="nav-link" href="/UrbanV2X/sensors/index.html">Sensors</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="/UrbanV2X/calibration/">Calibration</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="/UrbanV2X/download/">Download</a>
-                </li>
-                <!-- <li class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="https://github.com/mgaoling/mpl_calibration_toolbox/issues" target="_blank" rel="noopener noreferrer">Calibration Issue</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="https://github.com/mgaoling/mpl_dataset_toolbox/issues" target="_blank" rel="noopener noreferrer">Dataset Issue</a>
-                  </div>
-                </li> -->
-            </ul>
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="UrbanV2X: a vehicle–infrastructure cooperative dataset for urban navigation in Hong Kong. Synchronized sensing, reference trajectories, calibration and digital twins.">
+  <meta name="theme-color" content="#102b3a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="One city. Every perspective. · UrbanV2X">
+  <meta property="og:description" content="Seven vehicle sequences, ten roadside sequences, real multi-sensor recordings and research-ready urban navigation resources.">
+  <meta property="og:image" content="assets/media/platform.jpg">
+  <title>One city. Every perspective. · UrbanV2X</title>
+  <link rel="canonical" href="https://polyu-taslab.github.io/UrbanV2X/">
+  <link rel="icon" href="assets/img/taslab-icon.jpg">
+  <link rel="stylesheet" href="./assets/css/urbanv2x.css">
+  <script defer src="./assets/js/urbanv2x.js"></script>
+  <script defer src="./assets/js/overview.js"></script>
+  <script defer src="./assets/js/positioning.js"></script>
+  <link rel="stylesheet" href="./assets/css/positioning.css">
+  <link rel="stylesheet" href="./assets/css/overview.css">
+  <link rel="stylesheet" href="./assets/css/navigation.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-navigation">
+    <div class="site-navigation-inner">
+      <a class="site-navigation-brand" href="./index.html" aria-label="UrbanV2X home"><img src="./assets/img/taslab-icon.jpg" alt="TAS Lab"><span>Urban<span>V2X</span></span></a>
+      <button class="site-navigation-toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation-menu"><span aria-hidden="true"></span></button>
+      <nav class="site-navigation-links" id="site-navigation-menu" data-nav-menu aria-label="Main navigation">
+        <a href="./index.html" aria-current="page">Overview</a>
+        <a href="./sensors/">Sensors</a>
+        <a href="./calibration/">Calibration</a>
+        <a href="./download/">Download</a>
+        <a href="https://polyu-taslab.github.io/" target="_blank" rel="noopener noreferrer">TAS Lab ↗</a>
+        <a class="site-navigation-paper" href="https://www.overleaf.com/2516394827fhbggmhfvhjr#03cc03" target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
       </nav>
-    </header>
-
-    <!-- Content -->
-    <div class="container mt-5">
-      <!-- home.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           <span style="font-weight: 600;">The UrbanV2X Datasets</span>  
-          </h1>
-          <p class="desc">
-            Multisensory Vehicle-Infrastructure Dataset for Cooperative Navigation in Urban Areas.
-          </p>
-        </header>
-
-        <article>
-          
-
-          <div class="clearfix">
-            <p><br></p>
-
-
-<!-- <picture style="text-align: center;">
-  <img class="img-fluid rounded z-depth-1" src="https://polyu-taslab.github.io/UrbanV2X/assets/gif/total_homepage.gif" title="total_homepage">
-</picture> -->
-
-<div style="text-align: center;">
-  <picture>
-    <img style="width: 90%;" class="img-fluid rounded z-depth-1" src="assets/gif/dataset_overview_15secs.gif" title="sensor_platform">
-  </picture>
-</div>
-
-<p><br></p>
-
-
-<div style="text-align: center;">
-  <picture>
-    <img style="width: 90%;" class="img-fluid rounded z-depth-1" src="https://polyu-taslab.github.io/UrbanV2X/assets/gif/sensorview_camera.gif" title="homepage_vis">
-  </picture>
-</div>
-
-
-
-<p><br></p>
-
-<p style="text-align: justify;">
-  Due to the limitations of single autonomous vehicles, Cellular Vehicle-to-Everything (C-V2X) technology opens a new window for achieving fully autonomous driving through sensor information sharing. However, real-world datasets supporting vehicle–infrastructure cooperative navigation in complex urban environments remain rare. 
-</p>
-<p style="text-align: justify;">
-  To address this gap, we present UrbanV2X, a comprehensive multisensory dataset collected from both vehicles and roadside infrastructure in the Hong Kong C-V2X testbed, designed to support research on smart mobility applications in dense urban areas. 
-</p>
-<p style="text-align: justify;">
-  Our onboard platform provides time-synchronized data from multiple industrial cameras, LiDARs, 4D radar, UWB, IMU, and high-precision GNSS-RTK/INS navigation systems. Meanwhile, our roadside infrastructure provides LiDAR, GNSS, and UWB measurements. 
-</p>
-<p style="text-align: justify;">
-  The entire vehicle–infrastructure platform is synchronized using the Precision Time Protocol (PTP), with sensor calibration data provided. We also benchmark various navigation algorithms to evaluate the collected cooperative data.
-</p>
-<!-- After the paper is accepted, we will release all the datasets and keep the dataset maintenance. -->
-<br>
-
-The contributions of our work can be summarized as follows:
-</p>
-
-<ul>
-  <li style="text-align: justify;"> UrbanV2X Dataset and Sensor Integration: Our <a href="/sensors">sensor platform</a>  integrating various sensors like multiple event cameras, GNSS/INS, 4D Radar, LiDAR and sky-pointing cameara with roadside infrastructure, including GNSS, LiDAR, and UWB.
-  </li>
-  
-  <!-- <li style="text-align: justify;">
-    ALl sensors are <a href="/UrbanV2X/calibration">well-calibrated</a> and temporally synchronized at the hardware level, with recording data simultaneously.
-  </li> -->
-  
-  <li style="text-align: justify;"> UrbanV2X collects comprehensive data from both urban canyons and open areas. These <a href="/UrbanV2X/download">sequences</a> are recorded under various conditions. Our dataset and benchmark results are publicly available on our website.
-  </li>
-  <!-- <li style="text-align: justify;"> We present a comprehensive <a href="/UrbanV2X/benchmark">benchmark</a> that evaluates existing state-of-the-art SLAM algorithms of various
-    sensor modalities and analyzes their limitations.
-  </li> -->
-</ul>
-
-<!-- <p style="text-align: justify;">
-  We hope that we can make some contributions for the development of event-based vision, especially event-based multi-sensor fusioin for autonomous driving.
-  <br>
-  The visualization of each sequence is available in <a href="/UrbanV2X/download">Download section</a> and <a href="https://www.bilibili.com/video/BV1Km4y157KC/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7">Bilibili</a>.
-  <br>
-  If you have any suggestions or questions, do not hesitate to propose an issue to our <a href="https://polyu-taslab.github.io/UrbanV2X">Github Repository</a>.
-</p> -->
-
-<p><br></p>
-
-          </div>
-
-          <!-- News -->          
-          <!-- <div class="news">
-            <h2>News</h2>
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-
-                <tr>
-                  <th scope="row">December 2, 2023</th>
-                  <td>
-                    We release our GNSS-RTK/INS gt and M8T/F9P GNSS at <a href="/UrbanV2X/download">Download section</a>.
-                  </td>
-                </tr> 
-
-                <tr>
-                  <th scope="row">November 28, 2023</th>
-                  <td>
-                    Our work has been accepted by IEEE Transactions on Intelligent Vehicles!
-                  </td>
-                </tr> 
-                
-                <tr>
-                  <th scope="row">November 21, 2023</th>
-                  <td>
-                    Calibration results and rosbag are avaliable at <a href="/UrbanV2X/calibration">Calibration page</a>.
-                  </td>
-                </tr> 
-
-                <tr>
-                  <th scope="row">November 19, 2023</th>
-                  <td>
-                    We release our sequences at <a href="/UrbanV2X/download">Download section</a>.
-                  </td>
-                </tr> 
-
-                <tr>
-                  <th scope="row">November 07, 2023</th>
-                  <td>
-                    The preprint version is available at <a href="https://arxiv.org/abs/2311.02327">arXiv</a>.
-                  </td>
-                </tr> 
-                
-                <tr>
-                  <th scope="row">October 31, 2023</th>
-                  <td>
-                    Watch our video presentation on <a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.999.list.card_archive.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7">Bilibili</a> or <a href="https://youtu.be/Q1F9M_DZLws">Youtube</a>.
-                  </td>
-                </tr> 
-
-                <tr>
-                  <th scope="row">August 28, 2023</th>
-                  <td>
-                    We finish the evaluation of UrbanV2X using various LiDAR SLAM (<a href="https://space.bilibili.com/499377825/channel/collectiondetail?sid
-                  </td>
-                </tr>
-
-                <tr>
-                  <th scope="row">August 22, 2023</th>
-                  <td>
-                    We complete the collection of all sequences (<a href="https://www.bilibili.com/video/BV1Km4y157KC/?share_source=copy_web&vd_source=f5ac2a23210d1b4b7b4aa5e374feae10">bilibili visulization</a>).
-                  </td>
-                </tr> 
-
-                <tr>
-                  <th scope="row">June 2, 2023</th>
-                  <td>
-                   Driver code and time synchronization of event cameras are now available (<a href="https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/tree/main/driver_code/dv-ros-master/script">Code</a>, <a href="https://www.bilibili.com/video/BV168411o7BJ/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7">Bilibili</a>).
-                  </td>
-                </tr> 
-
-                <tr>
-                  <th scope="row">June 1, 2023</th>
-                  <td>
-                    UrbanV2X Datasets goes live!
-                  </td>
-                </tr> 
-     
-              </table>
-            </div> 
-          </div> -->
-
-          <!-- Selected papers -->
-          <div class="publications">
-            <h2>BibTeX</h2>
-            Please cite the following publication when using this benchmark in an academic context:
-            <pre style="background-color: #f8f9fa; padding: 10px; border: 1px solid #ddd; border-radius: 5px; overflow-x: auto;">
-@INPROCEEDINGS{11423762,
-  author={Qin, Qijun and Zhang, Ziqi and Zhong, Yihan and Huang, Feng and Liu, Xikun and Hu, Runzhi and Chen, Hang and Hu, Wei and Su, Dongzhe and Zhang, Jun and Ng, Hoi-Fung and Wen, Weisong},
-  booktitle={2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)}, 
-  title={UrbanV2X: A Multisensory Vehicle-Infrastructure Dataset for Cooperative Navigation in Urban Areas}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={815-822},
-  keywords={Global navigation satellite system;Simultaneous localization and mapping;Laser radar;Navigation;Benchmark testing;Cameras;Synchronization;Ultra wideband radar;Autonomous vehicles;Vehicle-to-everything;Multi-sensor Fusion;Road Side;SLAM;Autonomous Driving;Dataset},
-  doi={10.1109/ITSC60802.2025.11423762}}
-          </pre>
-<h2></h2>
-            <ol class="bibliography"><li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <!-- <div class="col-sm-2 abbr"><abbr class="badge">RA-L</abbr></div> -->
-        <!-- 上面这个RAL显示好像有点问题 -->
-
-
-        <!-- Entry bib key -->
-        <div id="UrbanV2X2023" class="col-sm-8">
-        
-          <!-- Author -->
-
-          <div class="paper" style="text-align: justify;">Qin, Q., Zhang, Z., Zhong, Y., Huang, F., Liu, X., Hu, R., Chen, H., Hu, W., Su, D., Zhang, J., Ng, H.-F., & Wen, W. (2025).
-            UrbanV2X: A Multisensory Vehicle-Infrastructure
-            Dataset for Cooperative Navigation in Urban Areas
-          </div>
-          
-          <!-- Title -->
-          <!-- <div class="title" style="text-align: justify;">UrbanV2X: An Event-Centric Multisensory Driving Dataset for SLAM.</div> -->
-
-          <!-- Journal/Book title and date -->
-          <!-- <div class="periodical" style="text-align: justify;">
-            IEEE Transactions on Intelligent Vehicles, vol. 9, no. 1, pp. 407-416, 2023.
-          </div> -->
-        
-          <!-- Links/Buttons -->
-          <div class="links">
-            <!-- <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="https://arxiv.org/abs/2311.02327" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a>
-            <a href="https://polyu-taslab.github.io/UrbanV2X/assets/pdf/2311.02327.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> -->
-            <!-- <a href="/UrbanV2X/assets/pdf/supplementary_material.pdf" class="btn btn-sm z-depth-0" role="button">Supp</a> -->
-            <!-- 以上三个内容依次放，arxiv网址，我们论文的pdf，如果有补充材料就加，没有就不加 -->
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p style="text-align: justify;">
-              Leveraging multiple sensors enhances complex environmental perception and increases resilience to varying luminance conditions and high-speed motion patterns, achieving precise localization and mapping.
-              This paper proposes, UrbanV2X, an event-centric multisensory dataset containing 81 sequences and covering over 200 km of various challenging driving scenarios including high-speed motion, repetitive scenarios, dynamic objects, etc.
-              UrbanV2X provides data from two sets of stereo event cameras with different resolutions (640&times;480, 346&times;260), stereo industrial cameras, an infrared camera, a top-installed mechanical LiDAR with two slanted LiDARs, 
-              two consumer-level GNSS receivers, and an onboard IMU.
-              Meanwhile, the ground-truth of the vehicle was obtained using a centimeter-level high-accuracy GNSS-RTK/INS navigation system.
-              All sensors are well-calibrated and temporally synchronized at the hardware level, with recording data simultaneously.
-              We additionally evaluate several state-of-the-art SLAM algorithms for benchmarking visual and LiDAR SLAM and identifying their limitations.
-              <!-- The full dataset can be found at \url{https://polyu-taslab.github.io/UrbanV2X/}. -->
-            </p>
-          </div>
-        </div>
-      </div>
-</li></ol>
-          </div>
-          <br>
-
-          <div class="Other resources">
-            <h2>Other resources</h2>
-            <p style="text-align: justify;">
-              Some tools for pre-processing the dataset 
-              and HKU event-based handheld & drone dataset are available at <a href="https://github.com/arclab-hku/Event_based_VO-VIO-SLAM" target="_blank" rel="noopener noreferrer">here</a>.
-            </p>
-          </div>
-
-          <!-- License -->
-          <div class="License">
-            <h2>License</h2>
-            <p>
-            This work is released under <a href="https://www.gnu.org/licenses/" target="_blank" rel="noopener noreferrer">GPLv3</a> license. 
-            For commercial inquires, please contact Dr. Wen Weisong(welson.wen@polyu.edu.hk).
-            </p>
-          </div>
-          <br>
-          <br>
-
-          <!-- Acknowledgements -->
-          <div class="Acknowledgement">
-            <h2>Acknowledgement</h2>
-            <p style="text-align: justify;">
-              The authors thank Yuteng Wang, Shaoting Qiu from PolyU, Jiashi Feng, Alpamys Urtay and Siqiao from ASTRI for their kind support in this data evaluation.
-            </p>
-          </div>
-          <br>
-          <br>
-
-        </article>
-
-</div>
-
     </div>
+  </header>
 
-   <!-- Footer -->    
-  <footer class="nofixed-bottom">
-    <div class="container mt-0" style="width:100%;text-align:center;">
-      © 2025 Tas Lab, The Hong Kong Polytechnic University. All rights reserved.
+  <main id="main">
+<section class="hero overview-hero"><div class="hero-copy"><p class="eyebrow">TAS LAB · THE HONG KONG POLYTECHNIC UNIVERSITY</p><h1>Urban navigation.<br>A shared<br><em>perspective.</em></h1><p>A vehicle–infrastructure dataset for urban navigation. Real streets, synchronized sensing and complementary viewpoints for perception, positioning and simulation.</p><div class="actions"><a class="button" href="download/">Dataset resources ↗</a><a class="text-link" href="#film">Watch the full film ↗</a></div><div class="hero-note"><span class="dot"></span>A research release of TAS Lab, PolyU</div></div><div class="hero-reel" role="region" aria-roledescription="carousel" aria-label="Automatically rotating dataset previews"><div class="reel-heading"><span id="reel-label">VEHICLE PLATFORM</span><span id="reel-count">01 / 05</span></div><div class="reel-screen"><figure class="hero-slide is-active" data-hero-slide aria-hidden="false" data-label="VEHICLE PLATFORM"><video muted loop playsinline preload="none" poster="assets/previews/platform.jpg" data-src="assets/previews/platform-loop.mp4" aria-label="Vehicle sensor platform"></video></figure><figure class="hero-slide" data-hero-slide aria-hidden="true" data-label="MULTI-LIDAR FUSION"><video muted loop playsinline preload="none" data-poster="assets/previews/multi-lidar.jpg" data-src="assets/previews/multi-lidar-loop.mp4" aria-label="Multi-LiDAR fusion"></video></figure><figure class="hero-slide" data-hero-slide aria-hidden="true" data-label="LIDAR × CAMERA"><video muted loop playsinline preload="none" data-poster="assets/previews/lidar-camera.jpg" data-src="assets/previews/lidar-camera-loop.mp4" aria-label="LiDAR–camera projection"></video></figure><figure class="hero-slide" data-hero-slide aria-hidden="true" data-label="VEHICLE + ROADSIDE LIDAR"><video muted loop playsinline preload="none" data-poster="assets/previews/cooperative.jpg" data-src="assets/previews/cooperative-loop.mp4" aria-label="Vehicle and roadside LiDAR"></video></figure><figure class="hero-slide" data-hero-slide aria-hidden="true" data-label="GNSS · UWB · GROUND TRUTH"><video muted loop playsinline preload="none" data-poster="assets/previews/positioning.jpg" data-src="assets/previews/positioning-loop.mp4" aria-label="GNSS, UWB and ground truth"></video></figure></div><div class="reel-controls"><div class="reel-dots"><button type="button" data-hero-index="0" aria-label="Show Vehicle sensor platform" aria-pressed="true"><span></span></button><button type="button" data-hero-index="1" aria-label="Show Multi-LiDAR fusion" aria-pressed="false"><span></span></button><button type="button" data-hero-index="2" aria-label="Show LiDAR–camera projection" aria-pressed="false"><span></span></button><button type="button" data-hero-index="3" aria-label="Show Vehicle and roadside LiDAR" aria-pressed="false"><span></span></button><button type="button" data-hero-index="4" aria-label="Show GNSS, UWB and ground truth" aria-pressed="false"><span></span></button></div><button id="reel-pause" type="button" aria-label="Pause automatic previews">Pause Ⅱ</button></div></div></section>
+<section class="film overview-film section" id="film"><div class="wrap"><div class="film-heading"><div><p class="eyebrow">THE FULL FILM</p><h2>UrbanV2X in motion.</h2></div></div><video id="full-film" muted controls playsinline preload="none" data-poster="assets/previews/lidar-camera.jpg" data-src="assets/video/urbanv2x-film-web.mp4" aria-label="Complete original UrbanV2X presentation film"></video><div class="video-caption"><span>41.9 s</span><a href="assets/video/urbanv2x-film-web.mp4">Download the full video ↗</a></div></div></section>
+<section class="wrap section" id="explore"><div class="section-head"><div><p class="eyebrow">01 / THE DATASET</p><h2>One dataset.<br>Many ways to see the city.</h2></div><p>Synchronized vehicle and roadside recordings from Hong Kong Science Park and East Kowloon.</p></div><section class="stats dataset-stats" aria-label="Dataset at a glance"><div><b>2</b><span>Hong Kong collection sites</span></div><div><b>7 <small>+ 10</small></b><span>Vehicle + roadside sequences</span></div><div><b>1.2 <small>h</small></b><span>Driving · plus 31 min static</span></div><div><b>143,252</b><span>Roadside LiDAR frames · 8.6 h roadside data</span></div></section>
+<div class="media-grid"><article class="media-card"><figure><img src="assets/media/cam2.jpg" loading="lazy" alt="Original front-facing cam2 observation"></figure><div class="card-copy"><h3>SURROUND CAMERAS</h3><p>image_0–image_6 · 360° coverage · 10 Hz.</p></div></article><article class="media-card"><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/multi-lidar.jpg" data-src="assets/previews/multi-lidar-loop.mp4" aria-label="MULTI-LIDAR"></video></figure><div class="card-copy"><h3>MULTI-LIDAR</h3><p>Velodyne HDL-32E · Hesai XT32 · Hesai AT128P.</p></div></article><article class="media-card"><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/lidar-camera.jpg" data-src="assets/previews/lidar-camera-loop.mp4" aria-label="LIDAR–CAMERA"></video></figure><div class="card-copy"><h3>LIDAR–CAMERA</h3><p>Image and point cloud alignment across seven cameras.</p></div></article><article class="media-card"><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/cooperative.jpg" data-src="assets/previews/cooperative-loop.mp4" aria-label="COOPERATIVE PERCEPTION"></video></figure><div class="card-copy"><h3>COOPERATIVE PERCEPTION</h3><p>Vehicle and roadside point clouds with 3D vehicle annotations.</p></div></article><article class="media-card"><figure class="positioning-card-image"><img src="assets/previews/positioning-card.webp" width="960" height="600" loading="lazy" alt="Ground-truth trajectory, UWB ranging and satellite connections over the HKSTP OpenStreetMap buildings"><a class="media-credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</a></figure><div class="card-copy"><h3>GNSS · UWB · GROUND TRUTH</h3><p>Raw satellite observations, ranging and GNSS-RTK/INS trajectories.</p></div></article><article class="media-card"><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/carla.jpg" data-src="assets/previews/carla-loop.mp4" aria-label="DIGITAL TWINS"></video></figure><div class="card-copy"><h3>DIGITAL TWINS</h3><p>CARLA maps of Hong Kong Science Park and East Kowloon.</p></div></article><article class="media-card"><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/reconstruction.jpg" data-src="assets/previews/reconstruction-loop.mp4" aria-label="SCENE RECONSTRUCTION"></video></figure><div class="card-copy"><h3>SCENE RECONSTRUCTION</h3><p>3D Gaussian Splatting and point cloud reconstruction.</p></div></article><article class="media-card"><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/platform.jpg" data-src="assets/previews/platform-loop.mp4" aria-label="MOTION · C-V2X"></video></figure><div class="card-copy"><h3>MOTION · C-V2X</h3><p>IMU, vehicle motion and V2X communication records.</p></div></article></div></section>
+<section class="wrap section collection-sites" id="collection-sites">
+  <div class="section-head"><div><p class="eyebrow">02 / COLLECTION SITES</p><h2>Collection sites.</h2></div></div>
+  <div class="collection-grid">
+    <article>
+      <a class="collection-map" href="assets/previews/site-hkstp.webp" target="_blank" rel="noopener noreferrer" aria-label="View the Hong Kong Science Park route and roadside map at full size"><img src="assets/previews/site-hkstp.webp" width="1082" height="971" loading="lazy" alt="Hong Kong Science Park small and large loop routes with four roadside locations"></a>
+      <div class="collection-title"><h3>Hong Kong Science Park</h3><span>4 roadside sites</span></div>
+      <p>A compact C-V2X testbed, with local loops and longer expressway routes.</p>
+    </article>
+    <article>
+      <a class="collection-map" href="assets/previews/site-east-kowloon.webp" target="_blank" rel="noopener noreferrer" aria-label="View the East Kowloon route and roadside map at full size"><img src="assets/previews/site-east-kowloon.webp" width="1082" height="971" loading="lazy" alt="East Kowloon small and large loop routes with six roadside locations"></a>
+      <div class="collection-title"><h3>East Kowloon</h3><span>6 roadside sites</span></div>
+      <p>Dense urban streets, elevated roads and highway tunnels.</p>
+    </article>
+  </div>
+</section>
+<section class="dataset-showcase tinted section" id="sensor-preview"><div class="wrap"><div class="section-head"><div><p class="eyebrow">03 / DATASET PREVIEW · SENSING</p><h2>Surround vision.<br>Shared geometry.</h2></div></div><figure class="wide-surround"><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/surround.jpg" data-src="assets/previews/surround-loop.mp4" aria-label="Seven original camera streams, without point cloud overlays"></video><figcaption><strong>Surround cameras</strong><span>HKSTP</span></figcaption></figure><div class="showcase-pair"><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/multi-lidar.jpg" data-src="assets/previews/multi-lidar-loop.mp4" aria-label="Three onboard LiDARs fused into one scene"></video><figcaption><strong>Multi-LiDAR fusion</strong><span>HKSTP</span></figcaption></figure><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/cooperative.jpg" data-src="assets/previews/cooperative-loop.mp4" aria-label="Experimental vehicle and roadside LiDAR with 3D reference boxes"></video><figcaption><strong>Vehicle–roadside fusion &amp; 3D annotations</strong><span>East Kowloon</span></figcaption></figure></div></div></section>
+<section class="wrap section dataset-showcase" id="reconstruction-preview"><div class="section-head"><div><p class="eyebrow">04 / DATASET PREVIEW · RECONSTRUCTION</p><h2>Scene reconstruction.</h2></div></div><div class="showcase-pair"><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/reconstruction.jpg" data-src="assets/previews/reconstruction-loop.mp4" aria-label="COLMAP and 3D Gaussian Splatting experimental reconstruction"></video><figcaption><strong>3D Gaussian Splatting</strong><span>HKSTP</span></figcaption></figure><figure><video data-preview muted loop playsinline preload="none" data-poster="assets/previews/reconstruction-vggt.jpg" data-src="assets/previews/reconstruction-vggt-loop.mp4" aria-label="VGGT experimental point projection"></video><figcaption><strong>VGGT reconstruction</strong><span>HKSTP</span></figcaption></figure></div></section>
+<section class="dataset-showcase navigation-preview section" id="positioning-preview"><div class="wrap"><div class="section-head"><div><p class="eyebrow">05 / DATASET PREVIEW · POSITIONING</p><h2 class="positioning-title">GNSS, UWB and ground truth.</h2></div></div><div class="positioning-demo" data-positioning-demo>
+  <div class="positioning-viewport">
+    <canvas id="positioning-canvas" tabindex="0" aria-label="Interactive 3D city with automatically playing vehicle trajectory, satellite observations and UWB. Drag or use arrow keys to rotate."></canvas>
+    <p id="scene-status" role="status">Loading scene…</p>
+    <div class="positioning-view-tools" role="group" aria-label="Scene viewpoint">
+      <button type="button" id="scene-left" aria-label="Rotate left" title="Rotate left">←</button>
+      <button type="button" id="scene-right" aria-label="Rotate right" title="Rotate right">→</button>
+      <button type="button" id="scene-zoom-out" aria-label="Zoom out" title="Zoom out">−</button>
+      <button type="button" id="scene-zoom-in" aria-label="Zoom in" title="Zoom in">+</button>
+      <button type="button" id="scene-reset" aria-label="Reset viewpoint" title="Reset view">↺</button>
     </div>
-  </footer> 
-
-
-    <!-- JavaScripts -->
-    <!-- jQuery -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <!-- Bootsrap & MDB scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
-
-    <!-- Masonry & imagesLoaded -->
-  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script defer src="/UrbanV2X/assets/js/masonry.js" type="text/javascript"></script>
-    
-  <!-- Medium Zoom JS -->
-  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
-  <script src="/UrbanV2X/assets/js/zoom.js"></script><!-- Load Common JS -->
-  <script src="/UrbanV2X/assets/js/common.js"></script>
-
-    <!-- MathJax -->
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        tags: 'ams'
-      }
-    };
-  </script>
-  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-
-  </body>
+    <span class="positioning-hint">Drag to rotate</span>
+    <a class="positioning-credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</a>
+  </div>
+  <div class="positioning-playback">
+    <button type="button" id="scene-play" aria-label="Pause trajectory" title="Pause trajectory">Ⅱ</button>
+    <input id="timeline" type="range" min="225" max="299" value="225" step="0.1" aria-label="Trajectory playback position" disabled>
+    <output id="scene-time" for="timeline">0:00 / 1:14</output>
+  </div>
+</div></div></section>
+</main>  <footer>
+    <div><a class="brand" href="./index.html"><img class="brand-icon" src="assets/img/taslab-icon.jpg" alt="TAS Lab">Urban<span>V2X</span></a><p>Real streets. Shared perspectives.</p></div>
+    <div><strong>TAS Lab, Department of Aeronautical and Aviation Engineering</strong><p>The Hong Kong Polytechnic University<br>Trustworthy embodied AI · perception, navigation and control</p></div>
+    <div><a href="https://polyu-taslab.github.io/" target="_blank" rel="noopener noreferrer">TAS Lab website ↗</a><a href="https://github.com/polyu-taslab" target="_blank" rel="noopener noreferrer">TAS Lab GitHub ↗</a><a href="https://github.com/PolyU-TASLAB/UrbanV2X" target="_blank" rel="noopener noreferrer">Project GitHub ↗</a><a href="mailto:darren.huang@polyu.edu.hk">Contact ↗</a></div>
+  </footer>
+  <script src="./assets/js/site.js" defer></script>
+</body>
 </html>
-

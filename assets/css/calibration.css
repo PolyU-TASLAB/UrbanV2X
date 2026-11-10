@@ -1,0 +1,27 @@
+.calibration-intro{padding:52px 0 64px}
+.calibration-intro h1,.download-intro h1{font-size:clamp(34px,4vw,50px);margin-bottom:30px}
+.calibration-frame{max-width:1000px;margin:0 auto}
+.calibration-frame img{width:100%;height:auto;border:1px solid var(--line)}
+.frame-guide{max-width:1000px;margin:24px auto 0}
+.frame-guide h2{font-size:25px;margin-bottom:16px}
+.frame-guide p{font-size:14px;color:var(--ink-soft);margin-bottom:16px;overflow-wrap:anywhere}
+.frame-equation{display:block;padding:15px 18px;margin:16px 0;background:var(--surface);border-left:3px solid var(--cyan);font-size:14px;overflow-wrap:anywhere}
+.parameter-table table{table-layout:fixed}
+.parameter-table th,.parameter-table td{min-width:0;overflow-wrap:anywhere;padding:14px;font-size:13px}
+.calibration-downloads{padding:62px 0 76px;background:var(--surface)}
+.calibration-downloads h2{font-size:34px;margin-bottom:22px}
+.calibration-downloads h3{font-size:24px;margin:40px 0 18px}
+.parameter-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.parameter-actions .button{font-size:13px;padding:12px 18px}
+.parameter-status{font-size:12px;color:var(--ink-soft);margin:18px 0 0}
+.parameter-status code{overflow-wrap:anywhere}
+.parameter-table th:first-child{width:26%}
+.parameter-table th:last-child{width:27%}
+.parameter-table th span{display:block;margin-top:5px;font-size:12px;color:var(--ink-soft);font-weight:400}
+.parameter-table details{margin-top:9px;font-size:12px}
+.parameter-table summary{cursor:pointer;color:#175dbe}
+.parameter-files{padding-left:17px;margin:10px 0 0}
+.parameter-files li{margin:7px 0}
+.parameter-format{margin:20px 0 0;font-size:13px;color:var(--ink-soft)}
+.roadside-actions{margin:22px 0;font-size:13px}
+@media(max-width:600px){.calibration-intro{padding:34px 0 42px}.calibration-frame{margin-bottom:26px}.calibration-downloads{padding:42px 0 50px}.parameter-table th,.parameter-table td{padding:10px 8px;font-size:11px}.parameter-table th span{font-size:10px}.parameter-table th:first-child{width:26%}.parameter-table th:last-child{width:29%}.parameter-table details{font-size:11px}.parameter-actions .button{font-size:12px}.parameter-files{padding-left:12px}}

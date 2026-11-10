@@ -1,0 +1,31 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+sensor: cam6
+topic: /hikcamera/image_6/compressed
+imageWidth: 2200
+imageHeight: 1740
+cameraMatrix:
+  rows: 3
+  cols: 3
+  dt: d
+  data:
+  - 1163.7425123734822
+  - 0.0
+  - 1086.1665133800445
+  - 0.0
+  - 1163.649427794282
+  - 858.1304774832732
+  - 0.0
+  - 0.0
+  - 1.0
+distCoeffs:
+  rows: 1
+  cols: 4
+  dt: d
+  data:
+  - -0.08386765552909899
+  - 0.0824993662179734
+  - -0.00030565970261017036
+  - 0.0002040277102143314
