@@ -1,0 +1,31 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+sensor: cam4
+topic: /hikcamera/image_4/compressed
+imageWidth: 2200
+imageHeight: 1740
+cameraMatrix:
+  rows: 3
+  cols: 3
+  dt: d
+  data:
+  - 1162.959300824903
+  - 0.0
+  - 1107.5723306806465
+  - 0.0
+  - 1162.6462091763115
+  - 843.8349823733267
+  - 0.0
+  - 0.0
+  - 1.0
+distCoeffs:
+  rows: 1
+  cols: 4
+  dt: d
+  data:
+  - -0.08642998047345563
+  - 0.0830579423736456
+  - 8.120007195635934e-05
+  - 9.434341114025918e-05

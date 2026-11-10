@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "failed": [],
+    "autoplay": true,
+    "automatic_slide_change": true,
+    "initial_video_requests": [
+      "platform-loop.mp4",
+      "multi-lidar-loop.mp4"
+    ],
+    "section_order": [
+      "hero overview-hero",
+      "film",
+      "explore",
+      "sensor-preview",
+      "reconstruction-preview",
+      "positioning-preview"
+    ],
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "failed": [],
+    "autoplay": true,
+    "automatic_slide_change": true,
+    "initial_video_requests": [
+      "platform-loop.mp4",
+      "multi-lidar-loop.mp4"
+    ],
+    "section_order": [
+      "hero overview-hero",
+      "film",
+      "explore",
+      "sensor-preview",
+      "reconstruction-preview",
+      "positioning-preview"
+    ],
+    "overflow": false
+  }
+]

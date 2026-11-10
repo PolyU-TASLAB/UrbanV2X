@@ -1,0 +1,28 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+source_sensor: hdl32
+target_sensor: cam5
+maps: hdl32 -> cam5
+Rotation:
+- -0.48017743657162737
+- 0.8768255259000249
+- 0.024629789638681433
+- -0.03495942640617477
+- 0.008926547356868195
+- -0.9993488656408417
+- -0.8764744536567235
+- -0.4807258198624561
+- 0.026366990816501238
+Translation:
+- 0.11221078728926098
+- -0.3148288594398731
+- -0.6180641844854975
+legacy_name: T_C_L[H]
+source_topic: /velodyne_points
+source_model: Velodyne HDL32
+target_topic: /hikcamera/image_5/compressed
+time_offset_to_imu_s_by_dataset:
+  aug07: 0.0087125509357328
+  aug13: 0.008649644761021716

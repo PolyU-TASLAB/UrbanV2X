@@ -1,0 +1,126 @@
+[
+  {
+    "asset": "platform.mp4",
+    "source": "UrbanV2X/assets/gif/onboard_platform_speedX4.gif",
+    "start_s": 0,
+    "duration_s": 6,
+    "filter": "scale=800:-2",
+    "size_bytes": 513266
+  },
+  {
+    "asset": "multi-lidar.mp4",
+    "source": "UrbanV2X/assets/media/multi-lidar.mp4",
+    "start_s": 0,
+    "duration_s": 6,
+    "filter": "scale=800:-2",
+    "size_bytes": 595887
+  },
+  {
+    "asset": "lidar-camera.mp4",
+    "source": "ws_data-flywheel/workspaces/sensor_calibration/lidar_cam/runs/multicamera_video/20260915T182812Z_small_60s/videos/七相机点云投影_一分钟_大点.mp4",
+    "start_s": 18,
+    "duration_s": 6,
+    "filter": "Remove the 38 px label strip from each 696 px row and the 48 px footer; retain all seven camera panels; 960 px web preview.",
+    "size_bytes": 578552,
+    "notes": "User-selected HDL32 large-point projection; top cam3,cam2,cam1,cam4; bottom cam0,cam6,cam5; colours encode range."
+  },
+  {
+    "asset": "carla.mp4",
+    "source": "Urban-V2X_dropbox/extension/video/carla_hkstp_showcase.mp4",
+    "start_s": 8,
+    "duration_s": 4,
+    "filter": "crop=956:540:964:64,scale=640:-2",
+    "size_bytes": 139220
+  },
+  {
+    "asset": "reconstruction.mp4",
+    "source": "Urban-V2X_dropbox/extension/video/重建/reconstruction.mp4",
+    "start_s": 8,
+    "duration_s": 4,
+    "filter": "crop=800:450:96:94,scale=640:-2",
+    "size_bytes": 190431
+  },
+  {
+    "asset": "cooperative-loop.mp4",
+    "source": "Urban-V2X_dropbox/extension/results/cooperative_perception/UrbanV2X_BEVFusion_EKEO1-6_LiDAR.zip",
+    "frames": "EKEO1 00010–00045; vehicle + roadside points and unchanged draft reference boxes",
+    "script": "scripts/render_cooperative_preview.py",
+    "size_bytes": 514968
+  },
+  {
+    "asset": "positioning-loop.mp4",
+    "source": "assets/data/positioning-timeline.json + assets/data/hkstp-map.json",
+    "frames": "Timeline indices 225–299; time-compressed; GT position, NAV-SAT ephemeris and reception, matching UWB",
+    "red_rule": "ephAvail=1; elevation>=10; cno=0; qualityInd<=1; NLOS candidate, not confirmed blockage",
+    "notes": "Combined GT, satellite observations and UWB lines. Nodes 1, 3 and 4 use original spreadsheet coordinates selected by recorded-range consistency; missing readings remain gaps. See assets/data/uwb-anchor-mapping.json.",
+    "size_bytes": 224997
+  },
+  {
+    "asset": "surround-loop.mp4",
+    "source": "2026-08-13-16-01-23_0.bag, offset 245–251 s",
+    "script": "scripts/render_surround_preview.py",
+    "notes": "Original compressed camera JPEGs; no points, no labels; timing provenance in surround-source.json",
+    "size_bytes": 1021960
+  },
+  {
+    "asset": "gnss-observations.svg",
+    "source": "assets/data/gnss.json",
+    "notes": "Skyplot of satellites with recorded C/N0 > 0; position from azimuth/elevation; no embedded text."
+  },
+  {
+    "asset": "positioning-card.webp",
+    "source": "assets/data/positioning-timeline.json + assets/data/hkstp-map.json",
+    "script": "scripts/capture_positioning_card.py",
+    "frame": 281,
+    "utc": 1786608365,
+    "notes": "GT trajectory through epoch 281; UWB connections to spreadsheet anchors only when recorded ranges exist; satellite rays from receiver azimuth/elevation. Same renderer as the interactive scene. No embedded text; OSM attribution in HTML."
+  },
+  {
+    "asset": "site-hkstp.webp",
+    "source": "ws_urbanv2x_ijrr/paper/pic/figure8_hkstp_slide.jpg",
+    "notes": "Full paper Figure 8 panel with collection routes and roadside locations; original annotations retained as specifically requested. WebP encoding only; no crop."
+  },
+  {
+    "asset": "site-east-kowloon.webp",
+    "source": "ws_urbanv2x_ijrr/paper/pic/figure8_eastkowloon_slide.jpg",
+    "notes": "Full paper Figure 8 panel with collection routes and roadside locations; original annotations retained as specifically requested. WebP encoding only; no crop."
+  },
+  {
+    "asset": "sensor-architecture.jpg",
+    "source": "UrbanV2X/20261110-223054.jpg",
+    "script": "scripts/prepare_sensor_figures.py",
+    "notes": "User-supplied image copied byte-for-byte. Original annotations, dimensions and composition retained."
+  },
+  {
+    "asset": "sensor-onboard.jpg",
+    "source": "UrbanV2X/20261110-223919.jpg",
+    "script": "scripts/prepare_sensor_figures.py",
+    "notes": "User-supplied image copied byte-for-byte. Original annotations, dimensions and composition retained."
+  },
+  {
+    "asset": "sensor-layout.webp",
+    "source": "ws_urbanv2x_ijrr/paper/pic/sensor_frame.pdf",
+    "notes": "Full paper frame diagram rendered at 2000 px. Used on Calibration to identify sensor axes; no cropping."
+  },
+  {
+    "asset": "small-loop-loop.mp4",
+    "source": "assets/gif/small_loop_demo_10hz_240p.gif",
+    "notes": "Original website sequence preview; full 15-second GIF encoded at 426×240, 8 fps, H.264 CRF 32 / 240 kbps ceiling; 0.8-second tail/head crossfade. Lazy autoplay on Download page."
+  },
+  {
+    "asset": "large-loop-loop.mp4",
+    "source": "assets/gif/large_loop_demo_10hz_240p.gif",
+    "notes": "Original website sequence preview; full 15-second GIF encoded at 426×240, 8 fps, H.264 CRF 32 / 240 kbps ceiling; 0.8-second tail/head crossfade. Lazy autoplay on Download page."
+  },
+  {
+    "asset": "../video/urbanv2x-film-web.mp4",
+    "source": "Urban-V2X_dropbox/extension/video/飞书20261110-151649.mp4",
+    "source_sha256": "96b5e4615d78d298bb93b332603fff1a9fd621e0cad96383a13b80f3c6353d13",
+    "notes": "Complete original 1258 frames; 1280×720 H.264 CRF 25, maxrate 2200k, faststart. No trimming or content changes."
+  },
+  {
+    "asset": "vehicle-platform-{640,1280,1760}.webp",
+    "source": "assets/img/calibration.png",
+    "notes": "Uncropped 4:3 responsive encodes, WebP quality 85. Original PNG retained as full-size link."
+  }
+]

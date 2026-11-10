@@ -1,321 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <!-- Head -->
-  <head>    <!-- Metadata, OpenGraph and Schema.org -->
-    
-
-    <!-- Standard metadata -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The UrbanV2X Datasets | Calibration </title>
-    <meta name="author" content="The UrbanV2X Datasets " />
-    <meta name="description" content="An Event-Centric Multisensory Driving Dataset for SLAM.
-" />
-    <meta name="keywords" content="Event-based Vision, Multi-sensor, SLAM, Autonomous Driving" />
-
-    <!-- OpenGraph -->
-    <meta property="og:site_name" content="The UrbanV2X Datasets  " />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="The UrbanV2X Datasets   | Calibration" />
-    <meta property="og:url" content="http://localhost:4000/UrbanV2X/sensors" />
-    <meta property="og:description" content="An Event-Centric Multisensory Driving Dataset for SLAM.
-" />
-    
-    <meta property="og:locale" content="en" />
-
-    <!-- Twitter card -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Calibration" />
-    <meta name="twitter:description" content="An Event-Centric Multisensory Driving Dataset for SLAM.
-" />
-    
-    
-
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-      {
-        "author":
-        {
-          "@type": "Person",
-          "name": "The UrbanV2X Datasets  "
-        },
-        "url": "http://localhost:4000/UrbanV2X/",
-        "@type": "WebSite",
-        "description": "An Event-Centric Multisensory Driving Dataset for SLAM.
-",
-        "headline": "Calibration",
-        "sameAs": ["https://github.com/arclab-hku/Event_based_VO-VIO-SLAM", "https://arclab.hku.hk/"],
-        "name": "The UrbanV2X Datasets  ",
-        "@context": "https://schema.org"
-      }
-    </script>
-
-
-    <!-- Bootstrap & MDB -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Barriecito&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700">
-
-    <!-- Code Syntax Highlighting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/PASTIE.css" media="none" id="highlight_theme_light" />
-
-    <!-- Styles -->
-
-    <link rel="shortcut icon" href="https://polyu-taslab.github.io/UrbanV2X/assets/img/icon.png"/>
-    
-    <link rel="stylesheet" href="https://polyu-taslab.github.io/UrbanV2X/assets/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/UrbanV2X/sensors">
-    <link rel="stylesheet" href="https://polyu-taslab.github.io/UrbanV2X/assets/css/fonts.css">
-    <link rel="stylesheet" href="/UrbanV2X/assets/css/fonts.css">
-    
-    <!-- Dark Mode -->
-    
-
-  </head>
-
-  <!-- Body -->
-  <body class="fixed-top-nav ">
-
-    <!-- Header -->
-    <header>
-
-      <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-        <div class="container">
-          <a class="navbar-brand title font-weight-lighter" href="http://polyu-taslab.github.io/UrbanV2X/"><span class="font-weight: 600">UrbanV2X Dataset</span>   </a>
-          <!-- Navbar Toggle -->
-          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
-
-          <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-
-              <!-- Home -->
-              <li class="nav-item">
-                <a class="nav-link" href="/UrbanV2X/index.html">Home</a>
-              </li>
-              
-              <!-- Other pages -->
-                <li class="nav-item ">
-                  <a class="nav-link" href="/UrbanV2X/sensors/index.html">Sensors</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="/UrbanV2X/calibration/index.html">Calibration<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="/UrbanV2X/download/index.html">Download</a>
-                </li>
-            </ul>
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071824">
+  <title>Calibration | UrbanV2X</title>
+  <meta name="description" content="UrbanV2X camera intrinsics, sensor extrinsics, coordinate frames and parameter downloads.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calibration | UrbanV2X">
+  <meta property="og:description" content="Download intrinsic and extrinsic parameters with explicit sensor frame conventions.">
+  <meta property="og:image" content="../assets/previews/sensor-layout.webp">
+  <link rel="canonical" href="https://polyu-taslab.github.io/UrbanV2X/calibration/">
+  <link rel="icon" href="../assets/img/taslab-icon.jpg">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/calibration.css">
+  <link rel="stylesheet" href="../assets/css/navigation.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-navigation">
+    <div class="site-navigation-inner">
+      <a class="site-navigation-brand" href="../index.html" aria-label="UrbanV2X home"><img src="../assets/img/taslab-icon.jpg" alt="TAS Lab"><span>Urban<span>V2X</span></span></a>
+      <button class="site-navigation-toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-navigation-menu"><span aria-hidden="true"></span></button>
+      <nav class="site-navigation-links" id="site-navigation-menu" data-nav-menu aria-label="Main navigation">
+        <a href="../index.html">Overview</a>
+        <a href="../sensors/">Sensors</a>
+        <a href="../calibration/" aria-current="page">Calibration</a>
+        <a href="../download/">Download</a>
+        <a href="https://polyu-taslab.github.io/" target="_blank" rel="noopener noreferrer">TAS Lab ↗</a>
       </nav>
-    </header>
-<!-- 以上为include -->
+    </div>
+  </header>
 
-    <!-- Content -->
-    <div class="container mt-5">
-      <!-- page.html -->
-        <div class="post">
+  <main id="main-content">
+    <section class="calibration-intro" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Calibration</h1>
+        <figure class="calibration-frame"><a href="../assets/previews/sensor-layout.webp" target="_blank" rel="noopener noreferrer" aria-label="View the sensor coordinate frames at full size"><img src="../assets/previews/sensor-layout.webp" width="2000" height="1172" fetchpriority="high" alt="Sensor coordinate axes and mounting positions on the vehicle roof rack"></a></figure>
+        <div class="frame-guide" id="frames">
+          <h2>Coordinate frames</h2>
+          <p><code>hdl32</code> is the onboard reference frame. Camera frames use the optical convention: x points right, y points down and z points forward.</p>
+          <code class="frame-equation">p_target = R · p_source + t</code>
+          <p><code>A_to_B.yaml</code> maps points from A to B. <code>Rotation</code> is a row-major 3 × 3 array; <code>Translation</code> is in metres. Files using <code>matrix</code> store a 4 × 4 homogeneous transform.</p>
+          <p><code>Camera-IMU/imu_to_camN.yaml</code> maps <strong>IMU → camera</strong>. In <code>camera_camera.yaml</code>, <code>cam0_from_cam1</code> maps <strong>cam1 → cam0</strong>.</p>
+          <p class="table-note">The original files use <code>ap128p</code> for the AT128P. Camera frame IDs and topics are listed below.</p>
+        </div>
+      </div>
+    </section>
+    <section class="calibration-downloads" id="parameters" aria-labelledby="parameters-title"><div class="container">
+      <h2 id="parameters-title">Parameters</h2>
+      <div class="parameter-actions">
+        <a class="button button-primary" href="../assets/calibration/UrbanV2X-calibration.zip" download>All parameters · ZIP · 73.3 KiB</a>
+        <a class="button button-outline" href="../assets/calibration/Camera-Intrinsics.zip" download>Intrinsics · ZIP</a>
+        <a class="button button-outline" href="../assets/calibration/Extrinsics.zip" download>Extrinsics · ZIP</a>
+        <a href="../assets/calibration/README.txt">File conventions</a>
+      </div>
+      <p class="parameter-status">Onboard source package: <code>august_2026_reviewed_candidate</code>. The supplied files retain their original <code>calibration_accepted: false</code> status.</p>
+      <h3>Camera intrinsics</h3>
+      <div class="table-wrap parameter-table"><table aria-label="Camera intrinsic downloads"><thead><tr><th scope="col">Camera</th><th scope="col">Image topic</th><th scope="col">Download</th></tr></thead><tbody><tr><th scope="row"><code>image_0</code><span>Frame: cam0</span><span>Right-back</span></th><td><code>/hikcamera/image_0/compressed</code></td><td><a href="../assets/calibration/Camera-Intrinsics/intrinsics_cam0.yaml" download>YAML ↓</a></td></tr><tr><th scope="row"><code>image_1</code><span>Frame: cam1</span><span>Front-right</span></th><td><code>/hikcamera/image_1/compressed</code></td><td><a href="../assets/calibration/Camera-Intrinsics/intrinsics_cam1.yaml" download>YAML ↓</a></td></tr><tr><th scope="row"><code>image_2</code><span>Frame: cam2</span><span>Front-left</span></th><td><code>/hikcamera/image_2/compressed</code></td><td><a href="../assets/calibration/Camera-Intrinsics/intrinsics_cam2.yaml" download>YAML ↓</a></td></tr><tr><th scope="row"><code>image_3</code><span>Frame: cam3</span><span>Left-front</span></th><td><code>/hikcamera/image_3/compressed</code></td><td><a href="../assets/calibration/Camera-Intrinsics/intrinsics_cam3.yaml" download>YAML ↓</a></td></tr><tr><th scope="row"><code>image_4</code><span>Frame: cam4</span><span>Right-front</span></th><td><code>/hikcamera/image_4/compressed</code></td><td><a href="../assets/calibration/Camera-Intrinsics/intrinsics_cam4.yaml" download>YAML ↓</a></td></tr><tr><th scope="row"><code>image_5</code><span>Frame: cam5</span><span>Left-back</span></th><td><code>/hikcamera/image_5/compressed</code></td><td><a href="../assets/calibration/Camera-Intrinsics/intrinsics_cam5.yaml" download>YAML ↓</a></td></tr><tr><th scope="row"><code>image_6</code><span>Frame: cam6</span><span>Rear</span></th><td><code>/hikcamera/image_6/compressed</code></td><td><a href="../assets/calibration/Camera-Intrinsics/intrinsics_cam6.yaml" download>YAML ↓</a></td></tr></tbody></table></div>
+      <p class="parameter-format">Pinhole model, 2200 × 1740 pixels. <code>cameraMatrix</code> contains K; <code>distCoeffs</code> contains [k1, k2, p1, p2].</p>
+      <h3>Extrinsics</h3>
+      <div class="table-wrap parameter-table"><table aria-label="Extrinsic downloads and directions"><thead><tr><th scope="col">Parameters</th><th scope="col">Source → target</th><th scope="col">Download</th></tr></thead><tbody><tr><th scope="row">LiDAR → Camera</th><td>Velodyne HDL-32E / Hesai XT32 / Hesai AT128P → image_0–image_6</td><td><a href="../assets/calibration/LiDAR-Camera.zip" download>ZIP ↓</a> · 16.0 KiB<details><summary>21 YAML files</summary><ul class="parameter-files"><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/ap128p_to_cam0.yaml" download>Hesai AT128P → image_0 (cam0)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/ap128p_to_cam1.yaml" download>Hesai AT128P → image_1 (cam1)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/ap128p_to_cam2.yaml" download>Hesai AT128P → image_2 (cam2)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/ap128p_to_cam3.yaml" download>Hesai AT128P → image_3 (cam3)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/ap128p_to_cam4.yaml" download>Hesai AT128P → image_4 (cam4)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/ap128p_to_cam5.yaml" download>Hesai AT128P → image_5 (cam5)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/ap128p_to_cam6.yaml" download>Hesai AT128P → image_6 (cam6)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/hdl32_to_cam0.yaml" download>Velodyne HDL-32E → image_0 (cam0)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/hdl32_to_cam1.yaml" download>Velodyne HDL-32E → image_1 (cam1)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/hdl32_to_cam2.yaml" download>Velodyne HDL-32E → image_2 (cam2)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/hdl32_to_cam3.yaml" download>Velodyne HDL-32E → image_3 (cam3)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/hdl32_to_cam4.yaml" download>Velodyne HDL-32E → image_4 (cam4)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/hdl32_to_cam5.yaml" download>Velodyne HDL-32E → image_5 (cam5)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/hdl32_to_cam6.yaml" download>Velodyne HDL-32E → image_6 (cam6)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/xt32_to_cam0.yaml" download>Hesai XT32 → image_0 (cam0)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/xt32_to_cam1.yaml" download>Hesai XT32 → image_1 (cam1)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/xt32_to_cam2.yaml" download>Hesai XT32 → image_2 (cam2)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/xt32_to_cam3.yaml" download>Hesai XT32 → image_3 (cam3)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/xt32_to_cam4.yaml" download>Hesai XT32 → image_4 (cam4)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/xt32_to_cam5.yaml" download>Hesai XT32 → image_5 (cam5)</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-Camera/xt32_to_cam6.yaml" download>Hesai XT32 → image_6 (cam6)</a></li></ul></details></td></tr><tr><th scope="row">LiDAR → LiDAR</th><td>Velodyne HDL-32E ↔ Hesai XT32 ↔ Hesai AT128P</td><td><a href="../assets/calibration/LiDAR-LiDAR.zip" download>ZIP ↓</a> · 5.4 KiB<details><summary>6 YAML files</summary><ul class="parameter-files"><li><a href="../assets/calibration/Extrinsics/LiDAR-LiDAR/ap128p_to_hdl32.yaml" download>Hesai AT128P → Velodyne HDL-32E</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-LiDAR/ap128p_to_xt32.yaml" download>Hesai AT128P → Hesai XT32</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-LiDAR/hdl32_to_ap128p.yaml" download>Velodyne HDL-32E → Hesai AT128P</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-LiDAR/hdl32_to_xt32.yaml" download>Velodyne HDL-32E → Hesai XT32</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-LiDAR/xt32_to_ap128p.yaml" download>Hesai XT32 → Hesai AT128P</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-LiDAR/xt32_to_hdl32.yaml" download>Hesai XT32 → Velodyne HDL-32E</a></li></ul></details></td></tr><tr><th scope="row">LiDAR → IMU</th><td>Velodyne HDL-32E / Hesai XT32 / Hesai AT128P → Xsens MTi-30</td><td><a href="../assets/calibration/LiDAR-IMU.zip" download>ZIP ↓</a> · 3.8 KiB<details><summary>3 YAML files</summary><ul class="parameter-files"><li><a href="../assets/calibration/Extrinsics/LiDAR-IMU/ap128p_to_imu.yaml" download>Hesai AT128P → Xsens MTi-30</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-IMU/hdl32_to_imu.yaml" download>Velodyne HDL-32E → Xsens MTi-30</a></li><li><a href="../assets/calibration/Extrinsics/LiDAR-IMU/xt32_to_imu.yaml" download>Hesai XT32 → Xsens MTi-30</a></li></ul></details></td></tr><tr><th scope="row">IMU → Camera</th><td>Xsens MTi-30 → image_0–image_6</td><td><a href="../assets/calibration/Camera-IMU.zip" download>ZIP ↓</a> · 7.3 KiB<details><summary>7 YAML files</summary><ul class="parameter-files"><li><a href="../assets/calibration/Extrinsics/Camera-IMU/imu_to_cam0.yaml" download>Xsens MTi-30 → image_0 (cam0)</a></li><li><a href="../assets/calibration/Extrinsics/Camera-IMU/imu_to_cam1.yaml" download>Xsens MTi-30 → image_1 (cam1)</a></li><li><a href="../assets/calibration/Extrinsics/Camera-IMU/imu_to_cam2.yaml" download>Xsens MTi-30 → image_2 (cam2)</a></li><li><a href="../assets/calibration/Extrinsics/Camera-IMU/imu_to_cam3.yaml" download>Xsens MTi-30 → image_3 (cam3)</a></li><li><a href="../assets/calibration/Extrinsics/Camera-IMU/imu_to_cam4.yaml" download>Xsens MTi-30 → image_4 (cam4)</a></li><li><a href="../assets/calibration/Extrinsics/Camera-IMU/imu_to_cam5.yaml" download>Xsens MTi-30 → image_5 (cam5)</a></li><li><a href="../assets/calibration/Extrinsics/Camera-IMU/imu_to_cam6.yaml" download>Xsens MTi-30 → image_6 (cam6)</a></li></ul></details></td></tr><tr><th scope="row">Camera → Camera</th><td>21 camera pairs · image_0–image_6</td><td><a href="../assets/calibration/Camera-Camera.zip" download>ZIP ↓</a> · 5.4 KiB<details><summary>1 YAML file</summary><ul class="parameter-files"><li><a href="../assets/calibration/Extrinsics/Camera-Camera/camera_camera.yaml" download>camera_camera.yaml · 21 pairs</a></li></ul></details></td></tr></tbody></table></div>
+      <p class="parameter-format">Dataset-specific time offsets are retained for <code>aug07</code> and <code>aug13</code>, in seconds. <code>t_IMU = t_sensor + offset</code>. Apply the matching offset once.</p>
 
-          <header class="post-header">
-            <h1 class="post-title">Calibration</h1>
-            <p class="post-description"></p>
-          </header>
+      <h3 id="roadside-parameters">Roadside LiDAR</h3>
+      <p class="parameter-format">Each <code>T_Rj</code> maps a roadside sensor frame to its site's East–North–Up (ENU) frame: <code>p_ENU = R_ENU_sensor · p_R + t_ENU</code>. Translations are in metres; quaternions use <code>[w, x, y, z]</code>. HKSTP and East Kowloon each use the WGS84 origin stored in <code>enu_anchor_lla_wgs84</code>.</p>
+      <div class="parameter-actions roadside-actions">
+        <a class="button button-outline" href="../assets/calibration/Roadside.zip" download>Roadside parameters · ZIP</a>
+        <a href="../assets/calibration/all_lampposts_latlon(1).xlsx" download>Lamppost coordinates · XLSX ↓</a>
+        <a href="../assets/calibration/rslidar_calibration/外参使用说明.md" download>Frame reference ↓</a>
+      </div>
+      <div class="table-wrap parameter-table"><table aria-label="Roadside extrinsic downloads"><thead><tr><th scope="col">Site</th><th scope="col">Sensor frames → site ENU</th><th scope="col">Download</th></tr></thead><tbody>
+<tr><th scope="row">Hong Kong Science Park</th><td><code>hkstp_2a, hkstp_2b → hkstp ENU</code></td><td><a href="../assets/calibration/Roadside-hkstp.zip" download>ZIP ↓</a> · <a href="../assets/calibration/rslidar_calibration/hkstp/poses.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/hkstp/poses.csv" download>CSV</a><details><summary>Individual sensor poses</summary><ul class="parameter-files"><li>hkstp_2a: <a href="../assets/calibration/rslidar_calibration/hkstp/hkstp_2a_lla_attitude.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/hkstp/hkstp_2a_lla_attitude.json" download>JSON</a></li><li>hkstp_2b: <a href="../assets/calibration/rslidar_calibration/hkstp/hkstp_2b_lla_attitude.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/hkstp/hkstp_2b_lla_attitude.json" download>JSON</a></li></ul></details></td></tr>
+<tr><th scope="row">East Kowloon</th><td><code>ekeo_1, ekeo_2, ekeo_3, ekeo_4, ekeo_5, ekeo_6 → ekeo ENU</code></td><td><a href="../assets/calibration/Roadside-ekeo.zip" download>ZIP ↓</a> · <a href="../assets/calibration/rslidar_calibration/ekeo/poses.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/ekeo/poses.csv" download>CSV</a><details><summary>Individual sensor poses</summary><ul class="parameter-files"><li>ekeo_1: <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_1_lla_attitude.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_1_lla_attitude.json" download>JSON</a></li><li>ekeo_2: <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_2_lla_attitude.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_2_lla_attitude.json" download>JSON</a></li><li>ekeo_3: <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_3_lla_attitude.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_3_lla_attitude.json" download>JSON</a></li><li>ekeo_4: <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_4_lla_attitude.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_4_lla_attitude.json" download>JSON</a></li><li>ekeo_5: <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_5_lla_attitude.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_5_lla_attitude.json" download>JSON</a></li><li>ekeo_6: <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_6_lla_attitude.yaml" download>YAML</a> · <a href="../assets/calibration/rslidar_calibration/ekeo/ekeo_6_lla_attitude.json" download>JSON</a></li></ul></details></td></tr>
+</tbody></table></div>
+      <p class="parameter-format">The coordinate workbook lists lamppost locations; sensor origins and orientations are given by the extrinsic files. Original quality fields are retained in each file.</p>
+    </div></section>
+  </main>
 
-          <article>
-            <p><br></p>
-
-  <!-- <figure style="text-align: center;"> -->
-    <!-- <img style = "width: 90%" src="/UrbanV2X/assets/img/sensors.png" alt="Image description"> -->
-    <!-- 放一张类似于VECtor calibration的图片, 主要是表现各个传感器的相互关联图-->
- <!-- </figure> -->
-
-<div style="text-align: center;">
-  <picture>
-    <img style="width: 90%;" class="img-fluid rounded z-depth-1" src="https://polyu-taslab.github.io/UrbanV2X/assets/img/calibration.png" title="calibration">
-  </picture>
-</div>
-
-<p><br></p>
-
-<div style="text-align: center;">
-  <h4 style="text-align: center; margin-bottom: 10px;"><a href="https://www.dropbox.com/scl/fo/eoeolnylgcrj2bld5rfv3/AOrLb_1LVdyX6tbaTUGmcDU?rlkey=sh6j4h975izf08oqxi4kysetf&st=rjxibk0w&dl=0" target="_blank" style="color: #2a4d70">Intrinsics</a></h4>
-  <table style="margin: 0 auto; display: inline-block; border-collapse: collapse; border: 1px solid #ccc; transform: translateX(-10%);">
-    <thead>
-      <tr style="background-color: #f5f5f5;">
-        <th>Camera Index</th>
-        <th style="min-width:180px;">Installation Position</th>
-        <th style="min-width:330px;">Topic Name</th>
-        <th style="min-width:350px;">Intrinsics File</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td colspan="4" style="background:#e9ecef;text-align:left;font-weight:bold;"><a href="https://www.dropbox.com/scl/fo/ky9tj6s4x7b11fuo0yfqk/AFTU2IB9H9UxSFiu5M8q8FY?rlkey=3xzq66nfj9y392ysyv49woymf&st=n4ee44z2&dl=0" target="_blank">Camera Intrinsics (Link)</a></td></tr>
-      <tr>
-        <td>0</td>
-        <td>Right-back</td>
-        <td>/hikcamera/image_0/compressed</td>
-        <td>camera-intrinsics_cam0.yaml</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Front (right)</td>
-        <td>/hikcamera/image_1/compressed</td>
-        <td>camera-intrinsics_cam1.yaml</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Front (left)</td>
-        <td>/hikcamera/image_2/compressed</td>
-        <td>camera-intrinsics_cam2.yaml</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Left-front</td>
-        <td>/hikcamera/image_3/compressed</td>
-        <td>camera-intrinsics_cam3.yaml</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Right-front</td>
-        <td>/hikcamera/image_4/compressed</td>
-        <td>camera-intrinsics_cam4.yaml</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Left-back</td>
-        <td>/hikcamera/image_5/compressed</td>
-        <td>camera-intrinsics_cam5.yaml</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Rear</td>
-        <td>/hikcamera/image_6/compressed</td>
-        <td>camera-intrinsics_cam6.yaml</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-  <h4 style="text-align: center; margin-top: 20px;"><a href="https://www.dropbox.com/scl/fo/2o63zlz0627jzynn7fkr2/AFFxK5Y1GwzC0hjxwrOCjbU?rlkey=ndd7iq8dsicvxjnuih6bh0zwl&st=bp3mn6bs&dl=0" target="_blank" style="color: #2a4d70">Extrinsics</a></h4>
-<div style="text-align: center;">
-  <table style="margin: 0 auto; display: inline-block; border-collapse: collapse; border: 1px solid #ccc; margin-top: 10px; transform: translateX(-10%);">
-    <thead>
-      <tr style="background-color: #f5f5f5;">
-        <th style="min-width:180px;">Target</th>
-        <th style="min-width:500px;">Topic</th>
-        <th>Extrinsics File</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Radar to Velodyne -->
-      <tr><td colspan="4" style="background:#e9ecef;text-align:left;font-weight:bold;"><a href="https://www.dropbox.com/scl/fo/06obly8bmctbn2s1b8las/AKXZec30QDKEgwe5nI1cIpE?rlkey=26uzc74b3kw5e35b112ld9bwq&st=jjrb711i&dl=0">4D Radar to LiDAR (Link)</a></td></tr>
-      <tr>
-        <td>Radar -> Velodyne</td>
-        <td>/Target_Radar_1 -> /velodyne_points</td>
-        <td>extrinsics_radar_velodyne.yaml</td>
-      </tr>
-        <!-- Radar to Camera -->
-        <tr><td colspan="4" style="background:#e9ecef;text-align:left;font-weight:bold;"><a href="https://www.dropbox.com/scl/fo/y16abjfnkinrmhpdio9jm/AIax0WFDYNhaUx02p9x72Hg?rlkey=w5en1cf5wyi9b9uf5e6fself9&st=v29rrrae&dl=0">4D Radar to Camera (Link)</a></td></tr>
-        <tr><td>Radar -> cam1</td><td>/Target_Radar_1 -> /hikcamera/image_1/compressed</td><td>extrinsics_radar_camera1.yaml</td></tr>
-        <tr><td>Radar -> cam2</td><td>/Target_Radar_1 -> /hikcamera/image_2/compressed</td><td>extrinsics_radar_camera2.yaml</td></tr>
-        <!-- LiDAR to IMU -->
-        <tr><td colspan="4" style="background:#e9ecef;text-align:left;font-weight:bold;"><a href="https://www.dropbox.com/scl/fo/rzpqa97edwqlbzplk7s1p/AO2YUBDGDOWpVealnkJKhTQ?rlkey=r5ktrnezeo29ksr0c6y4u4ybn&st=zi2zu64l&dl=0">LiDAR to IMU (Link)</a></td></tr>
-        <tr><td>Velodyne -> IMU</td><td>/velodyne_points -> /imu/data</td><td>velodyne_Initialization_result.txt</td></tr>
-        <tr><td>Hesai -> IMU</td><td>/hesai_points -> /imu/data</td><td>hesai1_Initialization_result.txt</td></tr>
-      <!-- Camera to IMU -->
-      <tr><td colspan="4" style="background:#e9ecef;text-align:left;font-weight:bold;"><a href="https://www.dropbox.com/scl/fo/x5yoj5jw53dpmvidxm8ql/AJcdxQZj1bZ0MKrj-O5Qqd8?rlkey=174s4p9gi9hzm4rm00ial9pv3&st=t3j6q4cr&dl=0">Camera to IMU (Link)</a></td></tr>
-      <tr><td>cam0 -> IMU</td><td>/hikcamera/image_0/compressed -> /imu/data</td><td>extrinsics_cam0_imu.yaml</td></tr>
-      <tr><td>cam1 -> IMU</td><td>/hikcamera/image_1/compressed -> /imu/data</td><td>extrinsics_cam1_imu.yaml</td></tr>
-      <tr><td>cam2 -> IMU</td><td>/hikcamera/image_2/compressed -> /imu/data</td><td>extrinsics_cam2_imu.yaml</td></tr>
-      <tr><td>cam3 -> IMU</td><td>/hikcamera/image_3/compressed -> /imu/data</td><td>extrinsics_cam3_imu.yaml</td></tr>
-      <tr><td>cam4 -> IMU</td><td>/hikcamera/image_4/compressed -> /imu/data</td><td>extrinsics_cam4_imu.yaml</td></tr>
-      <tr><td>cam5 -> IMU</td><td>/hikcamera/image_5/compressed -> /imu/data</td><td>extrinsics_cam5_imu.yaml</td></tr>
-      <tr><td>cam6 -> IMU</td><td>/hikcamera/image_6/compressed -> /imu/data</td><td>extrinsics_cam6_imu.yaml</td></tr>
-      <!-- Camera to Velodyne -->
-      <tr><td colspan="4" style="background:#e9ecef;text-align:left;font-weight:bold;"><a href="https://www.dropbox.com/scl/fo/b9310ooqjurje9sc0g0jq/ABputakfzqylJbGZn7tbM-E?rlkey=6tuwntlw6svpek8xqe5prk8sl&st=2xkjyrzs&dl=0">Camera to Velodyne LiDAR (Link)</a></td></tr>
-      <tr><td>Velodyne -> cam0</td><td>/velodyne_points -> /hikcamera/image_0/compressed</td><td>extrinsics_cam0_velodyne.yaml</td></tr>
-      <tr><td>Velodyne -> cam1</td><td>/velodyne_points -> /hikcamera/image_1/compressed</td><td>extrinsics_cam1_velodyne.yaml</td></tr>
-      <tr><td>Velodyne -> cam2</td><td>/velodyne_points -> /hikcamera/image_2/compressed</td><td>extrinsics_cam2_velodyne.yaml</td></tr>
-      <tr><td>Velodyne -> cam3</td><td>/velodyne_points -> /hikcamera/image_3/compressed</td><td>extrinsics_cam3_velodyne.yaml</td></tr>
-      <tr><td>Velodyne -> cam4</td><td>/velodyne_points -> /hikcamera/image_4/compressed</td><td>extrinsics_cam4_velodyne.yaml</td></tr>
-      <tr><td>Velodyne -> cam5</td><td>/velodyne_points -> /hikcamera/image_5/compressed</td><td>extrinsics_cam5_velodyne.yaml</td></tr>
-      <tr><td>Velodyne -> cam6</td><td>/velodyne_points -> /hikcamera/image_6/compressed</td><td>extrinsics_cam6_velodyne.yaml</td></tr>
-      <!-- Camera to Hesai -->
-      <tr><td colspan="4" style="background:#e9ecef;text-align:left;font-weight:bold;"><a href="https://www.dropbox.com/scl/fo/bq0yhkw0ppklbn7gyca51/AI776qd5OMhGusEG8qgKeLk?rlkey=2r1dgzdwiaeca9l567l09sh6x&st=pmvu0erl&dl=0">Camera to Hesai LiDAR (Link)</a></td></tr>
-      <tr><td>Hesai -> cam0</td><td>/hesai_points -> /hikcamera/image_0/compressed</td><td>extrinsics_cam0_hesai.yaml</td></tr>
-      <tr><td>Hesai -> cam1</td><td>/hesai_points -> /hikcamera/image_1/compressed</td><td>extrinsics_cam1_hesai.yaml</td></tr>
-      <tr><td>Hesai -> cam2</td><td>/hesai_points -> /hikcamera/image_2/compressed</td><td>extrinsics_cam2_hesai.yaml</td></tr>
-      <tr><td>Hesai -> cam3</td><td>/hesai_points -> /hikcamera/image_3/compressed</td><td>extrinsics_cam3_hesai.yaml</td></tr>
-      <tr><td>Hesai -> cam4</td><td>/hesai_points -> /hikcamera/image_4/compressed</td><td>extrinsics_cam4_hesai.yaml</td></tr>
-      <tr><td>Hesai -> cam5</td><td>/hesai_points -> /hikcamera/image_5/compressed</td><td>extrinsics_cam5_hesai.yaml</td></tr>
-    </tbody>
-  </table>
-</div>
-</div>
-
-<p><br></p>
-
-
-
-<!-- <h4><a href="https://github.com/mgaoling/mpl_calibration_toolbox" target="_blank" rel="noopener noreferrer">MPL Calibration Toolbox</a></h4>
-
-<p><br></p>
-
-<p>We provide an additional, easy-to-use toolbox to execute and reproduce the calibration tasks with detailed instructions. Related configuration files, data sequences, and calibration results can be found below.</p>
-
-<p><br></p> -->
-
-<h3>1. Time Synchronization</h3>
-
-<p><br></p>
-
-<p style="text-align: justify;">
-  We use an Ethernet topology to achieve data transmission, and the system architecture is shown in <a href="#sys_architecture">Figure 1</a>. 
-  The Precision Time Protocol (PTP) server broadcasts synchronization signals to coordinate the clocks of various data acquisition devices in the sensor network. 
-  The PTP server obtains NMEA output and Pulse-Per-Second (PPS) signals from the u-blox M8T GNSS receiver. 
-  These signals are then converted into PTP time synchronization using the <a href="https://www.coolshark.com/products/auto66.html" target="_blank">Auto66 autonomous driving time synchronization box</a> 
-  from Coolshark Technology (酷鲨科技). The PTP server serves as the system clock source. This mechanism allows the ROS time of the onboard computer to remain consistent with GPS time. 
-  Subsequently, the PTP server broadcasts time synchronization data to all network ports, ensuring that the hardware clocks of sensors such as cameras and LiDAR are synchronized. 
-  For sensors without Ethernet interfaces, ROS time synchronized with GPS is used to record timestamps.
-</p>
-
-<p style="text-align: justify;">
-  Furthermore, for cameras, the GigE Vision protocol is used to broadcast action commands over the network, enabling synchronous triggering of Ethernet cameras with a trigger precision of less than 0.005 seconds. 
-  All data is transmitted to the onboard computer through this system architecture and simultaneously recorded in rosbag format. 
-  The current trigger frequencies are set as follows: LiDAR and cameras at 10 Hz, IMU at 400 Hz, 4D radar at 13 Hz, GNSS at 1 Hz, and UWB at 50 Hz.
-</p>
-
-
-<figure style="text-align: center;">
-  <img style = "width: 100%" src="https://polyu-taslab.github.io/UrbanV2X/assets/img/sys_architecture.jpeg" alt="Image description">
-  <figcaption id="sys_architecture">Fig. 1. The Structure of Our Sensors Synchronization</figcaption>
-</figure>
-
-
-<h3>2. Sensors Frame</h3>
-            
-<p><br></p>
-
-<!-- Fallback to the original file -->
-<img class="img-fluid rounded z-depth-1" src="https://polyu-taslab.github.io/UrbanV2X/assets/img/sensor_frame.jpg" title="sensor_frame">
-
-<!-- <p style="text-align: justify;">
-For sensor calibration, we first define the coordinate of Xsens Mti-30 as the body frame. Then we meticulously calibrate the intrinsics of each sensor with the extrinsics between the external IMU and the rest sensors.  
-More details of the calibration sequence, platform layout, and reports of calibration can be found on our website.
-</p> -->
-
-<p><br></p>
-
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><a class="brand" href="../index.html"><svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="#102B3A"/><path d="M9 12L16 28L20 19L24 28L31 12" stroke="#3ED6D0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="10" r="2" fill="#FFFFFF"/></svg><span class="brand-name">UrbanV2X</span></a><p class="footer-about">A research release of TAS Lab, Department of Aeronautical and Aviation Engineering, The Hong Kong Polytechnic University.</p></div>
+      <div><h2 class="footer-title">Project</h2><ul class="footer-links"><li><a href="../index.html">Overview</a></li><li><a href="../sensors/index.html">Sensors</a></li><li><a href="index.html">Calibration</a></li><li><a href="../download/index.html">Download</a></li></ul></div>
+      <div><h2 class="footer-title">Resources</h2><ul class="footer-links"><li><a href="https://polyu-taslab.github.io/" target="_blank" rel="noopener noreferrer">TAS Lab website</a></li><li><a href="https://github.com/polyu-taslab" target="_blank" rel="noopener noreferrer">TAS Lab GitHub</a></li><li><a href="https://github.com/PolyU-TASLAB/UrbanV2X" target="_blank" rel="noopener noreferrer">Project GitHub</a></li><li><a href="../download/index.html#citation">Citation</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom"><div>© 2026 TAS Lab, The Hong Kong Polytechnic University.</div><span>UrbanV2X · Hong Kong</span></div>
+  </footer>
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.download-intro{padding:52px 0 64px}
+.download-intro h1{font-size:clamp(34px,4vw,50px);margin-bottom:30px}
+.latest-release{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:32px;border:1px solid #cddfe5;border-left:4px solid var(--cyan);background:var(--surface)}
+.latest-release h2{font-size:28px;margin-bottom:10px}
+.latest-release p{margin:0;color:var(--ink-soft);font-size:14px}
+.latest-release .eyebrow{margin-bottom:12px}
+.latest-release .button{flex-shrink:0}
+.download-calibration{margin:20px 0 0;font-size:14px}
+.download-previous{padding:58px 0 70px;border-top:1px solid var(--line)}
+.download-previous h2{font-size:32px}
+.download-previous .feature-list{margin-bottom:0}
+.release-structure{margin-top:32px}
+.structure-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.structure-heading h3{font-size:23px;margin:0}
+.sequence-links{display:flex;flex-wrap:wrap;gap:12px 22px;font-size:13px}
+.structure-note{margin:12px 0 18px;color:var(--ink-soft);font-size:14px}
+.structure-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);border:1px solid var(--line);background:var(--surface)}
+.directory-tree{margin:0;padding:28px;overflow:auto;font-size:13px;line-height:1.75;color:var(--ink)}
+.structure-key{margin:0;padding:28px 32px;background:#fff;border-left:1px solid var(--line);font-size:14px}
+.structure-key dt{font-weight:700;margin-bottom:8px}
+.structure-key dd{margin:0 0 22px;color:var(--ink-soft);line-height:1.8}
+.structure-key dd:last-child{margin-bottom:0}
+.sequence-grid{margin-top:28px;align-items:start}
+.sequence-card{border:1px solid var(--line);min-width:0;background:#fff}
+.sequence-title{display:flex;justify-content:space-between;align-items:center;padding:20px 24px}
+.sequence-title h3{font-size:24px;margin:0}
+.sequence-title>span{font-size:13px;color:var(--ink-soft)}
+.sequence-card video{display:block;width:100%;aspect-ratio:426/240;object-fit:contain;background:#edf2f5}
+.sequence-files{padding:22px 24px 26px}
+.folder-link{font-size:14px;margin:0 0 20px}
+.sequence-files ul{list-style:none;padding:0;margin:0}
+.sequence-files li{padding:14px 0;border-top:1px solid var(--line);font-size:13px;overflow-wrap:anywhere}
+.file-label{display:block;color:var(--ink-soft);font-size:12px;margin-bottom:6px}
+.sequence-files li>div{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.file-size{color:var(--ink-soft);white-space:nowrap;font-size:12px}
+.mirror-link{margin:12px 0 0;font-size:13px}
+.roadside-locations{margin-top:40px}
+.roadside-locations h3{font-size:23px;margin-bottom:18px}
+.roadside-locations table,.recording-format table{table-layout:fixed}
+.roadside-locations th,.roadside-locations td,.recording-format th,.recording-format td{overflow-wrap:anywhere;font-size:13px}
+.roadside-locations th:first-child{width:26%}
+.roadside-locations th:nth-child(2){width:46%}
+.recording-format{margin-top:32px;border-top:1px solid var(--line);padding-top:24px}
+.recording-format summary{cursor:pointer;font-size:20px;font-weight:600;color:var(--ink)}
+.recording-format .table-wrap{margin-top:20px}
+.recording-format p{font-size:13px;margin:18px 0 0;overflow-wrap:anywhere}
+@media(max-width:800px){.structure-grid{grid-template-columns:1fr}.structure-key{border-left:0;border-top:1px solid var(--line)}.directory-tree{padding:22px;font-size:12px}.sequence-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.structure-key{padding:22px}.sequence-title,.sequence-files{padding-left:18px;padding-right:18px}.roadside-locations th,.roadside-locations td,.recording-format th,.recording-format td{padding:12px 8px;font-size:11px}.roadside-locations th:first-child{width:28%}.roadside-locations th:nth-child(2){width:43%}.download-previous h2{font-size:28px}.directory-tree{font-size:11px;padding:18px 12px}}
+@media(max-width:600px){.download-intro{padding:34px 0 42px}.latest-release{display:block;padding:24px}.latest-release h2{font-size:25px}.latest-release .button{margin-top:24px}.download-previous{padding:40px 0 48px}}

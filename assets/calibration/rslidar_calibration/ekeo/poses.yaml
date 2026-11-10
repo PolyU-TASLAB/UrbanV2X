@@ -1,0 +1,455 @@
+schema: roadside_lidar_pose_v1
+enu_anchor_lla_wgs84:
+  latitude_deg: 22.3299584565062
+  longitude_deg: 114.20099264698274
+  altitude_m: 10.11305885668844
+records:
+- schema: roadside_lidar_pose_v1
+  sensor_id: ekeo_1
+  site: EastKowloon
+  enu_anchor_lla_wgs84:
+    latitude_deg: 22.3299584565062
+    longitude_deg: 114.20099264698274
+    altitude_m: 10.11305885668844
+  position_enu_m:
+  - 0.0
+  - 0.0
+  - 0.0
+  position_lla_wgs84:
+    latitude_deg: 22.3299584565062
+    longitude_deg: 114.20099264698274
+    altitude_m: 10.11305885668844
+  T_Rj:
+    frame_convention: sensor R -> public site ENU
+    translation_enu_m:
+    - 0.0
+    - 0.0
+    - 0.0
+    rotation_matrix_enu_sensor:
+    - - 0.586188880298285
+      - 0.8011992197145118
+      - 0.12025974781072851
+    - - -0.7678277597417849
+      - 0.5967568094684601
+      - -0.23307046514505994
+    - - -0.2585016982237327
+      - 0.04428454224535991
+      - 0.9649952079329537
+    quaternion_wxyz:
+    - 0.8871218768720142
+    - 0.07816147212161306
+    - 0.10673884161496833
+    - -0.4421678183015495
+  attitude:
+    reference_frame: public site ENU anchored at enu_anchor_lla_wgs84
+    transform_convention: R_enu_sensor maps sensor-frame vectors into anchor ENU;
+      p_enu = R_enu_sensor p_sensor + position_enu_m
+    quaternion_wxyz:
+    - 0.8871218768720142
+    - 0.07816147212161306
+    - 0.10673884161496833
+    - -0.4421678183015495
+    rpy_deg_xyz:
+    - 2.627514018588001
+    - 14.981176777380218
+    - -52.640510716981474
+    heading_sensor_plus_x_deg: -52.640510716981474
+    local_tangent_enu_at_sensor:
+      quaternion_wxyz:
+      - 0.8871218768720142
+      - 0.07816147212161306
+      - 0.10673884161496833
+      - -0.4421678183015495
+      rpy_deg_xyz:
+      - 2.627514018588001
+      - 14.981176777380218
+      - -52.640510716981474
+      heading_sensor_plus_x_deg: -52.640510716981474
+  quality:
+    median_nn_m: 0.23017881596218304
+    fraction_nn_under_0p3m: 0.7050881423864679
+    xy_shift_m: 0.9410240675802214
+    refinement_stable: false
+    quality_status: needs_review
+  calibration:
+    coarse_method: FFT fusion
+    snapshots: 8
+    rolling_scan_frames: 3
+    ndt_refinement_cycles: 120
+    parameter_overrides: {}
+    ndt_extension_review: null
+- schema: roadside_lidar_pose_v1
+  sensor_id: ekeo_2
+  site: EastKowloon
+  enu_anchor_lla_wgs84:
+    latitude_deg: 22.3299584565062
+    longitude_deg: 114.20099264698274
+    altitude_m: 10.11305885668844
+  position_enu_m:
+  - 38.94043914742119
+  - -35.126572270741434
+  - -0.48250997993423894
+  position_lla_wgs84:
+    latitude_deg: 22.329641242913993
+    longitude_deg: 114.20137062893886
+    altitude_m: 9.630764927715063
+  T_Rj:
+    frame_convention: sensor R -> public site ENU
+    translation_enu_m:
+    - 38.94043914742119
+    - -35.126572270741434
+    - -0.48250997993423894
+    rotation_matrix_enu_sensor:
+    - - 0.46526688704278235
+      - 0.8825915188901473
+      - 0.06751988303234391
+    - - -0.8562815829160335
+      - 0.4680994286384016
+      - -0.21832264121527423
+    - - -0.2242957301874698
+      - 0.043762263327948386
+      - 0.973538026852616
+    quaternion_wxyz:
+    - 0.852482308105834
+    - 0.07685933832619943
+    - 0.08557820216474962
+    - -0.5099440437860394
+  attitude:
+    reference_frame: public site ENU anchored at enu_anchor_lla_wgs84
+    transform_convention: R_enu_sensor maps sensor-frame vectors into anchor ENU;
+      p_enu = R_enu_sensor p_sensor + position_enu_m
+    quaternion_wxyz:
+    - 0.852482308105834
+    - 0.07685933832619943
+    - 0.08557820216474962
+    - -0.5099440437860394
+    rpy_deg_xyz:
+    - 2.5738143774810447
+    - 12.961468031532114
+    - -61.48222994749162
+    heading_sensor_plus_x_deg: -61.48222994749162
+    local_tangent_enu_at_sensor:
+      quaternion_wxyz:
+      - 0.8524821428975358
+      - 0.0768586416480413
+      - 0.08557409314347908
+      - -0.5099451145246071
+      rpy_deg_xyz:
+      - 2.5739742186797816
+      - 12.96102237780972
+      - -61.48233770584849
+      heading_sensor_plus_x_deg: -61.48233770584849
+  quality:
+    median_nn_m: 0.2228391067882834
+    fraction_nn_under_0p3m: 0.7547483500428234
+    xy_shift_m: 0.821480332681428
+    refinement_stable: false
+    quality_status: needs_review
+  calibration:
+    coarse_method: FFT fusion
+    snapshots: 8
+    rolling_scan_frames: 3
+    ndt_refinement_cycles: 120
+    parameter_overrides: {}
+    ndt_extension_review: null
+- schema: roadside_lidar_pose_v1
+  sensor_id: ekeo_3
+  site: EastKowloon
+  enu_anchor_lla_wgs84:
+    latitude_deg: 22.3299584565062
+    longitude_deg: 114.20099264698274
+    altitude_m: 10.11305885668844
+  position_enu_m:
+  - -197.03668930760688
+  - -559.3772624637583
+  - -3.0459418356741708
+  position_lla_wgs84:
+    latitude_deg: 22.324906943303652
+    longitude_deg: 114.19908014081439
+    altitude_m: 7.09481786750257
+  T_Rj:
+    frame_convention: sensor R -> public site ENU
+    translation_enu_m:
+    - -197.03668930760688
+    - -559.3772624637583
+    - -3.0459418356741708
+    rotation_matrix_enu_sensor:
+    - - 0.5140023545040064
+      - 0.8502679171825931
+      - 0.11334041015592333
+    - - -0.8266439724115208
+      - 0.526278057122777
+      - -0.19922637743726387
+    - - -0.22904436784177387
+      - 0.008710660196014325
+      - 0.9733770091587902
+    quaternion_wxyz:
+    - 0.8679944442197735
+    - 0.05989008311573628
+    - 0.09861375849745832
+    - -0.48298462644581314
+  attitude:
+    reference_frame: public site ENU anchored at enu_anchor_lla_wgs84
+    transform_convention: R_enu_sensor maps sensor-frame vectors into anchor ENU;
+      p_enu = R_enu_sensor p_sensor + position_enu_m
+    quaternion_wxyz:
+    - 0.8679944442197735
+    - 0.05989008311573628
+    - 0.09861375849745832
+    - -0.48298462644581314
+    rpy_deg_xyz:
+    - 0.5127209079760363
+    - 13.240816225749871
+    - -58.12689442669737
+    heading_sensor_plus_x_deg: -58.12689442669737
+    local_tangent_enu_at_sensor:
+      quaternion_wxyz:
+      - 0.8679986232563832
+      - 0.05984373764003327
+      - 0.09860624734800318
+      - -0.48298439423467787
+      rpy_deg_xyz:
+      - 0.5084372958289687
+      - 13.237460538841766
+      - -58.12714888245885
+      heading_sensor_plus_x_deg: -58.12714888245885
+  quality:
+    median_nn_m: 0.2250953662291051
+    fraction_nn_under_0p3m: 0.7284664943165498
+    xy_shift_m: 0.2442462211704652
+    refinement_stable: false
+    quality_status: needs_review
+  calibration:
+    coarse_method: FFT fusion
+    snapshots: 10
+    rolling_scan_frames: 3
+    ndt_refinement_cycles: 120
+    parameter_overrides: {}
+    ndt_extension_review: null
+- schema: roadside_lidar_pose_v1
+  sensor_id: ekeo_4
+  site: EastKowloon
+  enu_anchor_lla_wgs84:
+    latitude_deg: 22.3299584565062
+    longitude_deg: 114.20099264698274
+    altitude_m: 10.11305885668844
+  position_enu_m:
+  - 205.5725299633317
+  - -1551.2009805263683
+  - -2.348629826888555
+  position_lla_wgs84:
+    latitude_deg: 22.315950191503394
+    longitude_deg: 114.20298787737849
+    altitude_m: 7.957366923801601
+  T_Rj:
+    frame_convention: sensor R -> public site ENU
+    translation_enu_m:
+    - 205.5725299633317
+    - -1551.2009805263683
+    - -2.348629826888555
+    rotation_matrix_enu_sensor:
+    - - 0.8085176703942869
+      - -0.554182330198198
+      - 0.19794221772095655
+    - - 0.5310070523036502
+      - 0.8320302189511959
+      - 0.16049057653274418
+    - - -0.25363494842782086
+      - -0.024650753500037648
+      - 0.9669858599213832
+    quaternion_wxyz:
+    - 0.9496754378821833
+    - -0.04873805372013593
+    - 0.11887670990939121
+    - 0.285673752108896
+  attitude:
+    reference_frame: public site ENU anchored at enu_anchor_lla_wgs84
+    transform_convention: R_enu_sensor maps sensor-frame vectors into anchor ENU;
+      p_enu = R_enu_sensor p_sensor + position_enu_m
+    quaternion_wxyz:
+    - 0.9496754378821833
+    - -0.04873805372013593
+    - 0.11887670990939121
+    - 0.285673752108896
+    rpy_deg_xyz:
+    - -1.4602884739489594
+    - 14.692714485570477
+    - 33.29555479129652
+    heading_sensor_plus_x_deg: 33.29555479129652
+    local_tangent_enu_at_sensor:
+      quaternion_wxyz:
+      - 0.9496732766537938
+      - -0.04885796169478766
+      - 0.11889665733516736
+      - 0.28565215221174417
+      rpy_deg_xyz:
+      - -1.473440980430209
+      - 14.698861248919307
+      - 33.29146033156995
+      heading_sensor_plus_x_deg: 33.29146033156995
+  quality:
+    median_nn_m: 0.21039721949552329
+    fraction_nn_under_0p3m: 0.8033920914721295
+    xy_shift_m: 0.5658199645410015
+    refinement_stable: false
+    quality_status: needs_review
+  calibration:
+    coarse_method: FFT fusion
+    snapshots: 8
+    rolling_scan_frames: 3
+    ndt_refinement_cycles: 120
+    parameter_overrides: {}
+    ndt_extension_review: null
+- schema: roadside_lidar_pose_v1
+  sensor_id: ekeo_5
+  site: EastKowloon
+  enu_anchor_lla_wgs84:
+    latitude_deg: 22.3299584565062
+    longitude_deg: 114.20099264698274
+    altitude_m: 10.11305885668844
+  position_enu_m:
+  - 417.80316051558555
+  - -1754.9513559211262
+  - -1.3726290782799424
+  position_lla_wgs84:
+    latitude_deg: 22.31411016867362
+    longitude_deg: 114.20504767566511
+    altitude_m: 8.99682049266994
+  T_Rj:
+    frame_convention: sensor R -> public site ENU
+    translation_enu_m:
+    - 417.80316051558555
+    - -1754.9513559211262
+    - -1.3726290782799424
+    rotation_matrix_enu_sensor:
+    - - 0.9026683636212871
+      - 0.3665343900645044
+      - 0.22548251865124674
+    - - -0.35462068702460064
+      - 0.930396833544382
+      - -0.09276799267412905
+    - - -0.24379088098505236
+      - 0.0037779664674456592
+      - 0.969820464476752
+    quaternion_wxyz:
+    - 0.9750494425466871
+    - 0.024754118849965888
+    - 0.12032041124258923
+    - -0.18490218178207277
+  attitude:
+    reference_frame: public site ENU anchored at enu_anchor_lla_wgs84
+    transform_convention: R_enu_sensor maps sensor-frame vectors into anchor ENU;
+      p_enu = R_enu_sensor p_sensor + position_enu_m
+    quaternion_wxyz:
+    - 0.9750494425466871
+    - 0.024754118849965888
+    - 0.12032041124258923
+    - -0.18490218178207277
+    rpy_deg_xyz:
+    - 0.22319640254923206
+    - 14.11038981663455
+    - -21.447789815634653
+    heading_sensor_plus_x_deg: -21.447789815634653
+    local_tangent_enu_at_sensor:
+      quaternion_wxyz:
+      - 0.9750543097130312
+      - 0.024626936845868266
+      - 0.12026258660920212
+      - -0.18493111515831537
+      rpy_deg_xyz:
+      - 0.2094016667726526
+      - 14.101102870004077
+      - -21.45269191051874
+      heading_sensor_plus_x_deg: -21.45269191051874
+  quality:
+    median_nn_m: 0.22880365715845674
+    fraction_nn_under_0p3m: 0.7390565730376301
+    xy_shift_m: 0.93849769775625
+    refinement_stable: false
+    quality_status: needs_review
+  calibration:
+    coarse_method: FFT fusion
+    snapshots: 10
+    rolling_scan_frames: 3
+    ndt_refinement_cycles: 120
+    parameter_overrides: {}
+    ndt_extension_review: null
+- schema: roadside_lidar_pose_v1
+  sensor_id: ekeo_6
+  site: EastKowloon
+  enu_anchor_lla_wgs84:
+    latitude_deg: 22.3299584565062
+    longitude_deg: 114.20099264698274
+    altitude_m: 10.11305885668844
+  position_enu_m:
+  - 685.3327193119984
+  - -2009.9318540080126
+  - -4.99504736145127
+  position_lla_wgs84:
+    latitude_deg: 22.31180744716409
+    longitude_deg: 114.20764410408312
+    altitude_m: 5.473178845830262
+  T_Rj:
+    frame_convention: sensor R -> public site ENU
+    translation_enu_m:
+    - 685.3327193119984
+    - -2009.9318540080126
+    - -4.99504736145127
+    rotation_matrix_enu_sensor:
+    - - -0.7153370677166125
+      - -0.6634923750375592
+      - -0.2192504226167352
+    - - 0.6412542281048745
+      - -0.7479649752794573
+      - 0.17129334690180298
+    - - -0.2776434664965467
+      - -0.018062780024662217
+      - 0.9605143629793158
+    quaternion_wxyz:
+    - 0.3525664192684996
+    - -0.13426982589503178
+    - 0.04140570449176966
+    - 0.925177875596821
+  attitude:
+    reference_frame: public site ENU anchored at enu_anchor_lla_wgs84
+    transform_convention: R_enu_sensor maps sensor-frame vectors into anchor ENU;
+      p_enu = R_enu_sensor p_sensor + position_enu_m
+    quaternion_wxyz:
+    - 0.3525664192684996
+    - -0.13426982589503178
+    - 0.04140570449176966
+    - 0.925177875596821
+    rpy_deg_xyz:
+    - -1.0773384875155607
+    - 16.119609646143154
+    - 138.1257919299265
+    heading_sensor_plus_x_deg: 138.1257919299265
+    local_tangent_enu_at_sensor:
+      quaternion_wxyz:
+      - 0.3525677651760999
+      - -0.1343744348709571
+      - 0.041536278398814
+      - 0.9251563218119507
+      rpy_deg_xyz:
+      - -1.0675447115654901
+      - 16.136307034543428
+      - 138.12598629958632
+      heading_sensor_plus_x_deg: 138.12598629958632
+  quality:
+    median_nn_m: 0.19193747641136616
+    fraction_nn_under_0p3m: 0.8771682500766166
+    xy_shift_m: 1.6997919102489705
+    refinement_stable: false
+    quality_status: needs_review
+  calibration:
+    coarse_method: BEV coarse
+    snapshots: 8
+    rolling_scan_frames: 3
+    ndt_refinement_cycles: 120
+    parameter_overrides:
+      bev_fft_enable: false
+      bev_full_map: false
+      bev_max_shift: 6.0
+      bev_p2pl_rerank: true
+      bev_height_crop: true
+    ndt_extension_review: null

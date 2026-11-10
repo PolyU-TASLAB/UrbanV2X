@@ -1,0 +1,96 @@
+{
+  "schema": "roadside_lidar_pose_v1",
+  "sensor_id": "ekeo_1",
+  "site": "EastKowloon",
+  "enu_anchor_lla_wgs84": {
+    "latitude_deg": 22.3299584565062,
+    "longitude_deg": 114.20099264698274,
+    "altitude_m": 10.11305885668844
+  },
+  "position_enu_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "position_lla_wgs84": {
+    "latitude_deg": 22.3299584565062,
+    "longitude_deg": 114.20099264698274,
+    "altitude_m": 10.11305885668844
+  },
+  "T_Rj": {
+    "frame_convention": "sensor R -> public site ENU",
+    "translation_enu_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation_matrix_enu_sensor": [
+      [
+        0.586188880298285,
+        0.8011992197145118,
+        0.12025974781072851
+      ],
+      [
+        -0.7678277597417849,
+        0.5967568094684601,
+        -0.23307046514505994
+      ],
+      [
+        -0.2585016982237327,
+        0.04428454224535991,
+        0.9649952079329537
+      ]
+    ],
+    "quaternion_wxyz": [
+      0.8871218768720142,
+      0.07816147212161306,
+      0.10673884161496833,
+      -0.4421678183015495
+    ]
+  },
+  "attitude": {
+    "reference_frame": "public site ENU anchored at enu_anchor_lla_wgs84",
+    "transform_convention": "R_enu_sensor maps sensor-frame vectors into anchor ENU; p_enu = R_enu_sensor p_sensor + position_enu_m",
+    "quaternion_wxyz": [
+      0.8871218768720142,
+      0.07816147212161306,
+      0.10673884161496833,
+      -0.4421678183015495
+    ],
+    "rpy_deg_xyz": [
+      2.627514018588001,
+      14.981176777380218,
+      -52.640510716981474
+    ],
+    "heading_sensor_plus_x_deg": -52.640510716981474,
+    "local_tangent_enu_at_sensor": {
+      "quaternion_wxyz": [
+        0.8871218768720142,
+        0.07816147212161306,
+        0.10673884161496833,
+        -0.4421678183015495
+      ],
+      "rpy_deg_xyz": [
+        2.627514018588001,
+        14.981176777380218,
+        -52.640510716981474
+      ],
+      "heading_sensor_plus_x_deg": -52.640510716981474
+    }
+  },
+  "quality": {
+    "median_nn_m": 0.23017881596218304,
+    "fraction_nn_under_0p3m": 0.7050881423864679,
+    "xy_shift_m": 0.9410240675802214,
+    "refinement_stable": false,
+    "quality_status": "needs_review"
+  },
+  "calibration": {
+    "coarse_method": "FFT fusion",
+    "snapshots": 8,
+    "rolling_scan_frames": 3,
+    "ndt_refinement_cycles": 120,
+    "parameter_overrides": {},
+    "ndt_extension_review": null
+  }
+}
