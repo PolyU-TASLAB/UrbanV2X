@@ -1,0 +1,20 @@
+.positioning-demo{background:#091b29;overflow:hidden;border-radius:3px}
+.positioning-viewport{position:relative;isolation:isolate}
+#positioning-canvas{display:block;width:100%;aspect-ratio:16/9;background:#091b29 url('../previews/positioning.jpg') center/contain no-repeat;cursor:grab;touch-action:pan-y}
+#positioning-canvas.dragging{cursor:grabbing}
+#positioning-canvas:focus-visible{outline:2px solid #4ddcd6;outline-offset:-3px}
+.positioning-view-tools{position:absolute;top:16px;right:16px;display:flex;gap:5px}
+.positioning-demo button{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:0;border:1px solid #89a5b744;background:#0b2334d9;color:#c5d9e4;border-radius:3px;font-size:17px;line-height:1}
+.positioning-demo button:hover{color:white;border-color:#9ce3e1;background:#204051}
+.positioning-hint,.positioning-credit{position:absolute;bottom:16px;font-size:10px;line-height:1.4;color:#a1b9c6}
+.positioning-hint{left:18px;pointer-events:none}.positioning-credit{right:18px;text-decoration:underline;text-underline-offset:2px}
+#scene-status{position:absolute;left:18px;top:16px;padding:6px 10px;margin:0;color:#d1e4ed;background:#0b2334d9;font-size:12px}
+#scene-status[hidden]{display:none}
+.positioning-playback{display:flex;align-items:center;gap:20px;padding:14px 18px;border-top:1px solid #d7edf21a}
+.positioning-playback #scene-play{flex-shrink:0;border:0;background:transparent;color:#c8ebe9}
+.positioning-playback input{flex:1;min-width:0;width:100%;accent-color:#52d4cf;cursor:pointer}
+.positioning-playback output{flex-shrink:0;font-size:11px;color:#abc5d1;font-variant-numeric:tabular-nums;min-width:75px;text-align:right}
+@media(max-width:720px){#positioning-canvas{aspect-ratio:4/3}.positioning-view-tools{top:10px;right:10px;gap:4px}.positioning-demo button{width:32px;height:32px;font-size:15px}.positioning-hint,.positioning-credit{bottom:10px;font-size:8px}.positioning-hint{left:12px}.positioning-credit{right:12px}.positioning-playback{gap:10px;padding:10px}.positioning-playback output{font-size:10px;min-width:65px}#scene-status{top:50px;left:10px;font-size:10px}}
+
+#positioning-preview .positioning-title,h1.positioning-title{white-space:nowrap;font-size:clamp(19px,3.3vw,48px);letter-spacing:-.035em}
+@media(max-width:720px){#positioning-preview .positioning-title,h1.positioning-title{font-size:clamp(19px,6.25vw,32px)}}

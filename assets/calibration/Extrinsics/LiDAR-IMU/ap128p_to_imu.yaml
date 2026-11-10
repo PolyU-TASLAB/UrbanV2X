@@ -1,0 +1,27 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+source_sensor: ap128p
+target_sensor: imu
+maps: ap128p -> imu
+Rotation:
+- -0.009961038270099632
+- -0.9999489041175913
+- -0.001722460626113436
+- 0.9998725381045093
+- -0.009981741938321001
+- 0.012460833532351221
+- -0.012477389992534652
+- -0.0015981182383242565
+- 0.9999208772483283
+Translation:
+- -0.26417636489025853
+- 0.73881148619294
+- -0.12793918013179217
+legacy_name: T_I_L
+source_topic: /lidar_points2
+source_model: Hesai AP128P
+target_topic: /imu/data
+time_offset_to_imu_s_by_dataset:
+  aug13: 0.008649644761021716

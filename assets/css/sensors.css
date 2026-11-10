@@ -1,0 +1,26 @@
+.sensor-platform{padding-top:32px}
+.sensor-platform .paper-figure{max-width:880px;margin:0 auto}
+.sensor-overview{padding:56px 0 72px}
+.sensor-overview h1{font-size:clamp(32px,3.5vw,48px);margin-bottom:32px}
+.sensor-overview .paper-figure{margin:0}
+.paper-figure{margin:0}
+.paper-figure a{display:block}
+.paper-figure img{width:100%;height:auto;border:1px solid var(--line);background:white}
+.paper-figure figcaption{margin:14px 0 0;color:var(--ink-soft);font-size:13px}
+.sensor-section{padding:70px 0}
+.sensor-section .section-header{margin-bottom:32px}
+.sensor-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:36px;align-items:center;margin-bottom:42px}
+.sensor-layout-notes{display:grid;gap:16px}
+.sensor-layout h3{font-size:16px;margin:0 0 6px}
+.sensor-layout p{font-size:14px;color:var(--ink-soft);margin:0 0 22px}
+.sensor-layout p:last-child{margin-bottom:0}
+.sensor-specs table{table-layout:fixed}
+.sensor-specs thead th:first-child,.sensor-specs tbody th{width:31%;min-width:0}
+.sensor-specs th,.sensor-specs td{overflow-wrap:anywhere}
+.sensor-specs tbody th{background:white;font-weight:650;font-size:14px}
+.sensor-specs tbody th span{display:block;margin-top:5px;font-size:12px;color:var(--ink-soft);font-weight:400}
+.sensor-specs td{font-size:14px}
+.sensor-system-copy{max-width:900px;margin-top:28px;color:var(--ink-soft);font-size:15px}
+.sensor-system-copy p:last-child{margin-bottom:0}
+@media(max-width:860px){.sensor-layout{grid-template-columns:1fr;gap:26px}.sensor-layout-notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}}
+@media(max-width:600px){.sensor-overview{padding:36px 0 45px}.sensor-overview h1{margin-bottom:24px}.sensor-section{padding:48px 0}.sensor-layout-notes{grid-template-columns:1fr;gap:22px}.sensor-layout{margin-bottom:28px}.sensor-specs th,.sensor-specs td{padding:12px 10px}.sensor-specs tbody th,.sensor-specs td{font-size:12px}.sensor-specs tbody th span{font-size:11px}.paper-figure figcaption{font-size:11px}.sensor-system-copy{font-size:14px}}

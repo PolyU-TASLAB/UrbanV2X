@@ -1,0 +1,26 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+relation_type: lidar_lidar
+source_sensor: xt32
+target_sensor: ap128p
+maps: xt32 -> ap128p
+matrix:
+- - -0.012548689475060137
+  - -0.9358315274913692
+  - 0.3522241935836244
+  - -0.007080888698085208
+- - 0.9999167625297576
+  - -0.01068758580098091
+  - 0.007227968024185048
+  - -0.24824771109731938
+- - -0.0029997340666255657
+  - 0.35228557685906514
+  - 0.9358877464379006
+  - 0.08697396889717371
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+legacy_name: Y_from_X

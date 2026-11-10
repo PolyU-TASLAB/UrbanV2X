@@ -1,0 +1,26 @@
+package: august_2026_reviewed_candidate
+status: experimental_maintenance_candidate
+calibration_accepted: false
+source_package: common/calibration/organized/august_2026_reviewed_candidate
+relation_type: lidar_lidar
+source_sensor: hdl32
+target_sensor: xt32
+maps: hdl32 -> xt32
+matrix:
+- - -0.999911286766193
+  - 0.012227217184450141
+  - -0.005283347186859384
+  - 0.001792229052450633
+- - -0.013312747449958525
+  - -0.9303559420859323
+  - 0.3664158727194085
+  - 0.7778596990233235
+- - -0.0004351469938276475
+  - 0.36645370264921356
+  - 0.9304361850561119
+  - -0.09112795861169432
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+legacy_name: X_from_H

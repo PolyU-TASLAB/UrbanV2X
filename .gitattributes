@@ -1,0 +1,2 @@
+# Calibration files retain the source bytes and original CSV line endings.
+assets/calibration/** -text whitespace=cr-at-eol

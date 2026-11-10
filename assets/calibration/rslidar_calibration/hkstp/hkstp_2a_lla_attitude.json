@@ -1,0 +1,103 @@
+{
+  "schema": "roadside_lidar_pose_v1",
+  "sensor_id": "hkstp_2a",
+  "site": "HKSTP",
+  "enu_anchor_lla_wgs84": {
+    "latitude_deg": 22.424549180520735,
+    "longitude_deg": 114.21351706021711,
+    "altitude_m": 9.414061702787876
+  },
+  "position_enu_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "position_lla_wgs84": {
+    "latitude_deg": 22.424549180520735,
+    "longitude_deg": 114.21351706021711,
+    "altitude_m": 9.414061702787876
+  },
+  "T_Rj": {
+    "frame_convention": "sensor R -> public site ENU",
+    "translation_enu_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation_matrix_enu_sensor": [
+      [
+        -0.29067526387611625,
+        0.4396105954921353,
+        -0.8498531727902172
+      ],
+      [
+        0.15918377793295296,
+        0.898044539402196,
+        0.410093318761583
+      ],
+      [
+        0.9434873691860117,
+        -0.01607885508819834,
+        -0.33101820887303235
+      ]
+    ],
+    "quaternion_wxyz": [
+      0.5648785415142463,
+      -0.18861230447317034,
+      -0.7936841330389792,
+      -0.1241093425178863
+    ]
+  },
+  "attitude": {
+    "reference_frame": "public site ENU anchored at enu_anchor_lla_wgs84",
+    "transform_convention": "R_enu_sensor maps sensor-frame vectors into anchor ENU; p_enu = R_enu_sensor p_sensor + position_enu_m",
+    "quaternion_wxyz": [
+      0.5648785415142463,
+      -0.18861230447317034,
+      -0.7936841330389792,
+      -0.1241093425178863
+    ],
+    "rpy_deg_xyz": [
+      -177.21910458625405,
+      -70.64571287036465,
+      151.293370128407
+    ],
+    "heading_sensor_plus_x_deg": 151.293370128407,
+    "local_tangent_enu_at_sensor": {
+      "quaternion_wxyz": [
+        0.5648785415142463,
+        -0.18861230447317034,
+        -0.7936841330389792,
+        -0.1241093425178863
+      ],
+      "rpy_deg_xyz": [
+        -177.21910458625405,
+        -70.64571287036465,
+        151.293370128407
+      ],
+      "heading_sensor_plus_x_deg": 151.293370128407
+    }
+  },
+  "quality": {
+    "median_nn_m": 0.21518037911901888,
+    "fraction_nn_under_0p3m": 0.8104832947497785,
+    "xy_shift_m": 2.195489653928137,
+    "refinement_stable": false,
+    "quality_status": "needs_review"
+  },
+  "calibration": {
+    "coarse_method": "BEV direct",
+    "snapshots": 8,
+    "rolling_scan_frames": 3,
+    "ndt_refinement_cycles": 400,
+    "parameter_overrides": {
+      "bev_fft_enable": false,
+      "bev_full_map": false,
+      "bev_max_shift": 6.0,
+      "bev_p2pl_rerank": true,
+      "bev_height_crop": true,
+      "ndt_max_iter": 30
+    },
+    "ndt_extension_review": null
+  }
+}

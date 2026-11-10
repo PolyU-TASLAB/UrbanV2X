@@ -1,0 +1,102 @@
+{
+  "schema": "roadside_lidar_pose_v1",
+  "sensor_id": "ekeo_6",
+  "site": "EastKowloon",
+  "enu_anchor_lla_wgs84": {
+    "latitude_deg": 22.3299584565062,
+    "longitude_deg": 114.20099264698274,
+    "altitude_m": 10.11305885668844
+  },
+  "position_enu_m": [
+    685.3327193119984,
+    -2009.9318540080126,
+    -4.99504736145127
+  ],
+  "position_lla_wgs84": {
+    "latitude_deg": 22.31180744716409,
+    "longitude_deg": 114.20764410408312,
+    "altitude_m": 5.473178845830262
+  },
+  "T_Rj": {
+    "frame_convention": "sensor R -> public site ENU",
+    "translation_enu_m": [
+      685.3327193119984,
+      -2009.9318540080126,
+      -4.99504736145127
+    ],
+    "rotation_matrix_enu_sensor": [
+      [
+        -0.7153370677166125,
+        -0.6634923750375592,
+        -0.2192504226167352
+      ],
+      [
+        0.6412542281048745,
+        -0.7479649752794573,
+        0.17129334690180298
+      ],
+      [
+        -0.2776434664965467,
+        -0.018062780024662217,
+        0.9605143629793158
+      ]
+    ],
+    "quaternion_wxyz": [
+      0.3525664192684996,
+      -0.13426982589503178,
+      0.04140570449176966,
+      0.925177875596821
+    ]
+  },
+  "attitude": {
+    "reference_frame": "public site ENU anchored at enu_anchor_lla_wgs84",
+    "transform_convention": "R_enu_sensor maps sensor-frame vectors into anchor ENU; p_enu = R_enu_sensor p_sensor + position_enu_m",
+    "quaternion_wxyz": [
+      0.3525664192684996,
+      -0.13426982589503178,
+      0.04140570449176966,
+      0.925177875596821
+    ],
+    "rpy_deg_xyz": [
+      -1.0773384875155607,
+      16.119609646143154,
+      138.1257919299265
+    ],
+    "heading_sensor_plus_x_deg": 138.1257919299265,
+    "local_tangent_enu_at_sensor": {
+      "quaternion_wxyz": [
+        0.3525677651760999,
+        -0.1343744348709571,
+        0.041536278398814,
+        0.9251563218119507
+      ],
+      "rpy_deg_xyz": [
+        -1.0675447115654901,
+        16.136307034543428,
+        138.12598629958632
+      ],
+      "heading_sensor_plus_x_deg": 138.12598629958632
+    }
+  },
+  "quality": {
+    "median_nn_m": 0.19193747641136616,
+    "fraction_nn_under_0p3m": 0.8771682500766166,
+    "xy_shift_m": 1.6997919102489705,
+    "refinement_stable": false,
+    "quality_status": "needs_review"
+  },
+  "calibration": {
+    "coarse_method": "BEV coarse",
+    "snapshots": 8,
+    "rolling_scan_frames": 3,
+    "ndt_refinement_cycles": 120,
+    "parameter_overrides": {
+      "bev_fft_enable": false,
+      "bev_full_map": false,
+      "bev_max_shift": 6.0,
+      "bev_p2pl_rerank": true,
+      "bev_height_crop": true
+    },
+    "ndt_extension_review": null
+  }
+}
