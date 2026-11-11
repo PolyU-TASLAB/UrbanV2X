@@ -124,15 +124,19 @@
     "notes": "Uncropped 4:3 responsive encodes, WebP quality 85. Original PNG retained as full-size link."
   },
   {
-    "asset": "huggingface-surround.gif",
-    "source": "assets/previews/surround-loop.mp4",
+    "asset": "huggingface-multimodal.mp4",
+    "sources": [
+      "assets/previews/surround-loop.mp4",
+      "assets/previews/multi-lidar-loop.mp4",
+      "assets/previews/positioning-loop.mp4"
+    ],
     "dataset_sequence": "hkstp_s_02",
-    "notes": "Original seven-camera recording from 13 August 2026, shared with the Hugging Face release. Full existing seamless loop converted to a 440 px, 4 fps GIF with 64 colours, no embedded labels, no dithering, and infinite repeat.",
-    "size_bytes": 827877
+    "notes": "Simultaneous visual montage of seven cameras, three onboard LiDARs, and recorded GNSS/GT/UWB from the 13 August 2026 Honda collection. Input clips cover different time windows and are retimed independently; this is not a timestamp-aligned sensor comparison. No embedded labels. The three panels share a 0.6 s wraparound crossfade. OSM attribution is in the Download footer.",
+    "size_bytes": 680232
   },
   {
-    "asset": "huggingface-surround.jpg",
-    "source": "assets/previews/huggingface-surround.gif",
-    "notes": "First frame, used for reduced motion and while the animated preview is outside the viewport."
+    "asset": "huggingface-multimodal.jpg",
+    "source": "assets/previews/huggingface-multimodal.mp4",
+    "notes": "First frame of the combined preview."
   }
 ]

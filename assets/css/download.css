@@ -1,14 +1,13 @@
 .download-intro{padding:52px 0 64px}
 .download-intro h1{font-size:clamp(34px,4vw,50px);margin-bottom:30px}
-.latest-release{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:32px;padding:32px;border:1px solid #cddfe5;border-left:4px solid var(--cyan);background:var(--surface)}
+.latest-release{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center;gap:32px;padding:32px;border:1px solid #cddfe5;border-left:4px solid var(--cyan);background:var(--surface)}
 .latest-release h2{font-size:28px;margin-bottom:10px}
 .latest-release p{margin:0;color:var(--ink-soft);font-size:14px}
 .latest-release .eyebrow{margin-bottom:12px}
 .latest-release .button{margin-top:20px}
 .release-new{display:inline-block;padding:5px 8px;margin-left:6px;border-radius:3px;background:var(--cyan);color:#082731;font-size:10px;line-height:1.2;letter-spacing:.08em;vertical-align:middle;white-space:nowrap}
-.release-preview{width:100%;max-width:480px;margin:0;justify-self:end}
-.release-preview img{display:block;width:100%;height:auto;aspect-ratio:440/174;object-fit:contain;background:#091b29;border-radius:3px}
-.release-preview figcaption{margin-top:10px;font-size:12px;color:var(--ink-soft)}
+.release-preview{width:100%;max-width:640px;margin:0;justify-self:end}
+.release-preview video{display:block;width:100%;height:auto;aspect-ratio:800/544;object-fit:contain;background:#091b29;border-radius:3px}
 .download-calibration{margin:20px 0 0;font-size:14px}
 .download-previous{padding:58px 0 70px;border-top:1px solid var(--line)}
 .download-previous h2{font-size:32px}
