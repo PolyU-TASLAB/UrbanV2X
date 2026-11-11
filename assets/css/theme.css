@@ -17,7 +17,6 @@ html[data-theme="dark"] .site-navigation-links>a{color:var(--ink)}
 html[data-theme="dark"] .site-navigation-brand img{background:white;border-radius:3px}
 html[data-theme="dark"] .site-navigation-links>a[aria-current="page"],
 html[data-theme="dark"] .site-navigation-links>a:hover{color:var(--cyan)}
-html[data-theme="dark"] .site-navigation-links>a.site-navigation-paper,
 html[data-theme="dark"] .site-theme-toggle,
 html[data-theme="dark"] .site-navigation-toggle{border-color:var(--line);background:transparent;color:var(--ink)}
 html[data-theme="dark"] .site-theme-toggle:hover{border-color:var(--cyan);color:var(--cyan)}

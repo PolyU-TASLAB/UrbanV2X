@@ -9,11 +9,10 @@
 .site-navigation-links>a:hover{color:#008a9b}
 .site-navigation-links>a[aria-current="page"]{color:#142f3c;border-bottom-color:#00acc1;background:transparent}
 .site-navigation-links>a[aria-current="page"]::after{content:none}
-.site-navigation-links>a.site-navigation-paper{padding:9px 14px;border:1px solid #dce4e7;border-radius:3px;font-size:13px}
 .site-navigation-toggle{display:none;border:1px solid #dce4e7;border-radius:3px;background:white;color:#142f3c;width:42px;height:40px;align-items:center;justify-content:center;cursor:pointer;padding:10px}
 .site-navigation-toggle span,.site-navigation-toggle span::before,.site-navigation-toggle span::after{display:block;width:19px;height:2px;background:currentColor;position:relative}
 .site-navigation-toggle span::before,.site-navigation-toggle span::after{content:"";position:absolute;left:0}
 .site-navigation-toggle span::before{top:-6px}.site-navigation-toggle span::after{top:6px}
 .site-navigation a:focus-visible,.site-navigation button:focus-visible{outline:2px solid #00acc1;outline-offset:4px}
 @media(max-width:1000px){.site-navigation-links{gap:18px}.site-navigation-inner{gap:20px}}
-@media(max-width:1000px){.site-navigation{height:70px}.site-navigation-inner{width:90%}.site-navigation-brand{font-size:25px}.site-navigation-toggle{display:flex}.site-navigation-links{display:none;position:absolute;top:70px;left:0;right:0;margin:0;padding:14px 5% 20px;background:white;border-bottom:1px solid #dce4e7;box-shadow:0 12px 20px #102b3a0a;gap:0;align-items:stretch}.site-navigation-links.is-open{display:flex;flex-direction:column}.site-navigation-links>a{padding:13px 0;width:100%}.site-navigation-links>a[aria-current="page"]{border-bottom-color:transparent;color:#007f90}.site-navigation-links>a.site-navigation-paper{margin-top:10px;padding:11px 14px;text-align:center}}
+@media(max-width:1000px){.site-navigation{height:70px}.site-navigation-inner{width:90%}.site-navigation-brand{font-size:25px}.site-navigation-toggle{display:flex}.site-navigation-links{display:none;position:absolute;top:70px;left:0;right:0;margin:0;padding:14px 5% 20px;background:white;border-bottom:1px solid #dce4e7;box-shadow:0 12px 20px #102b3a0a;gap:0;align-items:stretch}.site-navigation-links.is-open{display:flex;flex-direction:column}.site-navigation-links>a{padding:13px 0;width:100%}.site-navigation-links>a[aria-current="page"]{border-bottom-color:transparent;color:#007f90}}

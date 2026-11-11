@@ -54,7 +54,9 @@ def main():
     for name in PAGES:
         owner = ROOT / name
         page = Page()
-        page.feed(owner.read_text())
+        content = owner.read_text()
+        assert not re.search(r'overleaf\.com|read\s+(?:the\s+)?paper', content, re.I), f'Private manuscript entry in {name}'
+        page.feed(content)
         for url in page.links:
             path = local_path(owner, url)
             if path:
