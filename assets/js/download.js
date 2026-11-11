@@ -1,23 +1,32 @@
 (() => {
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const previews = [...document.querySelectorAll('[data-download-preview]')];
+  const previews = [...document.querySelectorAll('[data-download-preview], [data-download-animation]')];
   const visible = new Set();
-  const update = video => {
-    if (visible.has(video) && !reducedMotion.matches && !document.hidden) {
-      if (!video.getAttribute('src')) video.src = video.dataset.src;
-      video.play().catch(() => {});
+  const shouldPlay = preview => visible.has(preview) && !reducedMotion.matches && !document.hidden;
+  previews.filter(preview => preview.tagName === 'IMG').forEach(image => {
+    image.dataset.poster = image.getAttribute('src');
+  });
+  const update = preview => {
+    if (preview.tagName === 'IMG') {
+      const src = shouldPlay(preview) ? preview.dataset.src : preview.dataset.poster;
+      if (preview.getAttribute('src') !== src) preview.src = src;
+    } else if (shouldPlay(preview)) {
+      if (!preview.getAttribute('src')) preview.src = preview.dataset.src;
+      preview.play().then(() => {
+        if (!shouldPlay(preview)) preview.pause();
+      }).catch(() => {});
     } else {
-      video.pause();
+      preview.pause();
     }
   };
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(({target, isIntersecting}) => {
-      if (isIntersecting) visible.add(target);
+    entries.forEach(({target, isIntersecting, intersectionRatio}) => {
+      if (isIntersecting && intersectionRatio >= 0.15) visible.add(target);
       else visible.delete(target);
       update(target);
     });
-  }, {threshold: 0.05});
-  previews.forEach(video => observer.observe(video));
+  }, {rootMargin: '-80px 0px 0px', threshold: [0, 0.15]});
+  previews.forEach(preview => observer.observe(preview));
   reducedMotion.addEventListener('change', () => previews.forEach(update));
   document.addEventListener('visibilitychange', () => previews.forEach(update));
 })();

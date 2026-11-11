@@ -122,5 +122,17 @@
     "asset": "vehicle-platform-{640,1280,1760}.webp",
     "source": "assets/img/calibration.png",
     "notes": "Uncropped 4:3 responsive encodes, WebP quality 85. Original PNG retained as full-size link."
+  },
+  {
+    "asset": "huggingface-surround.gif",
+    "source": "assets/previews/surround-loop.mp4",
+    "dataset_sequence": "hkstp_s_02",
+    "notes": "Original seven-camera recording from 13 August 2026, shared with the Hugging Face release. Full existing seamless loop converted to a 440 px, 4 fps GIF with 64 colours, no embedded labels, no dithering, and infinite repeat.",
+    "size_bytes": 827877
+  },
+  {
+    "asset": "huggingface-surround.jpg",
+    "source": "assets/previews/huggingface-surround.gif",
+    "notes": "First frame, used for reduced motion and while the animated preview is outside the viewport."
   }
 ]

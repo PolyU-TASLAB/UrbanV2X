@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://polyu-taslab.github.io/UrbanV2X/download/">
   <link rel="icon" href="../assets/img/taslab-icon.jpg">
   <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/download.css">
+  <link rel="stylesheet" href="../assets/css/download.css?v=20261111-preview">
   <script data-theme-init>
     (() => {
       let theme;
@@ -52,13 +52,20 @@
     <section class="download-intro" aria-labelledby="page-title"><div class="container">
       <h1 id="page-title">Download</h1>
       <div class="latest-release" id="latest-release">
-        <div><p class="eyebrow">Latest dataset · Partial release</p><h2>UrbanV2X on Hugging Face</h2></div>
-        <a class="button button-primary" href="https://huggingface.co/datasets/polyutaslab/UrbanV2X" target="_blank" rel="noopener noreferrer">Open on Hugging Face ↗</a>
+        <div class="release-copy">
+          <p class="eyebrow">Latest dataset · Partial release</p>
+          <h2>UrbanV2X on Hugging Face <span class="release-new">NEW</span></h2>
+          <a class="button button-primary" href="https://huggingface.co/datasets/polyutaslab/UrbanV2X" target="_blank" rel="noopener noreferrer">Open on Hugging Face ↗</a>
+        </div>
+        <figure class="release-preview">
+          <img data-download-animation src="../assets/previews/huggingface-surround.jpg" data-src="../assets/previews/huggingface-surround.gif" width="440" height="174" loading="lazy" decoding="async" alt="Seven surround-camera views from the HKSTP Small Loop 02 recording">
+          <figcaption>Surround cameras</figcaption>
+        </figure>
       </div>
 
       <div class="release-structure" aria-labelledby="structure-title">
-        <div class="structure-heading"><h3 id="structure-title">Dataset structure</h3><div class="sequence-links"><a href="https://huggingface.co/datasets/polyutaslab/UrbanV2X/tree/main/hkstp_s_01" target="_blank" rel="noopener noreferrer">Small Loop · <code>hkstp_s_01</code> ↗</a> <a href="https://huggingface.co/datasets/polyutaslab/UrbanV2X/tree/main/hkstp_l_01" target="_blank" rel="noopener noreferrer">Large Loop · <code>hkstp_l_01</code> ↗</a></div></div>
-        <p class="structure-note">Both sequences use the following layout. Small Loop also includes <code>camera/metadata.jsonl</code> for the image viewer.</p>
+        <div class="structure-heading"><h3 id="structure-title">Dataset structure</h3><div class="sequence-links"><a href="https://huggingface.co/datasets/polyutaslab/UrbanV2X/tree/main/hkstp_s_01" target="_blank" rel="noopener noreferrer">Small Loop · <code>hkstp_s_01</code> ↗</a> <a href="https://huggingface.co/datasets/polyutaslab/UrbanV2X/tree/main/hkstp_s_02" target="_blank" rel="noopener noreferrer">Small Loop 02 · <code>hkstp_s_02</code> ↗</a> <a href="https://huggingface.co/datasets/polyutaslab/UrbanV2X/tree/main/hkstp_l_01" target="_blank" rel="noopener noreferrer">Large Loop · <code>hkstp_l_01</code> ↗</a></div></div>
+        <p class="structure-note">Small Loop 01 and Large Loop use the following layout. Small Loop 01 also includes <code>camera/metadata.jsonl</code> for the image viewer.</p>
         <div class="structure-grid"><pre class="directory-tree" aria-label="Hugging Face sequence directory structure"><code>hkstp_s_01/ · hkstp_l_01/
 ├── camera/
 │   ├── cam0/ … cam6/       *.png
@@ -91,7 +98,7 @@
           <dt>Calibration</dt><dd>Use the intrinsics and extrinsics supplied inside each sequence's <code>calib/</code> directory.</dd>
         </dl></div>
       </div>
-      <p class="download-calibration"><a href="../calibration/#parameters">Camera intrinsics and sensor extrinsics ↓</a></p>
+      <p class="download-calibration"><a href="../calibration/#parameters">Camera intrinsics and sensor extrinsics <span aria-hidden="true">→</span></a></p>
     </div></section>
     <section class="download-previous" id="earlier-release" aria-labelledby="earlier-title"><div class="container">
       <h2 id="earlier-title">Original UrbanV2X downloads</h2>
@@ -144,6 +151,6 @@
     <div class="container footer-bottom"><div>© 2026 TAS Lab, The Hong Kong Polytechnic University.</div><span>UrbanV2X · Hong Kong</span></div>
   </footer>
   <script src="../assets/js/site.js?v=20261111-theme" defer></script>
-  <script src="../assets/js/download.js" defer></script>
+  <script src="../assets/js/download.js?v=20261111-preview" defer></script>
 </body>
 </html>
